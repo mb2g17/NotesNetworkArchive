@@ -23,7 +23,7 @@ What separates the archive and the original is the performance. Google Docs uses
 
 [The original Notes Network is hosted on Google Docs](https://docs.google.com/document/d/1OIcQ8dJ_FAhdkirU94M29-ZbNZ4oQs1LbWF3Nz-mq_U/edit?usp=sharing), but [the archive can be viewed through GitHub Pages](https://mb2g17.github.io/NotesNetworkArchive/).
 
-# License
+## License
 
 ![CC BY-NC-SA](https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png)
 
