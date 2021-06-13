@@ -1,10 +1,19 @@
+![Logo](logo.png)
+
 [![Available on GitHub](https://img.shields.io/badge/Available%20on-GitHub-white?logo=github)](https://github.com/mb2g17/NotesNetworkArchive)
 
-# Notes Network Archive
+## Table of contents
+
+-   [About](#about)
+-   [What is the Notes Network?](#what-is-the-notes-network?)
+-   [Where can I view the Notes Network?](#where-can-i-view-the-notes-network?)
+-   [License](#license)
+
+# About
 
 This is an archive of the Notes Network I created for my Software Engineering University degree.
 
-## What is the Notes Network?
+# What is the Notes Network?
 
 The Notes Network is a collection of notes documents for modules at the University of Southampton.
 
@@ -19,11 +28,11 @@ Asking and answering questions on the Google Docs comments is strongly encourage
 
 What separates the archive and the original is the performance. Google Docs uses a lot of JavaScript to support real-time collaboration, whereas the archive is comprised only of HTML and CSS. However, the archive is not meant to be improved; it is meant to be a 'snapshot' of the network after I finished University.
 
-## Where can I view the Notes Network?
+# Where can I view the Notes Network?
 
 [The original Notes Network is hosted on Google Docs](https://docs.google.com/document/d/1OIcQ8dJ_FAhdkirU94M29-ZbNZ4oQs1LbWF3Nz-mq_U/edit?usp=sharing), but [the archive can be viewed through GitHub Pages](https://mb2g17.github.io/NotesNetworkArchive/).
 
-## License
+# License
 
 ![CC BY-NC-SA](https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png)
 
