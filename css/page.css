@@ -1,0 +1,10 @@
+html {
+    background-color: lightgrey;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    margin: 0 !important;
+    height: fit-content;
+}
