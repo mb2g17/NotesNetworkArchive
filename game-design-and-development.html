@@ -1,0 +1,3695 @@
+<html>
+    <head>
+        <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+        <link rel="stylesheet" href="css/game-design-and-development.css" />
+        <link rel="stylesheet" href="css/page.css" />
+    </head>
+    <body class="c33">
+        <p class="c6">
+            <span class="c24 c32">COMP3218 - Game Design and Development</span>
+        </p>
+        <hr />
+        <p class="c6 c15"><span class="c0"></span></p>
+        <p class="c6 c15"><span class="c0 c17"></span></p>
+        <p class="c6"><span class="c16 c24">Game Design Vocabulary</span></p>
+        <p class="c6 c15"><span class="c0"></span></p>
+        <p class="c6">
+            <span class="c3">Game Engine: </span
+            ><span
+                >software application that hides technical implementation of the
+                graphics rendering, sound reproduction, asset management,
+                collision detection and physics simulation aspects of game
+                development, allowing the developer to focus on the game logic
+                and interaction<br /><br /></span
+            ><span class="c7">Scripts</span><span class="c0"><br /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0 start">
+            <li class="c4 li-bullet-0">
+                <span class="c3">Start()</span
+                ><span class="c0">&nbsp;- runs on the first frame</span>
+            </li>
+            <li class="c4 li-bullet-0">
+                <span class="c3">Update()</span
+                ><span class="c0"
+                    >&nbsp;- runs at the start of every frame</span
+                >
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0">used for receiving input</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">used for objects and variables</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">used for timers</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c3">FixedUpdate()</span
+                ><span class="c0"
+                    >&nbsp;- runs once, zero, or several times per frame
+                    depending on the framerate</span
+                >
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0">used for physics objects<br /></span>
+            </li>
+        </ul>
+        <p class="c6">
+            <span class="c7">Atoms of Game Design<br /><br /></span
+            ><span class="c0"
+                >Game design is influenced by many factors including:<br
+            /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0"><span class="c0">game state</span></li>
+            <li class="c4 li-bullet-0"><span class="c0">player</span></li>
+            <li class="c4 li-bullet-0"><span class="c0">avatar</span></li>
+            <li class="c4 li-bullet-0"><span class="c0">characters</span></li>
+            <li class="c4 li-bullet-0"><span class="c0">mechanics</span></li>
+            <li class="c4 li-bullet-0"><span class="c0">dynamics</span></li>
+            <li class="c4 li-bullet-0"><span class="c0">goals</span></li>
+            <li class="c4 li-bullet-0"><span class="c0">rules</span></li>
+            <li class="c4 li-bullet-0"><span class="c0">theme</span></li>
+            <li class="c4 li-bullet-0"><span class="c0">objectives</span></li>
+            <li class="c4 li-bullet-0"><span class="c0">procedures</span></li>
+            <li class="c4 li-bullet-0"><span class="c0">resources</span></li>
+            <li class="c4 li-bullet-0"><span class="c0">conflicts</span></li>
+            <li class="c4 li-bullet-0"><span class="c0">boundaries</span></li>
+            <li class="c4 li-bullet-0"><span class="c0">aesthetics</span></li>
+            <li class="c4 li-bullet-0"><span class="c0">interface</span></li>
+            <li class="c4 li-bullet-0"><span class="c0">rewards</span></li>
+            <li class="c4 li-bullet-0"><span class="c0">outcomes</span></li>
+            <li class="c4 li-bullet-0"><span class="c0">complexity</span></li>
+            <li class="c4 li-bullet-0"><span class="c0">difficulty</span></li>
+            <li class="c4 li-bullet-0"><span class="c0">story</span></li>
+            <li class="c4 li-bullet-0">
+                <span class="c0">controls<br /></span>
+            </li>
+            <li class="c4 li-bullet-0">
+                <span class="c10 c3">State and View</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c1">Game State:</span
+                ><span class="c0"
+                    >&nbsp;known value of all variables determining the
+                    progress, positions, and flow</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c1">Game View:</span
+                ><span class="c0"
+                    >&nbsp;how the player perceives the game state</span
+                >
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-2 start">
+            <li class="c6 c11 li-bullet-0">
+                <span class="c0">health bars</span>
+            </li>
+            <li class="c6 c11 li-bullet-0"><span class="c0">currency</span></li>
+            <li class="c6 c11 li-bullet-0"><span class="c0">menus</span></li>
+            <li class="c6 c11 li-bullet-0">
+                <span class="c0">inventory</span>
+            </li>
+            <li class="c6 c11 li-bullet-0">
+                <span class="c0">game board / map<br /></span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c3">Players, Avatars, and Characters</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c1">Player:</span
+                ><span class="c0"
+                    >&nbsp;human being interacting with the game</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c1">Avatar:</span
+                ><span class="c0">&nbsp;manifestation of the player</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c1">Character:</span
+                ><span class="c0"
+                    >&nbsp;personality written and created in the game<br
+                /></span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c3"
+                    >Mechanics, Dynamics, Systems, and Goals</span
+                >
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c1">Mechanics:</span
+                ><span class="c0"
+                    >&nbsp;rules, equations, and algorithms behind a game</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >e.g. points, achievements, status, levels, quests</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c1">Dynamics:</span
+                ><span class="c0"
+                    >&nbsp;patterns of play emerging from mechanics</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >e.g. appointment, feedback, progress, ability,
+                    strategy</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c20">Systems:</span
+                ><span class="c0"
+                    >&nbsp;collections of mechanics and dynamics</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c20">Goals:</span
+                ><span>&nbsp;motivation to use dynamics</span
+                ><span class="c10 c3"><br /></span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c3">Genre and Theme</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c20">Genre:</span
+                ><span class="c0">&nbsp;classification of the systems</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">e.g. FPS, RPG, Racing</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c20">Theme:</span
+                ><span class="c0"
+                    >&nbsp;classification of aesthetics, narrative, and
+                    content</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">e.g. fantasy, simulation</span>
+            </li>
+        </ul>
+        <p class="c6">
+            <span>&nbsp;</span><span>&nbsp;<br /><br /></span
+            ><span class="c16">Fullerton&#39;s Formal Elements<br /></span>
+        </p>
+        <p class="c6">
+            <span class="c1">Fullerton&#39;s Formal Elements:</span
+            ><span class="c0"
+                >&nbsp;model of eight mandatory elements which form the
+                structure of games.<br
+            /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0"><span class="c10 c3">Players</span></li>
+        </ul>
+        <p class="c6 c8">
+            <span
+                >Players must interact with each other and usually win or lose.
+                Many combinations of players and computers are possible.<br /><br /></span
+            ><span
+                style="
+                    overflow: hidden;
+                    display: inline-block;
+                    margin: 0px 0px;
+                    border: 0px solid #000000;
+                    transform: rotate(0rad) translateZ(0px);
+                    -webkit-transform: rotate(0rad) translateZ(0px);
+                    width: 601.7px;
+                    height: 245.33px;
+                "
+                ><img
+                    alt=""
+                    src="assets/game-design-and-development/image16.png"
+                    style="
+                        width: 601.7px;
+                        height: 245.33px;
+                        margin-left: 0px;
+                        margin-top: 0px;
+                        transform: rotate(0rad) translateZ(0px);
+                        -webkit-transform: rotate(0rad) translateZ(0px);
+                    "
+                    title="" /></span
+            ><span class="c0"><br /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c3">Objectives</span>
+            </li>
+        </ul>
+        <p class="c6 c8">
+            <span class="c0"
+                >Objectives are the motivation behind the dynamics.<br
+            /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1">
+            <li class="c5 li-bullet-0">
+                <span class="c1">Capture</span
+                ><span class="c0"
+                    >: Players have to avoid getting captured or killed while
+                    destroying some opponent properties</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c1">Chase:</span
+                ><span class="c0"
+                    >&nbsp;Players have to elude or catch an opponent</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c1">Race:</span
+                ><span class="c0"
+                    >&nbsp;Players have to reach a goal before anyone else
+                    does</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c1">Alignment:</span
+                ><span class="c0"
+                    >&nbsp;Players have to align their pieces in a spatial or
+                    conceptual configuration</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c1">Rescue or Escape:</span
+                ><span class="c0"
+                    >&nbsp;Players have to get some defined units or items to
+                    safety without being compromised</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c1">Forbidden Act:</span
+                ><span class="c0"
+                    >&nbsp;Players have to get the opponents to break the rules
+                    or to abandon a strategy</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c1">Construction:</span
+                ><span class="c0"
+                    >&nbsp;Players have to construct, maintain, or manage game
+                    objects</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c1">Exploration:</span
+                ><span class="c0"
+                    >&nbsp;Players have to explore unknown game areas</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c1">Solution:</span
+                ><span class="c0"
+                    >&nbsp;Players have to solve a problem or puzzle</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c1">Outwit:</span
+                ><span class="c0"
+                    >&nbsp;Players have to gain and use knowledge to outwit
+                    their opponents<br
+                /></span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c3">Procedures</span>
+            </li>
+        </ul>
+        <p class="c6 c8">
+            <span class="c0"
+                >Procedures are the actions or methods of play allowed by the
+                game&#39;s rules. These can be instructions or controls
+                specified to the player.<br
+            /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1">
+            <li class="c5 li-bullet-0">
+                <span class="c1">Starting</span
+                ><span class="c0"
+                    >&nbsp;- how the game begins and sets up its
+                    environment</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c1">Progression</span
+                ><span class="c0"
+                    >&nbsp;- ongoing procedures running during gameplay</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c1">Special</span
+                ><span class="c0"
+                    >&nbsp;- actions only available based on the game
+                    state</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c1">Resolving</span
+                ><span class="c0"
+                    >&nbsp;- actions which end the game and cause win or
+                    loss</span
+                >
+            </li>
+        </ul>
+        <p class="c6 c15 c8"><span class="c0"></span></p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0"><span class="c10 c3">Rules</span></li>
+        </ul>
+        <p class="c6 c8">
+            <span class="c0"
+                >Rules define the game constraints, and describe what the player
+                can and cannot do.<br
+            /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1">
+            <li class="c5 li-bullet-0">
+                <span>Defining </span
+                ><span class="c10 c1">objects and conditions</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span>Restricting </span><span class="c10 c1">actions</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span>Determining </span
+                ><span class="c10 c1">effects<br /></span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c3">Resources</span>
+            </li>
+        </ul>
+        <p class="c6 c8">
+            <span
+                >Resources are game objects which have value for players and
+                help them to reach their objectives. Designers control the</span
+            ><span class="c2">&nbsp;scarcity a</span><span>nd </span
+            ><span class="c2">utility</span
+            ><span class="c0">&nbsp;of objects.<br /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1">
+            <li class="c5 li-bullet-0">
+                <span class="c10 c1">Durational</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-2 start">
+            <li class="c6 c11 li-bullet-0">
+                <span class="c0">lives, time, health</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1">
+            <li class="c5 li-bullet-0">
+                <span class="c10 c1">Expendable</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-2 start">
+            <li class="c6 c11 li-bullet-0">
+                <span class="c0">units, currency, actions, inventory</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1">
+            <li class="c5 li-bullet-0">
+                <span class="c10 c1">Enhancements</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-2 start">
+            <li class="c6 c11 li-bullet-0">
+                <span class="c0">powerups, stats<br /></span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0"><span class="c10 c3">Conflict</span></li>
+        </ul>
+        <p class="c6 c8">
+            <span class="c0"
+                >Conflict emerges through procedures and rules preventing the
+                player from reaching their goal.<br
+            /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1">
+            <li class="c5 li-bullet-0">
+                <span class="c10 c1">Obstacles</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-2 start">
+            <li class="c6 c11 li-bullet-0">
+                <span class="c0">inhibitions to progress</span>
+            </li>
+            <li class="c6 c11 li-bullet-0">
+                <span class="c0">locked doors, walls</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1">
+            <li class="c5 li-bullet-0"><span class="c10 c1">Enemies</span></li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-2 start">
+            <li class="c6 c11 li-bullet-0">
+                <span class="c0">players and NPCs</span>
+            </li>
+            <li class="c6 c11 li-bullet-0"><span class="c0">bosses</span></li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1">
+            <li class="c5 li-bullet-0"><span class="c10 c1">Dilemmas</span></li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-2 start">
+            <li class="c6 c11 li-bullet-0">
+                <span class="c0">choices e.g. paths</span>
+            </li>
+            <li class="c6 c11 li-bullet-0">
+                <span class="c0">optimal solutions<br /></span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c3">Boundaries</span>
+            </li>
+        </ul>
+        <p class="c6 c8">
+            <span class="c0"
+                >Boundaries are the restrictions in the game environment.
+                Players will be restricted to certain actions or movements
+                within map, field, board, or world.<br
+            /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0"><span class="c10 c3">Outcomes</span></li>
+        </ul>
+        <p class="c6 c8">
+            <span class="c0"
+                >The outcome of a game is often measurable e.g. score and uneven
+                e.g. one team/player wins. The goal is described by a set of
+                conditions.<br
+            /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1">
+            <li class="c5 li-bullet-0"><span class="c0">rewards</span></li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">winning or losing</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">user experience</span>
+            </li>
+            <li class="c5 li-bullet-0"><span class="c0">score/points</span></li>
+            <li class="c5 li-bullet-0"><span class="c0">achievements</span></li>
+        </ul>
+        <p class="c6">
+            <span>&nbsp;</span><span>&nbsp;<br /><br /></span
+            ><span class="c16">The MDA Framework<br /></span
+            ><span class="c17"><br /></span><span>&nbsp;</span
+            ><span>&nbsp;</span
+            ><span class="c3"
+                >MDA (Mechanics-Dynamics-Aesthetics) Framework:</span
+            ><span class="c0"
+                >&nbsp;framework defining and providing a formal representation
+                of the three basic elements of game design<br
+            /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c3">Mechanics:</span
+                ><span class="c0"
+                    >&nbsp;rules, actions, interactions, algorithms, and data
+                    structures</span
+                >
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >a game is modified by adding, removing, or changing
+                    mechanics</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >mechanics affect the dynamics and aesthetics</span
+                >
+            </li>
+        </ul>
+        <p class="c6 c15 c8"><span class="c0"></span></p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c3">Dynamics:</span
+                ><span class="c0"
+                    >&nbsp;runtime behaviour of mechanics based on player
+                    input</span
+                >
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0">player inputs to control the mechanics</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">e.g. A to jump<br /></span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">how the mechanics are experienced</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >e.g. jumps at speed x, falls at rate y, moves in an arc<br
+                /></span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c3">Aesthetics:</span
+                ><span class="c0"
+                    >&nbsp;emotional responses evoked in the player</span
+                >
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c1">Sensation:</span
+                ><span class="c0"
+                    >&nbsp;player enjoys memorable audio-visual effects</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c1">Fantasy:</span
+                ><span class="c0">&nbsp;imaginary world</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c1">Narrative:</span
+                ><span class="c0"
+                    >&nbsp;a story that drives the player to keep playing</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c1">Challenge:</span
+                ><span class="c0">&nbsp;urge to master a skill</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c1">Fellowship:</span
+                ><span class="c0"
+                    >&nbsp;active community for players to join</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c1">Discovery:</span
+                ><span class="c0">&nbsp;urge to explore</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c1">Expression:</span
+                ><span class="c0">&nbsp;creativity and customisation</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c1">Submission:</span
+                ><span class="c0">&nbsp;connection to a game</span>
+            </li>
+        </ul>
+        <p class="c6">
+            <span class="c16"><br />Designing Mechanics</span
+            ><span class="c17"><br /><br /></span
+            ><span class="c3">Mechanics </span
+            ><span
+                >are the rules, equations, and algorithms behind a game. Rules
+                are used to control the game and </span
+            ><span class="c1">simulate/approximate complex systems</span
+            ><span>&nbsp;through the game engine.<br /><br /></span
+            ><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span
+            ><span class="c0">Rules share 6 common features:<br /></span>
+        </p>
+        <ol class="c9 lst-kix_arjja9wcznbj-0 start" start="1">
+            <li class="c4 li-bullet-0">
+                <span>rules</span
+                ><span class="c13 c2">&nbsp;limit player action</span>
+            </li>
+            <li class="c4 li-bullet-0">
+                <span>rules and </span
+                ><span class="c13 c2">explicit and unambiguous</span>
+            </li>
+            <li class="c4 li-bullet-0">
+                <span>rules are </span
+                ><span class="c13 c2">shared by all players</span>
+            </li>
+            <li class="c4 li-bullet-0">
+                <span>rules are </span><span class="c13 c2">fixed</span>
+            </li>
+            <li class="c4 li-bullet-0">
+                <span>rules are </span><span class="c13 c2">binding</span>
+            </li>
+            <li class="c4 li-bullet-0">
+                <span>rules are </span><span class="c13 c2">repeatable</span>
+            </li>
+        </ol>
+        <p class="c6 c15 c8"><span class="c0"></span></p>
+        <p class="c6">
+            <span class="c3">Salen and Zimmerman&#39;s model</span
+            ><span class="c0"
+                >&nbsp;separates game rules into 3 categories:<br
+            /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c20">Operational:</span
+                ><span class="c1">&nbsp;</span
+                ><span class="c0"
+                    >formal attributes and statistics defining the game,
+                    frequently provided as written rules supplied in instruction
+                    booklets</span
+                >
+            </li>
+        </ul>
+        <p class="c6 c15 c8"><span class="c0"></span></p>
+        <p class="c6 c8">
+            <span class="c0"
+                >e.g. players take turns to move pieces on the board<br />e.g.
+                if players land on a property they may buy it<br />e.g. roll to
+                hit first, then roll for damage<br
+            /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c20">Constitutive:</span
+                ><span class="c1">&nbsp;</span
+                ><span class="c0"
+                    >underlying formal structures existing below the surface of
+                    rules presented to players</span
+                >
+            </li>
+        </ul>
+        <p class="c6 c15 c8"><span class="c0"></span></p>
+        <p class="c6 c8">
+            <span class="c0"
+                >e.g. the game is played on an 8x8 grid<br />e.g. shortswords do
+                1d6 damage<br
+            /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c20">Implicit:</span><span class="c1">&nbsp;</span
+                ><span class="c0"
+                    >unwritten rules concerning etiquette, sportsmanship, and
+                    implied behaviour</span
+                >
+            </li>
+        </ul>
+        <p class="c6 c8"><span class="c0">&nbsp;</span></p>
+        <p class="c6 c8">
+            <span class="c0"
+                >e.g. when touching a piece the player must move<br />e.g.
+                beginner players may take back a move after playing<br />e.g.
+                players must space themselves out around the board<br
+            /></span>
+        </p>
+        <p class="c6">
+            <span
+                >Implicit rules emerge from operational rules which are informed
+                by constitutive rules<br /><br /></span
+            ><span>&nbsp;</span><span class="c0">&nbsp;</span>
+        </p>
+        <p class="c6">
+            <span class="c16">Core Dynamics</span
+            ><span class="c17"><br /><br /></span
+            ><span class="c3">Dynamics:</span
+            ><span
+                >&nbsp;runtime behaviour of mechanics based on player input<br /><br />The </span
+            ><span class="c3">Core Dynamic</span><span>&nbsp;is the </span
+            ><span class="c1">central dynamic</span
+            ><span>&nbsp;in the game, and helps to build a coherent </span
+            ><span class="c1">experience</span
+            ><span class="c0"
+                >&nbsp;by anchoring the player to a major form of play. Without
+                a core dynamic, the game&#39;s rules may appear confusing or
+                poorly defined.<br
+            /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c1">Territorial Acquisition</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0">compete for a finite spatial resource</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">e.g. Civilisation</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c1">Prediction</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0">correctly guess an outcome</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">can be statistical or empathetic</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">e.g. Hearthstone, Rock-Paper-Scissors</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c1">Spatial Reasoning</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >solve a spatial pattern involving patterns or puzzles</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">e.g. Tetris, Tic-Tac-Toe</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0"><span class="c10 c1">Survival</span></li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >struggle against fatal elements to stay alive</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">e.g. Minecraft survival</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c1">Destruction</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0">battle against opponents</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">e.g. Doom, Overwatch, CSGO</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0"><span class="c10 c1">Building</span></li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >use building blocks to create something aesthetic</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">e.g. Minecraft, SimCity, Catan</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c1">Collection</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0">collect a resource or object</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">e.g. Monopoly</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c1">Chasing/Evading</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >contest of navigation and pace with opponents</span
+                >
+            </li>
+            <li class="c5 li-bullet-0"><span class="c0">e.g. Pac-Man</span></li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0"><span class="c10 c1">Trading</span></li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >exchange resources for co-operation or to manipulate a
+                    deal</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">e.g. Patrician</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0"><span class="c10 c1">Racing</span></li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0">be the first to achieve a win state</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span>e.g. Mario Kart<br /></span><span class="c0">&nbsp;</span>
+            </li>
+        </ul>
+        <p class="c6">
+            <span class="c0"
+                >Core dynamics are often related to fundamental human needs such
+                as survival, collecting resources to survive, pattern
+                recognition, and competition.<br
+            /></span>
+        </p>
+        <p class="c6">
+            <span><br /></span><span class="c16">Interaction Design<br /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c0"
+                    >What does the player know about the game state?</span
+                >
+            </li>
+            <li class="c4 li-bullet-0">
+                <span class="c0"
+                    >How can the player control the game state?</span
+                >
+            </li>
+            <li class="c4 li-bullet-0">
+                <span class="c0"
+                    >What feedback does the player receive from the
+                    controls?</span
+                >
+            </li>
+        </ul>
+        <p class="c6">
+            <span><br /></span><span>&nbsp;</span
+            ><span class="c7">Information Design<br /><br /></span
+            ><span class="c3">Information design</span
+            ><span class="c0"
+                >&nbsp;concerns the amount of information given to the player
+                and the way it is provided.<br
+            /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span>For meaningful play, players need </span
+                ><span class="c1">information</span
+                ><span>&nbsp;which is used to make </span
+                ><span class="c10 c1">decisions</span>
+            </li>
+            <li class="c4 li-bullet-0">
+                <span>Players should only have</span
+                ><span class="c1">&nbsp;information on the game state</span
+                ><span>&nbsp;which is </span
+                ><span class="c10 c1">relevant to the dynamics</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >more information leads to better decision-making and
+                    strategy</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >less information leads to statistical and risky
+                    gameplay</span
+                >
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span>Information can be </span
+                ><span class="c10 c1">provided in different ways</span>
+            </li>
+            <li class="c8 c18 li-bullet-0">
+                <span>HUD, attributes, cycles/turns<br /><br /></span
+                ><span>&nbsp;</span
+                ><span
+                    style="
+                        overflow: hidden;
+                        display: inline-block;
+                        margin: 0px 0px;
+                        border: 0px solid #000000;
+                        transform: rotate(0rad) translateZ(0px);
+                        -webkit-transform: rotate(0rad) translateZ(0px);
+                        width: 249.33px;
+                        height: 174.67px;
+                    "
+                    ><img
+                        alt="Controlling Your Javelin on PlayStation 4"
+                        src="assets/game-design-and-development/image1.jpg"
+                        style="
+                            width: 249.33px;
+                            height: 174.67px;
+                            margin-left: 0px;
+                            margin-top: 0px;
+                            transform: rotate(0rad) translateZ(0px);
+                            -webkit-transform: rotate(0rad) translateZ(0px);
+                        "
+                        title="" /></span
+                ><span class="c0"><br /></span>
+            </li>
+        </ul>
+        <p class="c6">
+            <span class="c7">Control Design<br /><br /></span
+            ><span class="c3">Control design</span
+            ><span class="c0"
+                >&nbsp;concerns the physical input and interactions with the
+                game state.<br
+            /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c0">Controls can be direct or indirect</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c1">Direct controls</span
+                ><span class="c0"
+                    >&nbsp;allow the player to change the game state in the way
+                    they desire</span
+                >
+            </li>
+        </ul>
+        <p class="c6 c31"><span class="c0">e.g. press space to shoot</span></p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1">
+            <li class="c5 li-bullet-0">
+                <span class="c1">Indirect controls</span
+                ><span class="c0"
+                    >&nbsp;allow the player to change the game state to affect
+                    the system and cause changes</span
+                >
+            </li>
+        </ul>
+        <p class="c6 c31">
+            <span
+                >e.g. lower the price of an item to attract more customers and
+                increase sales<br
+            /></span>
+        </p>
+        <p class="c6">
+            <span class="c7">Feedback Design<br /><br /></span
+            ><span class="c3">Feedback design</span
+            ><span class="c0"
+                >&nbsp;concerns the changes in the game in response to
+                control.<br
+            /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c0">Feedback can be reinforcing or balancing</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c1">Reinforcing feedback</span
+                ><span class="c0"
+                    >&nbsp;encourages players into certain patterns of
+                    play</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c1">Balancing feedback</span
+                ><span
+                    >&nbsp;maintains the level of difficulty and challenge<br /><br /></span
+                ><span>&nbsp;</span
+                ><span
+                    style="
+                        overflow: hidden;
+                        display: inline-block;
+                        margin: 0px 0px;
+                        border: 0px solid #000000;
+                        transform: rotate(0rad) translateZ(0px);
+                        -webkit-transform: rotate(0rad) translateZ(0px);
+                        width: 420px;
+                        height: 144px;
+                    "
+                    ><img
+                        alt=""
+                        src="assets/game-design-and-development/image15.png"
+                        style="
+                            width: 420px;
+                            height: 144px;
+                            margin-left: 0px;
+                            margin-top: 0px;
+                            transform: rotate(0rad) translateZ(0px);
+                            -webkit-transform: rotate(0rad) translateZ(0px);
+                        "
+                        title="" /></span
+                ><span><br /><br /> </span><span class="c0">&nbsp;</span>
+            </li>
+        </ul>
+        <p class="c6">
+            <span class="c16">Level Design</span
+            ><span class="c17"><br /><br /></span><span class="c7">Space</span>
+        </p>
+        <p class="c6 c15"><span class="c0"></span></p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c3">Level structure</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c3">Linear:</span
+                ><span class="c0"
+                    >&nbsp;where tasks or rooms are visited sequentially</span
+                >
+            </li>
+        </ul>
+        <p class="c6">
+            <span
+                style="
+                    overflow: hidden;
+                    display: inline-block;
+                    margin: 0px 0px;
+                    border: 0px solid #000000;
+                    transform: rotate(0rad) translateZ(0px);
+                    -webkit-transform: rotate(0rad) translateZ(0px);
+                    width: 228px;
+                    height: 169.33px;
+                "
+                ><img
+                    alt=""
+                    src="assets/game-design-and-development/image12.png"
+                    style="
+                        width: 228px;
+                        height: 169.33px;
+                        margin-left: 0px;
+                        margin-top: 0px;
+                        transform: rotate(0rad) translateZ(0px);
+                        -webkit-transform: rotate(0rad) translateZ(0px);
+                    "
+                    title="" /></span
+            ><span class="c0"><br /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1">
+            <li class="c5 li-bullet-0">
+                <span class="c3">Parallel:</span
+                ><span class="c0"
+                    >&nbsp;where tasks are completed sequentially, with
+                    different paths based on player decisions</span
+                >
+            </li>
+        </ul>
+        <p class="c6">
+            <span
+                style="
+                    overflow: hidden;
+                    display: inline-block;
+                    margin: 0px 0px;
+                    border: 0px solid #000000;
+                    transform: rotate(0rad) translateZ(0px);
+                    -webkit-transform: rotate(0rad) translateZ(0px);
+                    width: 185.33px;
+                    height: 273.33px;
+                "
+                ><img
+                    alt=""
+                    src="assets/game-design-and-development/image5.png"
+                    style="
+                        width: 185.33px;
+                        height: 273.33px;
+                        margin-left: 0px;
+                        margin-top: 0px;
+                        transform: rotate(0rad) translateZ(0px);
+                        -webkit-transform: rotate(0rad) translateZ(0px);
+                    "
+                    title="" /></span
+            ><span class="c0"><br /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1">
+            <li class="c5 li-bullet-0">
+                <span class="c3">Network:</span><span class="c20">&nbsp;</span
+                ><span class="c0"
+                    >where the player has the freedom to navigate between tasks
+                    or rooms in any order or combination</span
+                >
+            </li>
+        </ul>
+        <p class="c6">
+            <span
+                style="
+                    overflow: hidden;
+                    display: inline-block;
+                    margin: 0px 0px;
+                    border: 0px solid #000000;
+                    transform: rotate(0rad) translateZ(0px);
+                    -webkit-transform: rotate(0rad) translateZ(0px);
+                    width: 177.33px;
+                    height: 174.67px;
+                "
+                ><img
+                    alt=""
+                    src="assets/game-design-and-development/image2.png"
+                    style="
+                        width: 177.33px;
+                        height: 174.67px;
+                        margin-left: 0px;
+                        margin-top: 0px;
+                        transform: rotate(0rad) translateZ(0px);
+                        -webkit-transform: rotate(0rad) translateZ(0px);
+                    "
+                    title="" /></span
+            ><span class="c0"><br /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1">
+            <li class="c5 li-bullet-0">
+                <span class="c3">Hub and Spoke:</span
+                ><span class="c20">&nbsp;</span
+                ><span class="c0"
+                    >where players return to the hub environment after
+                    completing tasks</span
+                >
+            </li>
+        </ul>
+        <p class="c6">
+            <span
+                style="
+                    overflow: hidden;
+                    display: inline-block;
+                    margin: 0px 0px;
+                    border: 0px solid #000000;
+                    transform: rotate(0rad) translateZ(0px);
+                    -webkit-transform: rotate(0rad) translateZ(0px);
+                    width: 240px;
+                    height: 178.67px;
+                "
+                ><img
+                    alt=""
+                    src="assets/game-design-and-development/image7.png"
+                    style="
+                        width: 240px;
+                        height: 178.67px;
+                        margin-left: 0px;
+                        margin-top: 0px;
+                        transform: rotate(0rad) translateZ(0px);
+                        -webkit-transform: rotate(0rad) translateZ(0px);
+                    "
+                    title="" /></span
+            ><span><br /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1">
+            <li class="c5 li-bullet-0">
+                <span class="c3">Ring: </span
+                ><span class="c0"
+                    >where the player repeats the same tasks many times</span
+                >
+            </li>
+        </ul>
+        <p class="c6">
+            <span
+                style="
+                    overflow: hidden;
+                    display: inline-block;
+                    margin: 0px 0px;
+                    border: 0px solid #000000;
+                    transform: rotate(0rad) translateZ(0px);
+                    -webkit-transform: rotate(0rad) translateZ(0px);
+                    width: 181.33px;
+                    height: 181.33px;
+                "
+                ><img
+                    alt=""
+                    src="assets/game-design-and-development/image9.png"
+                    style="
+                        width: 181.33px;
+                        height: 181.33px;
+                        margin-left: 0px;
+                        margin-top: 0px;
+                        transform: rotate(0rad) translateZ(0px);
+                        -webkit-transform: rotate(0rad) translateZ(0px);
+                    "
+                    title="" /></span
+            ><span class="c0"><br /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1">
+            <li class="c5 li-bullet-0">
+                <span class="c3">Open:</span
+                ><span class="c0"
+                    >&nbsp;where the player can explore the area freely</span
+                >
+            </li>
+        </ul>
+        <p class="c6">
+            <span
+                style="
+                    overflow: hidden;
+                    display: inline-block;
+                    margin: 0px 0px;
+                    border: 0px solid #000000;
+                    transform: rotate(0rad) translateZ(0px);
+                    -webkit-transform: rotate(0rad) translateZ(0px);
+                    width: 184px;
+                    height: 142.67px;
+                "
+                ><img
+                    alt=""
+                    src="assets/game-design-and-development/image21.png"
+                    style="
+                        width: 184px;
+                        height: 142.67px;
+                        margin-left: 0px;
+                        margin-top: 0px;
+                        transform: rotate(0rad) translateZ(0px);
+                        -webkit-transform: rotate(0rad) translateZ(0px);
+                    "
+                    title="" /></span
+            ><span class="c0"><br /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1">
+            <li class="c5 li-bullet-0">
+                <span class="c3">Combination: </span
+                ><span class="c0"
+                    >combination of level structures put together</span
+                >
+            </li>
+        </ul>
+        <p class="c6">
+            <span
+                style="
+                    overflow: hidden;
+                    display: inline-block;
+                    margin: 0px 0px;
+                    border: 0px solid #000000;
+                    transform: rotate(0rad) translateZ(0px);
+                    -webkit-transform: rotate(0rad) translateZ(0px);
+                    width: 298.67px;
+                    height: 222.67px;
+                "
+                ><img
+                    alt=""
+                    src="assets/game-design-and-development/image11.png"
+                    style="
+                        width: 298.67px;
+                        height: 222.67px;
+                        margin-left: 0px;
+                        margin-top: 0px;
+                        transform: rotate(0rad) translateZ(0px);
+                        -webkit-transform: rotate(0rad) translateZ(0px);
+                    "
+                    title="" /></span
+            ><span class="c0"><br /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c3">Atmosphere</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0"><span class="c0">aesthetics</span></li>
+            <li class="c5 li-bullet-0"><span class="c0">lighting</span></li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">colour palette</span>
+            </li>
+            <li class="c5 li-bullet-0"><span class="c0">weather</span></li>
+            <li class="c5 li-bullet-0"><span class="c0">objects</span></li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">visual effects</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">sound effects, ambient audio, music</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">content layers</span>
+            </li>
+        </ul>
+        <p class="c6">
+            <span><br /></span><span>&nbsp;</span
+            ><span class="c7">Progression<br /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c3">Indicators</span
+                ><span class="c0"
+                    >&nbsp;show the player where they should go</span
+                >
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0"><span class="c0">text</span></li>
+            <li class="c5 li-bullet-0"><span class="c0">colour</span></li>
+            <li class="c5 li-bullet-0"><span class="c0">lighting</span></li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">negative space</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">landscapes, objects</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c3">Obstacles</span
+                ><span class="c0"
+                    >&nbsp;can block the player from choosing certain
+                    paths</span
+                >
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0">keys and doors</span>
+            </li>
+            <li class="c5 li-bullet-0"><span class="c0">walls</span></li>
+            <li class="c5 li-bullet-0"><span class="c0">puzzles</span></li>
+        </ul>
+        <p class="c6">
+            <span><br /></span><span class="c7">Mechanics<br /></span>
+        </p>
+        <p class="c6">
+            <span class="c3">Mechanics</span
+            ><span class="c0"
+                >&nbsp;describe the rules and algorithms behind the system</span
+            >
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c0">The player should know:</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span>the </span><span class="c13 c2">initial conditions</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span>the </span><span class="c2">challenges</span
+                ><span class="c0">&nbsp;they will face</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span>the </span
+                ><span class="c13 c2">termination conditions</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span>The game should provide </span
+                ><span class="c1">feedback loops</span><span class="c0">:</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c2">positive feedback</span
+                ><span class="c0">&nbsp;/ rewards</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c2">negative feedback</span
+                ><span class="c0">&nbsp;/ penalties</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >imagination, skill, intelligence, and determination<br
+                /></span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c3">Mechanics Rules</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span>introduce features in </span><span class="c2">order</span
+                ><span>&nbsp;of </span
+                ><span class="c13 c2">general -&gt; specialised</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span>allow </span
+                ><span class="c13 c2">optional tutorials</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span>allow the player to </span
+                ><span class="c13 c2">retry tutorials</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span>highlight </span><span class="c13 c2">UI features</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c2">do not</span><span>&nbsp;use</span
+                ><span class="c13 c2">&nbsp;blocks of text</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span>ensure players </span><span class="c2">understand</span
+                ><span class="c0">&nbsp;the tutorials</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c2">turn off features</span
+                ><span class="c0">&nbsp;until they are needed<br /></span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c3">Mechanics Pitfalls</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c1">Conceptual Non-Sequiturs:</span
+                ><span class="c0"
+                    >&nbsp;game elements which are not consistent with the game
+                    mechanics</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c1">Poor Enemy AI:</span
+                ><span class="c0"
+                    >&nbsp;enemy AI should challenge the player, and have an
+                    appropriate difficulty</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c1">Irrelevant Code:</span
+                ><span
+                    >&nbsp;code should be reusable and fit together with other
+                    classes or functions</span
+                ><span class="c10 c3"><br /></span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0"><span class="c10 c3">Pacing</span></li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0">replenish resources after consumption</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">release features and mechanics</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">allow levels with choice of difficulty</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">allow optional levels</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">allow alternate routes</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">provide optional tutorials</span>
+            </li>
+        </ul>
+        <p class="c6">
+            <span><br /><br /></span><span>&nbsp;</span
+            ><span
+                style="
+                    overflow: hidden;
+                    display: inline-block;
+                    margin: 0px 0px;
+                    border: 0px solid #000000;
+                    transform: rotate(0rad) translateZ(0px);
+                    -webkit-transform: rotate(0rad) translateZ(0px);
+                    width: 460px;
+                    height: 238.67px;
+                "
+                ><img
+                    alt="&#1585;&#1605; &#1575;&#1605;&#1583;&#1607; 
+&#1585; "
+                    src="assets/game-design-and-development/image3.png"
+                    style="
+                        width: 460px;
+                        height: 238.67px;
+                        margin-left: 0px;
+                        margin-top: 0px;
+                        transform: rotate(0rad) translateZ(0px);
+                        -webkit-transform: rotate(0rad) translateZ(0px);
+                    "
+                    title="" /></span
+            ><span><br /></span
+            ><span class="c16">&nbsp;<br />Balance and Difficulty</span
+            ><span class="c17"><br /><br /></span
+            ><span class="c29 c7">Fairness<br /></span>
+        </p>
+        <p class="c6">
+            <span class="c3">Fairness:</span
+            ><span class="c0"
+                >&nbsp;quality of treating people equally, or in a way that is
+                right and reasonable<br
+            /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c1">Player context</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span>in </span><span class="c2">singleplayer</span
+                ><span class="c0">&nbsp;- being right and reasonable</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span>in </span><span class="c2">multiplayer</span
+                ><span class="c0">&nbsp;- treating players equally</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c1">PvP vs PVE</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0">a game must provide meaningful choices</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >players must perceive the game to be fair</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">chance should not outweigh player skill</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >players should be &#39;reset&#39; at certain points</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >level of difficulty should be consistent<br
+                /></span>
+            </li>
+        </ul>
+        <p class="c6">
+            <span class="c7">Balance<br /><br /></span
+            ><span class="c3">Balance:</span
+            ><span class="c0"
+                >&nbsp;mathematical balance between players, game elements,
+                actions, and relations within the game mechanics<br
+            /></span>
+        </p>
+        <p class="c6">
+            <span class="c0"
+                >Balance differs depending on the context:<br
+            /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c1">Singleplayer:</span
+                ><span class="c0"
+                    >&nbsp;whether the difficulty is appropriate for the
+                    audience, such that users of all abilities can play</span
+                >
+            </li>
+            <li class="c4 li-bullet-0">
+                <span class="c1">Multiplayer:</span
+                ><span class="c0"
+                    >&nbsp;whether all players have an equal chance of
+                    winning</span
+                >
+            </li>
+            <li class="c4 li-bullet-0">
+                <span class="c1">Strategy:</span
+                ><span class="c0"
+                    >&nbsp;whether all strategies have equal chances of
+                    success</span
+                >
+            </li>
+            <li class="c4 li-bullet-0">
+                <span class="c1">Objects:</span
+                ><span class="c0"
+                    >&nbsp;whether all objects have equal chances of producing
+                    benefits/rewards</span
+                >
+            </li>
+        </ul>
+        <p class="c6">
+            <span><br /></span><span>&nbsp;</span><span>A </span
+            ><span class="c3">dominant strategy</span
+            ><span>&nbsp;is one which is much </span
+            ><span class="c2">stronger</span
+            ><span>&nbsp;than others, and is</span
+            ><span class="c2">&nbsp;exploited</span
+            ><span
+                >&nbsp;to win the game. This causes players to avoid all other
+                strategies, making the game unbalanced and meaningless. To avoid
+                this, dominant features can be </span
+            ><span class="c2">removed</span><span>&nbsp;or </span
+            ><span class="c2">changed</span><span>, and </span
+            ><span class="c2">counteractive strategies</span
+            ><span>&nbsp;can be added. Developers should perform </span
+            ><span class="c2">playtesting</span
+            ><span
+                >&nbsp;with a large sample size to identify dominant
+                strategies.<br /><br /></span
+            ><span class="c7">Relationships<br /><br /></span
+            ><span class="c3">Transitive Relationship:</span
+            ><span class="c0"
+                >&nbsp;relation where elements can be compared to all other
+                elements<br
+            /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c0"
+                    >Assuming there exist three elements a, b, and c</span
+                >
+            </li>
+            <li class="c4 li-bullet-0">
+                <span class="c0">If a &gt; b and b &gt; c</span>
+            </li>
+            <li class="c4 li-bullet-0">
+                <span class="c0">Then a &gt; c<br /></span>
+            </li>
+        </ul>
+        <p class="c6">
+            <span
+                >Transitive relationships between strategies mean that certain
+                strategies always have an </span
+            ><span class="c2">advantage</span
+            ><span>&nbsp;over others, making the game </span
+            ><span class="c2">unbalanced</span
+            ><span class="c0">. To fix this we can:<br /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span>Impose </span><span class="c1">direct cost</span
+                ><span class="c0"
+                    >&nbsp;- certain items or actions have higher costs</span
+                >
+            </li>
+            <li class="c4 li-bullet-0">
+                <span>Impose </span><span class="c1">shadow cost</span
+                ><span class="c0"
+                    >&nbsp;- certain items or actions have hidden costs or
+                    consequences</span
+                >
+            </li>
+        </ul>
+        <p class="c6">
+            <span><br /></span><span class="c3">Intransitive Relationship:</span
+            ><span class="c0"
+                >&nbsp;relation where elements can be compared to sequentially
+                adjacent elements only<br
+            /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c0"
+                    >Assuming there exist three elements a, b, and c</span
+                >
+            </li>
+            <li class="c4 li-bullet-0">
+                <span class="c0">If a &gt; b and b &gt; c</span>
+            </li>
+            <li class="c4 li-bullet-0">
+                <span>Then a </span><span>&#8815;</span
+                ><span class="c0">&nbsp;c</span>
+            </li>
+        </ul>
+        <p class="c6">
+            <span><br /></span><span>&nbsp;</span
+            ><span class="c2">&nbsp;Transitive</span
+            ><span
+                >&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+            ><span class="c2">Intransitive<br /><br /></span><span>&nbsp;</span
+            ><span
+                style="
+                    overflow: hidden;
+                    display: inline-block;
+                    margin: 0px 0px;
+                    border: 0px solid #000000;
+                    transform: rotate(0rad) translateZ(0px);
+                    -webkit-transform: rotate(0rad) translateZ(0px);
+                    width: 502.67px;
+                    height: 210.67px;
+                "
+                ><img
+                    alt="Rock 
+Lizard 
+Paper 
+c 
+B 
+Spock Scissors "
+                    src="assets/game-design-and-development/image8.png"
+                    style="
+                        width: 502.67px;
+                        height: 210.67px;
+                        margin-left: 0px;
+                        margin-top: 0px;
+                        transform: rotate(0rad) translateZ(0px);
+                        -webkit-transform: rotate(0rad) translateZ(0px);
+                    "
+                    title="" /></span
+            ><span><br /></span><span><br /></span><span>&nbsp;</span
+            ><span class="c7">Feedback Loops<br /><br /></span
+            ><span class="c3">Feedback design</span
+            ><span class="c0"
+                >&nbsp;concerns the changes in the game in response to
+                control.<br
+            /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c1">Positive Feedback</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0">gives advantages to winning players</span>
+            </li>
+        </ul>
+        <p class="c6 c8 c25">
+            <span class="c0"
+                >e.g.items, tools, equipment, experience<br
+            /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c1">Negative feedback</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0">gives advantages to losing players</span>
+            </li>
+        </ul>
+        <p class="c6 c8 c25">
+            <span>e.g. random respawns, health<br /><br /></span
+            ><span>&nbsp;</span><span class="c2">Positive</span
+            ><span
+                >&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+            ><span class="c2">Negative<br /><br /></span><span>&nbsp;</span
+            ><span
+                style="
+                    overflow: hidden;
+                    display: inline-block;
+                    margin: 0px 0px;
+                    border: 0px solid #000000;
+                    transform: rotate(0rad) translateZ(0px);
+                    -webkit-transform: rotate(0rad) translateZ(0px);
+                    width: 362.67px;
+                    height: 140px;
+                "
+                ><img
+                    alt="OJOOS 
+ssed "
+                    src="assets/game-design-and-development/image4.png"
+                    style="
+                        width: 362.67px;
+                        height: 140px;
+                        margin-left: 0px;
+                        margin-top: 0px;
+                        transform: rotate(0rad) translateZ(0px);
+                        -webkit-transform: rotate(0rad) translateZ(0px);
+                    "
+                    title="" /></span
+            ><span><br /> </span>
+        </p>
+        <p class="c6">
+            <span>The </span><span class="c3">snowball effect</span
+            ><span
+                >&nbsp;describes a situation where players gain feedback
+                proportional to their ability. This causes good players to get
+                better as positive feedback loops reward them, and bad players
+                to get worse as negative feedback loops penalise them. This
+                makes the game very predictable and unbalanced.<br /><br />To
+                control the </span
+            ><span class="c2">snowball effect</span
+            ><span class="c0">:<br /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c0"
+                    >adjust the reward given by positive feedback loops</span
+                >
+            </li>
+            <li class="c4 li-bullet-0">
+                <span class="c0">associate costs to items and actions</span>
+            </li>
+            <li class="c4 li-bullet-0">
+                <span class="c0"
+                    >allow players to work together against a common enemy</span
+                >
+            </li>
+            <li class="c4 li-bullet-0">
+                <span class="c0">introduce chance-based events</span>
+            </li>
+            <li class="c4 li-bullet-0">
+                <span class="c0"
+                    >&#39;reset&#39; players at certain points</span
+                >
+            </li>
+        </ul>
+        <p class="c6">
+            <span><br /></span><span>&nbsp;</span
+            ><span class="c7">Depth vs Complexity<br /><br /></span
+            ><span>&nbsp;</span><span class="c3">Depth:</span
+            ><span
+                >&nbsp;variation of experiences available from the mechanics<br /><br /></span
+            ><span>&nbsp;</span><span class="c3">Complexity:</span
+            ><span class="c0">&nbsp;mental burden put on the player<br /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c0">data to remember</span>
+            </li>
+            <li class="c4 li-bullet-0">
+                <span class="c0">rules to process</span>
+            </li>
+            <li class="c4 li-bullet-0">
+                <span class="c0">calculations to make</span>
+            </li>
+            <li class="c4 li-bullet-0">
+                <span class="c0">actions on the interface</span>
+            </li>
+        </ul>
+        <p class="c6 c15 c8"><span class="c0"></span></p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span>Complexity </span><span class="c2">enables</span
+                ><span>&nbsp;depth, but too much complexity </span
+                ><span class="c2">limits</span
+                ><span class="c0">&nbsp;depth</span>
+            </li>
+            <li class="c4 li-bullet-0">
+                <span>Aim for </span><span class="c2">maximum depth</span
+                ><span>&nbsp;and </span
+                ><span class="c13 c2">minimum complexity</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0">combine or reuse existing mechanics</span>
+            </li>
+        </ul>
+        <p class="c6">
+            <span><br /></span><span>&nbsp;</span
+            ><span class="c7">Flow<br /><br /></span><span>&nbsp;</span
+            ><span class="c3">Flow:</span
+            ><span class="c0"
+                >&nbsp;balance between skill and difficulty which produces
+                focus, control, and concentration<br
+            /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span>flow aims to create</span
+                ><span class="c2">&nbsp;immersion</span
+                ><span class="c0">&nbsp;in a game</span>
+            </li>
+            <li class="c4 li-bullet-0">
+                <span
+                    >flow increases the player&#39;s focus and concentration<br /><br /></span
+                ><span>&nbsp;</span
+                ><span
+                    style="
+                        overflow: hidden;
+                        display: inline-block;
+                        margin: 0px 0px;
+                        border: 0px solid #000000;
+                        transform: rotate(0rad) translateZ(0px);
+                        -webkit-transform: rotate(0rad) translateZ(0px);
+                        width: 294.67px;
+                        height: 226.67px;
+                    "
+                    ><img
+                        alt="HIGH 
+Boredom 
+Skill 
+LOW 
+LOW 
+Difficulty 
+Anxiety 
+HIGH "
+                        src="assets/game-design-and-development/image18.png"
+                        style="
+                            width: 294.67px;
+                            height: 226.67px;
+                            margin-left: 0px;
+                            margin-top: 0px;
+                            transform: rotate(0rad) translateZ(0px);
+                            -webkit-transform: rotate(0rad) translateZ(0px);
+                        "
+                        title="" /></span
+                ><span class="c0"><br /></span>
+            </li>
+        </ul>
+        <p class="c6">
+            <span class="c7">Difficulty<br /><br /></span
+            ><span class="c3">Absolute Difficulty:</span
+            ><span
+                >&nbsp;difficulty of a challenge compared to a trivial baseline
+                challenge<br /><br /></span
+            ><span class="c3">Relative Difficulty:</span
+            ><span
+                >&nbsp;absolute difficulty adjusted for power<br /><br /></span
+            ><span class="c3">Power:</span
+            ><span
+                >&nbsp;player&#39;s strength, stats, and abilities<br /><br /></span
+            ><span class="c3">Experience:</span
+            ><span
+                >&nbsp;practice the player has had on a particular challenge<br /><br /></span
+            ><span>&nbsp;</span><span class="c0">&nbsp;</span>
+        </p>
+        <p class="c6">
+            <span class="c1">Perceived Difficulty</span
+            ><span>&nbsp;= relative difficulty - experience<br /><br /></span
+            ><span>&nbsp;</span><span>&nbsp; =</span
+            ><span class="c2"
+                >&nbsp;absolute difficulty - power - experience<br /><br /></span
+            ><span>&nbsp;</span><span>&nbsp;<br /></span
+            ><span class="c3">&nbsp;</span
+            ><span class="c3">Sawtooth levels</span
+            ><span
+                >&nbsp;ensure that difficulty rises for each level<br /><br /></span
+            ><span>&nbsp;</span
+            ><span
+                style="
+                    overflow: hidden;
+                    display: inline-block;
+                    margin: 0px 0px;
+                    border: 0px solid #000000;
+                    transform: rotate(0rad) translateZ(0px);
+                    -webkit-transform: rotate(0rad) translateZ(0px);
+                    width: 370.67px;
+                    height: 198.67px;
+                "
+                ><img
+                    alt="Overlap levels 
+Give breathing space 
+Get back in the zone after a break from game 
+Time "
+                    src="assets/game-design-and-development/image17.png"
+                    style="
+                        width: 370.67px;
+                        height: 198.67px;
+                        margin-left: 0px;
+                        margin-top: 0px;
+                        transform: rotate(0rad) translateZ(0px);
+                        -webkit-transform: rotate(0rad) translateZ(0px);
+                    "
+                    title="" /></span
+            ><span><br /><br /> </span><span><br /></span
+            ><span class="c16">&nbsp;Interactive Narratives<br /></span
+            ><span class="c17"><br /></span><span>&nbsp;</span
+            ><span class="c3">Narrative:</span
+            ><span
+                >&nbsp;spoken or written account of connected events<br /><br /></span
+            ><span>&nbsp;</span><span class="c3">Story:</span
+            ><span class="c0"
+                >&nbsp;account of imaginary or real people and events told for
+                entertainment<br
+            /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span>The </span><span class="c3">premise</span
+                ><span class="c0"
+                    >&nbsp;is a short story which establishes the action within
+                    a setting or metaphor and leads to emotional
+                    investment.</span
+                >
+            </li>
+        </ul>
+        <p class="c6 c15 c8"><span class="c0"></span></p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c3">The Magic Circle</span
+                ><span class="c0"
+                    >&nbsp;is a special space or frame of mind where the normal
+                    rules of the real world are suspended and replaced by the
+                    artificial reality of the game world.</span
+                >
+            </li>
+        </ul>
+        <p class="c6">
+            <span><br /></span><span class="c7">Narratology<br /><br /></span
+            ><span
+                >Narratives are split into three main layers:<br /><br /></span
+            ><span class="c20">Narrative Text:</span
+            ><span class="c1">&nbsp;</span
+            ><span
+                >method of telling the story, e.g. book, film, game<br /><br /></span
+            ><span class="c20">Story: </span
+            ><span
+                >organisation of fabula elements in chronological order<br /><br /></span
+            ><span class="c20">Fabula: </span
+            ><span
+                >series of events, people, locations, and more, which make up
+                the material of the narrative<br /><br /></span
+            ><span>&nbsp;</span
+            ><span
+                style="
+                    overflow: hidden;
+                    display: inline-block;
+                    margin: 0px 0px;
+                    border: 0px solid #000000;
+                    transform: rotate(0rad) translateZ(0px);
+                    -webkit-transform: rotate(0rad) translateZ(0px);
+                    width: 386.67px;
+                    height: 261.33px;
+                "
+                ><img
+                    alt='Narrative Text 
+"a text in which a narrative agent tells a story" 
+Story 
+"these elements are organized in a certain way into a story. Their 
+arrangement in relation to one another is such that they can produce the 
+effect desired, be this convincing, moving, disgusting, or aesthetic." 
+Fabula 
+"a series of logically and chronologically related events that are caused 
+or experienced by actors___ Events, actors, time, and location 
+together constitute the material of a fabula." '
+                    src="assets/game-design-and-development/image22.png"
+                    style="
+                        width: 386.67px;
+                        height: 261.33px;
+                        margin-left: 0px;
+                        margin-top: 0px;
+                        transform: rotate(0rad) translateZ(0px);
+                        -webkit-transform: rotate(0rad) translateZ(0px);
+                    "
+                    title="" /></span
+            ><span><br /></span><span><br /></span><span>&nbsp;</span
+            ><span class="c7">Stories<br /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0"><span class="c10 c3">Emergent</span></li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c1">Requires rich mechanics</span
+                ><span class="c0">&nbsp;to produce a rich fabula</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-2 start">
+            <li class="c6 c11 li-bullet-0">
+                <span class="c0">no pre-planned structure</span>
+            </li>
+            <li class="c6 c11 li-bullet-0">
+                <span class="c0"
+                    >Fabula and Story emerge from player actions</span
+                >
+            </li>
+            <li class="c6 c11 li-bullet-0">
+                <span class="c0">limits repetition and randomness</span>
+            </li>
+            <li class="c6 c11 li-bullet-0">
+                <span class="c0">produces realistic events</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1">
+            <li class="c5 li-bullet-0">
+                <span class="c10 c1">No narrator</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-2 start">
+            <li class="c6 c11 li-bullet-0">
+                <span class="c0">the player is the storyteller</span>
+            </li>
+            <li class="c6 c11 li-bullet-0">
+                <span class="c0">no guarantee of what the story will be</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0"><span class="c10 c3">Designed</span></li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c10 c1">Story as a journey</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-2 start">
+            <li class="c6 c11 li-bullet-0">
+                <span class="c0">pre-planned structure</span>
+            </li>
+            <li class="c6 c11 li-bullet-0">
+                <span class="c0"
+                    >story is modelled as a sequence of locations</span
+                >
+            </li>
+            <li class="c6 c11 li-bullet-0">
+                <span class="c0"
+                    >progress is maintained by limiting travel</span
+                >
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1">
+            <li class="c5 li-bullet-0">
+                <span class="c10 c1">Story as a drama</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-2 start">
+            <li class="c6 c11 li-bullet-0">
+                <span class="c0">pre-planned structure</span>
+            </li>
+            <li class="c6 c11 li-bullet-0">
+                <span class="c0"
+                    >story is modelled as a sequence of events</span
+                >
+            </li>
+            <li class="c6 c11 li-bullet-0">
+                <span class="c0"
+                    >player cannot always influence the direction of the
+                    story<br
+                /></span>
+            </li>
+        </ul>
+        <p class="c6">
+            <span>The </span><span class="c3">Story Engine</span
+            ><span class="c0"
+                >&nbsp;is an interaction model showing the handling of inputs
+                and outputs which control the story.<br
+            /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c0"
+                    >takes player inputs as they progress through the
+                    story</span
+                >
+            </li>
+            <li class="c4 li-bullet-0">
+                <span class="c0">processes player events</span>
+            </li>
+            <li class="c4 li-bullet-0">
+                <span class="c0"
+                    >produces outputs depending on player input and events</span
+                >
+            </li>
+            <li class="c4 li-bullet-0">
+                <span class="c0">forms a cycle over time<br /></span>
+            </li>
+            <li class="c4 li-bullet-0">
+                <span>The </span><span class="c1">Emergent Story Engine</span
+                ><span class="c0"
+                    >&nbsp;processes events only through core mechanics</span
+                >
+            </li>
+            <li class="c4 li-bullet-0">
+                <span>The </span><span class="c1">Designed Story Engine</span
+                ><span class="c0"
+                    >&nbsp;processes events through core mechanics and the
+                    storytelling engine, which is triggered by certain inputs
+                    and produces narrative events</span
+                >
+            </li>
+        </ul>
+        <p class="c6">
+            <span><br /></span><span>&nbsp;</span><span>&nbsp; </span
+            ><span class="c2 c1">Emergent</span
+            ><span class="c2"
+                >&nbsp;Story Engine &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+            ><span class="c2 c1">&nbsp;Designed</span
+            ><span class="c2">&nbsp;Story Engine<br /></span><span>&nbsp;</span
+            ><span
+                style="
+                    overflow: hidden;
+                    display: inline-block;
+                    margin: 0px 0px;
+                    border: 0px solid #000000;
+                    transform: rotate(0rad) translateZ(0px);
+                    -webkit-transform: rotate(0rad) translateZ(0px);
+                    width: 601.7px;
+                    height: 214.67px;
+                "
+                ><img
+                    alt="The Player 
+Outputs 
+Player Events 
+Drama stories 
+a storytelling 
+to supplement 
+ard mechanics 
+Narrative Events 
+Storytelling Engine 
+The Player 
+Outputs 
+Inputs 
+The User Interface 
+In Game Events 
+Inputs 
+The User Interface 
+In Game Events 
+Player Events 
+Core Mechanics 
+Triggers 
+Core Mechanics "
+                    src="assets/game-design-and-development/image10.png"
+                    style="
+                        width: 601.7px;
+                        height: 214.67px;
+                        margin-left: 0px;
+                        margin-top: 0px;
+                        transform: rotate(0rad) translateZ(0px);
+                        -webkit-transform: rotate(0rad) translateZ(0px);
+                    "
+                    title="" /></span
+            ><span><br /></span><span><br /></span><span>&nbsp;</span
+            ><span class="c7">Agency and Patterns<br /><br /></span
+            ><span class="c3">Agency:</span
+            ><span>&nbsp;the ability to act or exert power<br /><br /></span
+            ><span class="c3">Mark Bernstein&#39;s Non-Linear Patterns</span
+            ><span class="c0"
+                >&nbsp;is an analysis of structural patterns used by authors.<br
+            /></span>
+        </p>
+        <a id="t.a672f4db6a1b8614e3ce55c1173b48653c537147"></a><a id="t.0"></a>
+        <table class="c26">
+            <tbody>
+                <tr class="c14">
+                    <td class="c12" colspan="1" rowspan="1">
+                        <p class="c6"><span class="c10 c1">Cycle</span></p>
+                    </td>
+                    <td class="c23" colspan="1" rowspan="1">
+                        <p class="c6">
+                            <span class="c0"
+                                >Reader returns to a previously visited node and
+                                joins a new path</span
+                            >
+                        </p>
+                    </td>
+                </tr>
+                <tr class="c14">
+                    <td class="c12" colspan="1" rowspan="1">
+                        <p class="c6">
+                            <span class="c10 c1">Joyce&#39;s Cycle</span>
+                        </p>
+                    </td>
+                    <td class="c23" colspan="1" rowspan="1">
+                        <p class="c6">
+                            <span class="c0"
+                                >Reader returns to a previously visited node and
+                                continues along a visited path</span
+                            >
+                        </p>
+                    </td>
+                </tr>
+                <tr class="c14">
+                    <td class="c12" colspan="1" rowspan="1">
+                        <p class="c6"><span class="c10 c1">Contour</span></p>
+                    </td>
+                    <td class="c23" colspan="1" rowspan="1">
+                        <p class="c6">
+                            <span class="c0"
+                                >Combination of cycles allowing free movement
+                                between each path</span
+                            >
+                        </p>
+                    </td>
+                </tr>
+                <tr class="c14">
+                    <td class="c12" colspan="1" rowspan="1">
+                        <p class="c6">
+                            <span class="c10 c1">Counterpoint</span>
+                        </p>
+                    </td>
+                    <td class="c23" colspan="1" rowspan="1">
+                        <p class="c6">
+                            <span class="c0">Alternating voices or themes</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="c14">
+                    <td class="c12" colspan="1" rowspan="1">
+                        <p class="c6"><span class="c10 c1">Tangle</span></p>
+                    </td>
+                    <td class="c23" colspan="1" rowspan="1">
+                        <p class="c6">
+                            <span class="c0"
+                                >Variety of paths where the correct choice is
+                                not provided</span
+                            >
+                        </p>
+                    </td>
+                </tr>
+                <tr class="c14">
+                    <td class="c12" colspan="1" rowspan="1">
+                        <p class="c6"><span class="c10 c1">Sieve</span></p>
+                    </td>
+                    <td class="c23" colspan="1" rowspan="1">
+                        <p class="c6">
+                            <span class="c0"
+                                >Layer of paths which direct the reader to
+                                certain sections or episodes</span
+                            >
+                        </p>
+                    </td>
+                </tr>
+                <tr class="c14">
+                    <td class="c12" colspan="1" rowspan="1">
+                        <p class="c6">
+                            <span class="c10 c1">Mirrorworld</span>
+                        </p>
+                    </td>
+                    <td class="c23" colspan="1" rowspan="1">
+                        <p class="c6">
+                            <span class="c0"
+                                >Stories are duplicated and changed to produce
+                                contrast</span
+                            >
+                        </p>
+                    </td>
+                </tr>
+                <tr class="c14">
+                    <td class="c12" colspan="1" rowspan="1">
+                        <p class="c6"><span class="c10 c1">Montage</span></p>
+                    </td>
+                    <td class="c23" colspan="1" rowspan="1">
+                        <p class="c6">
+                            <span class="c0"
+                                >Collection of narratives which reinforce each
+                                other</span
+                            >
+                        </p>
+                    </td>
+                </tr>
+                <tr class="c14">
+                    <td class="c12" colspan="1" rowspan="1">
+                        <p class="c6"><span class="c10 c1">Split/Join</span></p>
+                    </td>
+                    <td class="c23" colspan="1" rowspan="1">
+                        <p class="c6">
+                            <span class="c0"
+                                >Reader chooses from two or more paths, then
+                                returns to the original</span
+                            >
+                        </p>
+                    </td>
+                </tr>
+                <tr class="c14">
+                    <td class="c12" colspan="1" rowspan="1">
+                        <p class="c6"><span class="c10 c1">Rashomon</span></p>
+                    </td>
+                    <td class="c23" colspan="1" rowspan="1">
+                        <p class="c6">
+                            <span class="c0"
+                                >Reader traverses a split/join embedded within a
+                                cycle</span
+                            >
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="c6">
+            <span>&nbsp;<br /></span><span>&nbsp;</span
+            ><span
+                style="
+                    overflow: hidden;
+                    display: inline-block;
+                    margin: 0px 0px;
+                    border: 0px solid #000000;
+                    transform: rotate(0rad) translateZ(0px);
+                    -webkit-transform: rotate(0rad) translateZ(0px);
+                    width: 570.67px;
+                    height: 302.67px;
+                "
+                ><img
+                    alt="In the Cycle, the reader returns to a 
+previously-visited node and 
+eventually departs along a new path. 
+In Joyce&#39;s Cycle, the reader rejoins a 
+previously-visited part of the 
+hypertext and continues along a 
+previously-traversed trajectory 
+A contour is formed where cycles 
+impinge on each other, allowing free 
+movement within and between the 
+paths defined by each cycle. 
+Mirrorworlds provide a parallel or 
+intertextual narrative that adopts a 
+different voice or contrasting 
+perspective. 
+In Counterpoint, two voices alternate, 
+interleaving themes or welding 
+together theme and response. 
+The Tangle confronts the reader with a 
+variety of links without providing 
+sufficient clues to guide the reader&#39;s 
+choice. 
+Sieves sort readers through one or 
+more layers of choice in order to direct 
+them to sections or episodes. Sieves 
+are often trees, but may be different 
+topologies 
+In Montage, several distinct writing 
+spaces appear simultaneously, 
+reinforcing each other while retaining 
+their separate identities. "
+                    src="assets/game-design-and-development/image13.png"
+                    style="
+                        width: 570.67px;
+                        height: 302.67px;
+                        margin-left: 0px;
+                        margin-top: 0px;
+                        transform: rotate(0rad) translateZ(0px);
+                        -webkit-transform: rotate(0rad) translateZ(0px);
+                    "
+                    title="" /></span
+            ><span><br /> </span
+            ><span
+                style="
+                    overflow: hidden;
+                    display: inline-block;
+                    margin: 0px 0px;
+                    border: 0px solid #000000;
+                    transform: rotate(0rad) translateZ(0px);
+                    -webkit-transform: rotate(0rad) translateZ(0px);
+                    width: 422.67px;
+                    height: 289.33px;
+                "
+                ><img
+                    alt="The Split/Join pattern knits two or more sequences 
+together. Split/J0in is indispensable to interactive narratives 
+in which the reader&#39;s intervention changes the course Of 
+events... Splits permit the narrative to depend on the 
+reader&#39;s choice for a limited span, later returning the reader 
+(at least temporarily) to a central core. 
+The Rashomon pattern embeds a split-join within a cycle. 
+The split/join effectively breaks the cycle, as readers explore 
+different splits during each recurrent exploration, yet the 
+cycle remains a prominent frame that provides context for 
+each strand. 
+Overviews and tours are examples Of Split/J0in where the 
+rhetorical intent of each path is similar, but one side of the 
+split is more detailed than the other. "
+                    src="assets/game-design-and-development/image14.png"
+                    style="
+                        width: 422.67px;
+                        height: 289.33px;
+                        margin-left: 0px;
+                        margin-top: 0px;
+                        transform: rotate(0rad) translateZ(0px);
+                        -webkit-transform: rotate(0rad) translateZ(0px);
+                    "
+                    title="" /></span
+            ><span class="c0"><br /></span>
+        </p>
+        <p class="c6">
+            <span class="c7">Choices<br /><br /></span
+            ><span class="c3">Choice:</span
+            ><span class="c0">&nbsp;manifestation of agency<br /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c0">Influences the narrative in several ways</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c1">Intermediate</span
+                ><span class="c0"
+                    >&nbsp;- the player&#39;s choice is made at the point of
+                    branching</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c1">Deferred</span
+                ><span class="c0"
+                    >&nbsp;- the player&#39;s choice is recorded and used later
+                    in the story</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c1">Cumulative</span
+                ><span class="c0"
+                    >&nbsp;- the player&#39;s choices are fed into a model which
+                    influences a branch later in the story</span
+                >
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c0"
+                    >Allows players to overcome internal conflict</span
+                >
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c10 c1">Risk/Value decisions</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-2 start">
+            <li class="c6 c11 li-bullet-0">
+                <span class="c0">finding extra lives</span>
+            </li>
+            <li class="c6 c11 li-bullet-0">
+                <span class="c0">finding achievements</span>
+            </li>
+            <li class="c6 c11 li-bullet-0">
+                <span class="c0">doing side quests</span>
+            </li>
+            <li class="c6 c11 li-bullet-0">
+                <span class="c0">pursuing challenges</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1">
+            <li class="c5 li-bullet-0"><span class="c10 c1">Perks</span></li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-2 start">
+            <li class="c6 c11 li-bullet-0">
+                <span class="c0"
+                    >e.g. choosing between attack, defense, or stamina</span
+                >
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1">
+            <li class="c5 li-bullet-0">
+                <span class="c10 c1">Moral and ethical judgements</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-2 start">
+            <li class="c6 c11 li-bullet-0">
+                <span class="c0">moral: internal values</span>
+            </li>
+            <li class="c6 c11 li-bullet-0">
+                <span class="c0">ethical: external values and rules</span>
+            </li>
+        </ul>
+        <p class="c6">
+            <span><br /></span><span class="c3">Narrative Paradox:</span
+            ><span class="c0"
+                >&nbsp;conflict between the player&#39;s freedom of choice and
+                the author&#39;s control over the world<br
+            /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c0">This is managed in several ways</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0">create an illusion of choice</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">use cutscenes to remove agency</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >use the physical space to encourage or restrict
+                    choices</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >use cycles to return the story to the same state after each
+                    episode</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >use splits/joins to restrict the exponential growth of
+                    branches</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >use mirrorworlds to create alternate paths with the same
+                    assets</span
+                >
+            </li>
+        </ul>
+        <p class="c6">
+            <span><br /></span><span>&nbsp;</span
+            ><span
+                style="
+                    overflow: hidden;
+                    display: inline-block;
+                    margin: 0px 0px;
+                    border: 0px solid #000000;
+                    transform: rotate(0rad) translateZ(0px);
+                    -webkit-transform: rotate(0rad) translateZ(0px);
+                    width: 386.67px;
+                    height: 272px;
+                "
+                ><img
+                    alt="Level of Agency 
+Full Agency 
+Influenced Agency 
+Partial Agency 
+False Agency 
+No Agency 
+Mechanism 
+Topology (Open Worlds) 
+Normal Game Mechanics 
+Direction/Misdirection 
+Topology (Encourage) 
+Control (Quick Time Events) 
+Patterns (Split/Joins) 
+Patterns (Mirrorworlds) 
+Topology (Restrict) 
+Illusion of Choice 
+Agnostic Characters 
+Control (Cut scenes) "
+                    src="assets/game-design-and-development/image6.png"
+                    style="
+                        width: 386.67px;
+                        height: 272px;
+                        margin-left: 0px;
+                        margin-top: 0px;
+                        transform: rotate(0rad) translateZ(0px);
+                        -webkit-transform: rotate(0rad) translateZ(0px);
+                    "
+                    title="" /></span
+            ><span><br /></span><span class="c16"><br />Writing Narratives</span
+            ><span class="c17"><br /><br /></span
+            ><span class="c3">Story Arc:</span
+            ><span
+                >&nbsp;planned trajectory of a story, including the start,
+                structure of events, and end<br /><br /></span
+            ><span class="c7">Modelling Story Arcs<br /></span>
+        </p>
+        <p class="c6">
+            <span>The </span><span class="c3">Three Act Arc</span
+            ><span class="c0">&nbsp;divides a story into 3 acts.</span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c1">Dramatic Question</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >A problem changes or affects the hero in a significant way.
+                    For example, Princess Peach is taken by Bowser.</span
+                >
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c1"
+                    >Acquisition of Means and Dramatic Reversal</span
+                >
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >The character acquires the skills, allies, and equipment
+                    needed to solve the problem. A dramatic reversal occurs
+                    which hinders the plan. This act contains many conflicts and
+                    resolutions as drama slowly builds.</span
+                >
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0"><span class="c10 c1">Climax</span></li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >The drama reaches its peak as the hero uses their skills to
+                    solve the problem irreversibly. For example, Link fights
+                    Ganon.<br
+                /></span>
+            </li>
+        </ul>
+        <p class="c6">
+            <span>The </span><span class="c3">Hero&#39;s Journey</span
+            ><span
+                >&nbsp;is a story template where a hero goes on an adventure, is
+                victorious in a crisis, and returns home with new skills. This
+                is based on Campbell&#39;s 17 stages.<br /><br /></span
+            ><span>&nbsp;</span
+            ><span class="c2 c3 c21">1-3. The Beginning<br /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c1">Call to Adventure</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >An ordinary life is disturbed as the hero is sent away,
+                    given a goal, or understands something that changes their
+                    situation.</span
+                >
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c1">Refusal of the Call</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >The hero rejects the call, only to find this impossible or
+                    dangerous.</span
+                >
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c1">Supernatural Aid</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span
+                    >The hero obtains help, support, or equipment needed to
+                    progress.<br
+                /></span>
+            </li>
+        </ul>
+        <p class="c6">
+            <span class="c21 c2 c3">4-11. The Journey<br /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c1">Crossing the Threshold</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >The hero leaves the ordinary world and enters the
+                    adventure. This is often where the tutorial ends and the
+                    main game begins.</span
+                >
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c1">Belly of the Whale</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >The hero is forced to accept the path and reflects on their
+                    situation, themselves, and the path ahead.</span
+                >
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c1">Road of Trials</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >The hero is tested and must overcome a series of
+                    challenges.</span
+                >
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c1">Meeting with the Goddess</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >The hero comes to understand love (romantic or platonic)
+                    and grows beyond conflict and the trials.</span
+                >
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c1">Temptation</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >The hero overcomes a temptation to leave the journey.</span
+                >
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c1">Atonement with the Father</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >Reconciliation with a supreme being. The hero turns to
+                    other options as their main plan fails.</span
+                >
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c1">Apotheosis</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >The point of realization from which a greater understanding
+                    is achieved.</span
+                >
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c1">Ultimate Boon</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span
+                    >The hero is reborn or gains a supernatural power, and the
+                    quest is completed.<br /><br /></span
+                ><span>&nbsp;</span><span class="c0">&nbsp;</span>
+            </li>
+        </ul>
+        <p class="c6">
+            <span class="c21 c2 c3">12-17. The Return<br /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c1">Refusal of Return</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >The hero finds himself not wanting to leave.</span
+                >
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c1">Magic Flight</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >The hero escapes the boon to return to the regular
+                    world.</span
+                >
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c1">Rescue from Without</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >The hero receives help to return to ordinary life.</span
+                >
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c1">Crossing the Return Threshold</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0">The hero returns to the other world.</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c1">Master of Two Worlds</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >The hero becomes a master of both worlds, and achieves
+                    spiritual balance.</span
+                >
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c1">Freedom to Live</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span
+                    >Mastery leads to freedom from fear, and the hero is free to
+                    live without regret.<br /></span
+                ><span class="c0">&nbsp;</span>
+            </li>
+        </ul>
+        <p class="c6">
+            <span class="c7">Pacing<br /><br /></span
+            ><span class="c3">Pacing</span
+            ><span class="c0"
+                >&nbsp;is controlled in a number of narrative and mechanical
+                methods.<br
+            /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c1">Narrative</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0">emotional scenes</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">stirring music</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">dramatic action</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c1">Mechanical</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0">rapid decision making</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">scarce resources</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">increased conflict</span>
+            </li>
+        </ul>
+        <p class="c6">
+            <span><br />The</span
+            ><span class="c3">&nbsp;classic dramatic arc</span
+            ><span>&nbsp;follows a premise leading to </span
+            ><span class="c1">rising action, a climax, and a resolution</span
+            ><span>. <br /><br /></span><span>&nbsp;</span
+            ><span
+                style="
+                    overflow: hidden;
+                    display: inline-block;
+                    margin: 0px 0px;
+                    border: 0px solid #000000;
+                    transform: rotate(0rad) translateZ(0px);
+                    -webkit-transform: rotate(0rad) translateZ(0px);
+                    width: 312px;
+                    height: 181.33px;
+                "
+                ><img
+                    alt="Narrative Tension "
+                    src="assets/game-design-and-development/image23.png"
+                    style="
+                        width: 312px;
+                        height: 181.33px;
+                        margin-left: 0px;
+                        margin-top: 0px;
+                        transform: rotate(0rad) translateZ(0px);
+                        -webkit-transform: rotate(0rad) translateZ(0px);
+                    "
+                    title="" /></span
+            ><span><br /><br /> </span
+            ><span>&nbsp;Dramatic curves can also be more </span
+            ><span class="c1">complex</span
+            ><span
+                >&nbsp;with several peaks within the story. &nbsp;<br /><br /></span
+            ><span>&nbsp;</span
+            ><span
+                style="
+                    overflow: hidden;
+                    display: inline-block;
+                    margin: 0px 0px;
+                    border: 0px solid #000000;
+                    transform: rotate(0rad) translateZ(0px);
+                    -webkit-transform: rotate(0rad) translateZ(0px);
+                    width: 518.67px;
+                    height: 202.67px;
+                "
+                ><img
+                    alt="use the Force&#39; 
+Obi-Wan 
+killed 
+Star 
+Re bel 
+st roved 
+ersion 
+Rebels 
+cap d 
+Luke&#39;s 
+rents 
+killed 
+Luke&#39;s 
+training 
+Obi-Wan 
+Prologue 
+Act 1 
+Act 11 
+Time 
+Act 111 "
+                    src="assets/game-design-and-development/image20.png"
+                    style="
+                        width: 518.67px;
+                        height: 202.67px;
+                        margin-left: 0px;
+                        margin-top: 0px;
+                        transform: rotate(0rad) translateZ(0px);
+                        -webkit-transform: rotate(0rad) translateZ(0px);
+                    "
+                    title="" /></span
+            ><span><br /><br /> </span
+            ><span>&nbsp;Portnow states that pacing is </span
+            ><span class="c3">recursive</span><span>&nbsp;and </span
+            ><span class="c3">repeats itself infinitely</span
+            ><span class="c0">&nbsp;within games.<br /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c1">Arc</span
+                ><span class="c0"
+                    >&nbsp;- the overall story (Mario goes on an adventure to
+                    rescue the princess)</span
+                >
+            </li>
+            <li class="c4 li-bullet-0">
+                <span class="c1">Scenes</span
+                ><span class="c0"
+                    >&nbsp;- individual encounters (mario defeats enemies to
+                    reach the flag)</span
+                >
+            </li>
+            <li class="c4 li-bullet-0">
+                <span class="c1">Actions</span
+                ><span class="c0"
+                    >&nbsp;- interactions with the player (mario jumps over a
+                    gap)</span
+                >
+            </li>
+        </ul>
+        <p class="c6">
+            <span><br /></span><span class="c29 c7">Pacing Techniques</span>
+        </p>
+        <p class="c6 c15"><span class="c7 c29"></span></p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c3">In Medias Res</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >Means &quot;in the middle of&quot; and jumps the player
+                    straight into the action.</span
+                >
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0"><span class="c10 c3">Lepsis</span></li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span
+                    >Where parts of the story are omitted or shown out of
+                    order.<br /></span
+                ><span class="c1">Prolepsis:</span
+                ><span>&nbsp;flashforward or foreshadowing<br /></span
+                ><span class="c1">Analepsis:</span
+                ><span class="c0">&nbsp;flashbacks</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c3"
+                    >Cutscenes, Cinematics, and In-Game Events</span
+                >
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c1">Cutscene:</span
+                ><span
+                    >&nbsp;control is removed from the player to convey a key
+                    part of the story<br /></span
+                ><span class="c1">Cinematic:</span
+                ><span>&nbsp;pre-rendered or live-action video<br /></span
+                ><span class="c1">In-Game Event:</span
+                ><span class="c0"
+                    >&nbsp;inverted cutscene where the environment changes but
+                    not the player<br
+                /></span>
+            </li>
+        </ul>
+        <p class="c6">
+            <span class="c7">Characters<br /><br /></span
+            ><span class="c0">Characters come in 3 main forms:<br /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c1">Protagonists</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0">The hero, often the player&#39;s avatar</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c1">Antagonists</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >The villain, a central NPC who acts as an obstacle</span
+                >
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0"><span class="c10 c1">NPCs</span></li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >Mixture of allies, guides, neutrals, and enemies<br
+                /></span>
+            </li>
+        </ul>
+        <p class="c6">
+            <span>The </span><span class="c3">Myers-Briggs Type Indicator</span
+            ><span class="c0"
+                >&nbsp;is useful for constructing personalities.<br
+            /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c1">Introversion vs Extroversion</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0">Strength from being alone or in crowds</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c1">Sensing vs Intuition</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span>Trusting facts or gut feeling<br /></span
+                ><span class="c10 c1">Thinking vs Feeling</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >Making decisions logically or empathetically</span
+                >
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c1">Judging vs Perceiving</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0">Liking resolution or open options<br /></span>
+            </li>
+        </ul>
+        <p class="c6">
+            <span>Characters tend to follow common </span
+            ><span class="c3">archetypes</span><span class="c0">:<br /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c3">Protagonists</span>
+            </li>
+            <li class="c4 li-bullet-0">
+                <span class="c10 c1">The Classical Hero</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span>possesses</span
+                ><span class="c0"
+                    >&nbsp;a supernatural power, skill, or ability which rises
+                    them above regular people</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >fails to bend the world to their desires, or has a hidden
+                    weakness</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">power fantasies are common in games</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >personal suffering makes the character feel human and
+                    relatable</span
+                >
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c1">The Anti Hero</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >rebellion against the classical hero with stronger flaws
+                    and mixed motivations</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >has villainous traits like anger or aggression</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >brooding, antsy, rebellious, self-destructive</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">unconstrained by ethics or laws</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c1">The Ordinary Hero</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >ordinary person with no remarkable advantages or
+                    flaws</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >initially is disempowered but grows to match a
+                    challenge</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">very relatable for the player<br /></span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c3">Antagonists</span>
+            </li>
+            <li class="c4 li-bullet-0">
+                <span class="c10 c1">Mechanical</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >an evil character designed to make the player dislike
+                    them</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">opposes the protagonists views or values</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >appears big and powerful and is satisfying to defeat</span
+                >
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c10 c1">Narratological</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >source of drama and conflict in the story</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >evil stems from a motivation such as greed or revenge</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">tightly linked to the protagonist</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c1 c10">Force of Nature</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0">drives the story as a primal concept</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">often a monster, alien, or inhuman being</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">is not relatable and has no flaws</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >explores deep questions relating to their ideology</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >can be a social commentary on society or institution</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >tightly linked to the protagonist and the world</span
+                >
+            </li>
+        </ul>
+        <p class="c6">
+            <span>&nbsp;</span><span>&nbsp;<br /><br /></span
+            ><span class="c16">&nbsp;Poetics of Game Narratives<br /></span
+            ><span class="c17"><br /></span><span>&nbsp;</span
+            ><span class="c3">Narratology:</span
+            ><span
+                >&nbsp;study of narratives and their structure, function, and
+                themes<br /><br /></span
+            ><span>&nbsp;</span><span class="c3">Ludology:</span
+            ><span class="c0"
+                >&nbsp;study of games, gameplay, and players<br
+            /></span>
+        </p>
+        <a id="t.fd00f10c693d99e55effd47ac40c891719c22f94"></a><a id="t.1"></a>
+        <table class="c26">
+            <tbody>
+                <tr class="c14">
+                    <td class="c27 c30" colspan="1" rowspan="1">
+                        <p class="c6 c34 c8">
+                            <span class="c0">Narratology</span>
+                        </p>
+                    </td>
+                    <td class="c19" colspan="1" rowspan="1">
+                        <p class="c6 c8 c34">
+                            <span class="c0">Ludology</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="c14">
+                    <td class="c27" colspan="1" rowspan="1">
+                        <p class="c6">
+                            <span class="c0">Fixed sequence of events</span>
+                        </p>
+                    </td>
+                    <td class="c22" colspan="1" rowspan="1">
+                        <p class="c6">
+                            <span class="c0"
+                                >Flexible arrangement of events</span
+                            >
+                        </p>
+                    </td>
+                </tr>
+                <tr class="c14">
+                    <td class="c27" colspan="1" rowspan="1">
+                        <p class="c6"><span class="c0">Variable speed</span></p>
+                    </td>
+                    <td class="c22" colspan="1" rowspan="1">
+                        <p class="c6"><span class="c0">Fixed speed</span></p>
+                    </td>
+                </tr>
+                <tr class="c14">
+                    <td class="c27" colspan="1" rowspan="1">
+                        <p class="c6">
+                            <span class="c0">Story &amp; Fabula</span>
+                        </p>
+                    </td>
+                    <td class="c22" colspan="1" rowspan="1">
+                        <p class="c6">
+                            <span class="c0">Mechanics &amp; Assets</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="c14">
+                    <td class="c27" colspan="1" rowspan="1">
+                        <p class="c6">
+                            <span class="c0">Requires actors</span>
+                        </p>
+                    </td>
+                    <td class="c22" colspan="1" rowspan="1">
+                        <p class="c6">
+                            <span class="c0">Can be abstract</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="c14">
+                    <td class="c27" colspan="1" rowspan="1">
+                        <p class="c6">
+                            <span class="c0">Narrative desire</span>
+                        </p>
+                    </td>
+                    <td class="c22" colspan="1" rowspan="1">
+                        <p class="c6">
+                            <span class="c0"
+                                >Desire for understanding and performance</span
+                            >
+                        </p>
+                    </td>
+                </tr>
+                <tr class="c14">
+                    <td class="c27" colspan="1" rowspan="1">
+                        <p class="c6"><span class="c0">Consume once</span></p>
+                    </td>
+                    <td class="c22" colspan="1" rowspan="1">
+                        <p class="c6">
+                            <span class="c0">Play many times</span>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="c6">
+            <span><br /></span><span class="c7">Immersion<br /><br /></span
+            ><span class="c0">Immersion is determined by 3 factors:<br /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c3">Sensory</span
+                ><span class="c0"
+                    >&nbsp;- physical feeling of being in the game world</span
+                >
+            </li>
+            <li class="c4 li-bullet-0">
+                <span class="c3">Challenge</span
+                ><span class="c0">&nbsp;- cognitive involvement in a game</span>
+            </li>
+            <li class="c4 li-bullet-0">
+                <span class="c3">Imagination</span
+                ><span
+                    >&nbsp;- interest in the game characters and world<br /><br /></span
+                ><span>&nbsp;</span
+                ><span
+                    style="
+                        overflow: hidden;
+                        display: inline-block;
+                        margin: 0px 0px;
+                        border: 0px solid #000000;
+                        transform: rotate(0rad) translateZ(0px);
+                        -webkit-transform: rotate(0rad) translateZ(0px);
+                        width: 356px;
+                        height: 242.67px;
+                    "
+                    ><img
+                        alt="Challenge-Based 
+(Flow) 
+Sensory 
+Imaginative 
+(Suspension of Disbelief) "
+                        src="assets/game-design-and-development/image19.png"
+                        style="
+                            width: 356px;
+                            height: 242.67px;
+                            margin-left: 0px;
+                            margin-top: 0px;
+                            transform: rotate(0rad) translateZ(0px);
+                            -webkit-transform: rotate(0rad) translateZ(0px);
+                        "
+                        title="" /></span
+                ><span><br /><br /> </span><span class="c0">&nbsp;</span>
+            </li>
+        </ul>
+        <p class="c6">
+            <span class="c7">Poetics<br /><br /></span
+            ><span>Poetics is generally defined as the </span
+            ><span class="c1"
+                >study of linguistic techniques in poetry and literature</span
+            ><span>. In games, poetics is about </span
+            ><span class="c1"
+                >how a game functions and comes together to produce an effect on
+                the player</span
+            ><span
+                >.<br /><br />Poetics can be supported using two
+                approaches:</span
+            ><span>&nbsp;</span><span class="c0">&nbsp;<br /></span>
+        </p>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c21 c2 c3">Emphasising the Fabula</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c13 c2">Reject the Grand Narrative Arc</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-2 start">
+            <li class="c6 c11 li-bullet-0">
+                <span class="c2 c1">Setup:</span
+                ><span class="c13 c2"
+                    >&nbsp;introduction of the premise, characters, and
+                    world</span
+                >
+            </li>
+            <li class="c6 c11 li-bullet-0">
+                <span class="c2 c1">Complication:</span
+                ><span class="c2 c13"
+                    >&nbsp;introduces a challenge to the protagonist</span
+                >
+            </li>
+            <li class="c6 c11 li-bullet-0">
+                <span class="c2 c1">Development:</span
+                ><span class="c13 c2"
+                    >&nbsp;the protagonist working towards a goal</span
+                >
+            </li>
+            <li class="c6 c11 li-bullet-0">
+                <span class="c2 c1">Resolution:</span
+                ><span class="c13 c2"
+                    >&nbsp;the protagonist achieves victory</span
+                >
+            </li>
+            <li class="c6 c11 li-bullet-0">
+                <span class="c2 c1">Denouement:</span
+                ><span class="c13 c2">&nbsp;the story is concluded</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1">
+            <li class="c5 li-bullet-0">
+                <span class="c13 c2">Embrace the Fabula</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-2 start">
+            <li class="c6 c11 li-bullet-0">
+                <span class="c2 c1">Storyworld:</span
+                ><span class="c13 c2"
+                    >&nbsp;the environment in which the game unfolds</span
+                >
+            </li>
+            <li class="c6 c11 li-bullet-0">
+                <span class="c2 c1">Characters:</span
+                ><span class="c13 c2">&nbsp;beings populating the world</span>
+            </li>
+            <li class="c6 c11 li-bullet-0">
+                <span class="c2 c1">Emotion:</span
+                ><span class="c13 c2"
+                    >&nbsp;feelings of characters and players</span
+                >
+            </li>
+            <li class="c6 c11 li-bullet-0">
+                <span class="c2 c1">Interface:</span
+                ><span class="c13 c2"
+                    >&nbsp;way in which narrative is directed by the
+                    player</span
+                >
+            </li>
+            <li class="c6 c11 li-bullet-0">
+                <span class="c2 c1">Micro-Narratives:</span
+                ><span class="c2">&nbsp;smaller parts of the story</span
+                ><span class="c0"><br /></span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-0">
+            <li class="c4 li-bullet-0">
+                <span class="c21 c2 c3">Fusion</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1 start">
+            <li class="c5 li-bullet-0">
+                <span class="c13 c2">Embedded Narrative</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-2 start">
+            <li class="c6 c11 li-bullet-0">
+                <span class="c2 c1">Diegetic:</span
+                ><span class="c13 c2"
+                    >&nbsp;narrative told using standard mechanics existing in
+                    the world</span
+                >
+            </li>
+            <li class="c6 c11 li-bullet-0">
+                <span class="c2 c1">Extra-Diegetic:</span
+                ><span class="c13 c2"
+                    >&nbsp;narrative told separately from the world using
+                    designed mechanics</span
+                >
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-1">
+            <li class="c5 li-bullet-0">
+                <span class="c13 c2">Thematic Coherence</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-2 start">
+            <li class="c6 c11 li-bullet-0">
+                <span class="c13 c2">Consistent themes:</span>
+            </li>
+        </ul>
+        <ul class="c9 lst-kix_7qnwni40hl0l-3 start">
+            <li class="c6 c28 li-bullet-0"><span class="c13 c2">Art</span></li>
+            <li class="c6 c28 li-bullet-0">
+                <span class="c13 c2">Audio</span>
+            </li>
+            <li class="c6 c28 li-bullet-0">
+                <span class="c13 c2">Music</span>
+            </li>
+            <li class="c6 c28 li-bullet-0">
+                <span class="c13 c2">Writing</span>
+            </li>
+            <li class="c6 c28 li-bullet-0">
+                <span class="c2">Mechanics</span>
+            </li>
+        </ul>
+        <hr />
+        <p class="c6 c15"><span class="c0"></span></p>
+        <p class="c6 c15"><span class="c0"></span></p>
+    </body>
+</html>
