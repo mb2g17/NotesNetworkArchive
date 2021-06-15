@@ -1,0 +1,2877 @@
+<html>
+    <head>
+        <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+        <link rel="stylesheet" href="css/software-security.css" />
+        <link rel="stylesheet" href="css/page.css" />
+    </head>
+    <body class="c54">
+        <div>
+            <p class="c22">
+                <span class="c10 c38"
+                    ><a class="c1" href="index.html"
+                        >Computer Science / Software Engineering Notes
+                        Network</a
+                    ></span
+                >
+            </p>
+        </div>
+        <p class="c56 title" id="h.dmsre8z54z83">
+            <span class="c64">Software Security</span
+            ><span
+                style="
+                    overflow: hidden;
+                    display: inline-block;
+                    margin: 0px 0px;
+                    border: 0px solid #000000;
+                    transform: rotate(0rad) translateZ(0px);
+                    -webkit-transform: rotate(0rad) translateZ(0px);
+                    width: 261.5px;
+                    height: 213.79px;
+                "
+                ><img
+                    alt=""
+                    src="assets/software-security/image3.png"
+                    style="
+                        width: 284.44px;
+                        height: 213.79px;
+                        margin-left: -22.94px;
+                        margin-top: 0px;
+                        transform: rotate(0rad) translateZ(0px);
+                        -webkit-transform: rotate(0rad) translateZ(0px);
+                    "
+                    title=""
+            /></span>
+        </p>
+        <p class="c63 subtitle" id="h.yiv1szahk3jk">
+            <span class="c61">Matthew Barnes</span>
+        </p>
+        <p class="c57">
+            <span class="c18 c17"
+                ><a class="c1" href="#h.c9l2ohpna8dy"
+                    >Software Vulnerabilities</a
+                ></span
+            ><span class="c18 c17"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+            ><span class="c18 c17"
+                ><a class="c1" href="#h.c9l2ohpna8dy">1</a></span
+            >
+        </p>
+        <p class="c12">
+            <span class="c4"
+                ><a class="c1" href="#h.35rph54m6eiy"
+                    >Risks and Consequences</a
+                ></span
+            ><span class="c4"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+            ><span class="c4"><a class="c1" href="#h.35rph54m6eiy">1</a></span>
+        </p>
+        <p class="c12">
+            <span class="c4"
+                ><a class="c1" href="#h.dbpw6giiu1p"
+                    >Who is the Attacker?</a
+                ></span
+            ><span class="c4"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+            ><span class="c4"><a class="c1" href="#h.dbpw6giiu1p">3</a></span>
+        </p>
+        <p class="c12">
+            <span class="c4"
+                ><a class="c1" href="#h.uuk9adxnsvm">Vulnerabilities</a></span
+            ><span class="c4"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+            ><span class="c4"><a class="c1" href="#h.uuk9adxnsvm">5</a></span>
+        </p>
+        <p class="c12">
+            <span class="c4"
+                ><a class="c1" href="#h.jskd5zdotn7o">CIA Triad</a></span
+            ><span class="c4"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+            ><span class="c4"><a class="c1" href="#h.jskd5zdotn7o">7</a></span>
+        </p>
+        <p class="c12">
+            <span class="c4"
+                ><a class="c1" href="#h.sytln1kma4gg">CVE / CVSS / CWE</a></span
+            ><span class="c4"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+            ><span class="c4"><a class="c1" href="#h.sytln1kma4gg">7</a></span>
+        </p>
+        <p class="c11">
+            <span class="c18 c17"
+                ><a class="c1" href="#h.4gfhskll75bo"
+                    >Low-Level Programming</a
+                ></span
+            ><span class="c18 c17"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+            ><span class="c17 c18"
+                ><a class="c1" href="#h.4gfhskll75bo">9</a></span
+            >
+        </p>
+        <p class="c11">
+            <span class="c18 c17"
+                ><a class="c1" href="#h.xa6ttd5xg0h2">Memory Errors</a></span
+            ><span class="c18 c17"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+            ><span class="c18 c17"
+                ><a class="c1" href="#h.xa6ttd5xg0h2">9</a></span
+            >
+        </p>
+        <p class="c11">
+            <span class="c18 c17"
+                ><a class="c1" href="#h.5c401vlhp5oy">Assembly</a></span
+            ><span class="c18 c17"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+            ><span class="c18 c17"
+                ><a class="c1" href="#h.5c401vlhp5oy">10</a></span
+            >
+        </p>
+        <p class="c11">
+            <span class="c18 c17"
+                ><a class="c1" href="#h.joaalawoh8pb">Malware</a></span
+            ><span class="c18 c17"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+            ><span class="c18 c17"
+                ><a class="c1" href="#h.joaalawoh8pb">11</a></span
+            >
+        </p>
+        <p class="c12">
+            <span class="c4"
+                ><a class="c1" href="#h.k6r11uhln00a">About Malware</a></span
+            ><span class="c4"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+            ><span class="c4"><a class="c1" href="#h.k6r11uhln00a">11</a></span>
+        </p>
+        <p class="c12">
+            <span class="c4"
+                ><a class="c1" href="#h.ru1w07u4uojr"
+                    >Common Techniques</a
+                ></span
+            ><span class="c4"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+            ><span class="c4"><a class="c1" href="#h.ru1w07u4uojr">11</a></span>
+        </p>
+        <p class="c15">
+            <span class="c4"
+                ><a class="c1" href="#h.n1ezw51ue1ql">Persistence</a></span
+            ><span class="c4"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+            ><span class="c4"><a class="c1" href="#h.n1ezw51ue1ql">11</a></span>
+        </p>
+        <p class="c15">
+            <span class="c4"
+                ><a class="c1" href="#h.2s60qln4xypr">Stealth</a></span
+            ><span class="c4"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+            ><span class="c4"><a class="c1" href="#h.2s60qln4xypr">11</a></span>
+        </p>
+        <p class="c15">
+            <span class="c4"
+                ><a class="c1" href="#h.t7urxezb9vbf"
+                    >Packing and Obfuscation</a
+                ></span
+            ><span class="c4"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+            ><span class="c4"><a class="c1" href="#h.t7urxezb9vbf">12</a></span>
+        </p>
+        <p class="c15">
+            <span class="c4"
+                ><a class="c1" href="#h.a68huvw7sluf">Anti-Analysis</a></span
+            ><span class="c4"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+            ><span class="c4"><a class="c1" href="#h.a68huvw7sluf">12</a></span>
+        </p>
+        <p class="c12">
+            <span class="c4"
+                ><a class="c1" href="#h.ea4hzvt2gf38"
+                    >Basic Static Analysis</a
+                ></span
+            ><span class="c4"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+            ><span class="c4"><a class="c1" href="#h.ea4hzvt2gf38">12</a></span>
+        </p>
+        <p class="c12">
+            <span class="c4"
+                ><a class="c1" href="#h.p8ar9kmo50at"
+                    >Advanced Static Analysis with IDA</a
+                ></span
+            ><span class="c4"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+            ><span class="c4"><a class="c1" href="#h.p8ar9kmo50at">12</a></span>
+        </p>
+        <p class="c11">
+            <span class="c18 c17"
+                ><a class="c1" href="#h.ck8ypjpw35b4"
+                    >Introduction to Risk Analysis</a
+                ></span
+            ><span class="c18 c17"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+            ><span class="c18 c17"
+                ><a class="c1" href="#h.ck8ypjpw35b4">12</a></span
+            >
+        </p>
+        <p class="c11">
+            <span class="c18 c17"
+                ><a class="c1" href="#h.rdb6g9rq2tpi"
+                    >Eliciting Security Requirements with Misuse Cases</a
+                ></span
+            ><span class="c18 c17"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+            ><span class="c18 c17"
+                ><a class="c1" href="#h.rdb6g9rq2tpi">15</a></span
+            >
+        </p>
+        <p class="c12">
+            <span class="c4"
+                ><a class="c1" href="#h.25tnzhbprpj6"
+                    >Security Requirements</a
+                ></span
+            ><span class="c4"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+            ><span class="c4"><a class="c1" href="#h.25tnzhbprpj6">15</a></span>
+        </p>
+        <p class="c12">
+            <span class="c4"
+                ><a class="c1" href="#h.59q6qvfb1l4w">Misuse Cases</a></span
+            ><span class="c4"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+            ><span class="c4"><a class="c1" href="#h.59q6qvfb1l4w">15</a></span>
+        </p>
+        <p class="c42">
+            <span class="c4"
+                ><a class="c1" href="#h.kgyvdo5qbku">Attack Trees</a></span
+            ><span class="c4"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+            ><span class="c4"><a class="c1" href="#h.kgyvdo5qbku">17</a></span>
+        </p>
+        <h1 class="c24" id="h.c9l2ohpna8dy">
+            <span class="c47">Software Vulnerabilities</span>
+        </h1>
+        <h2 class="c39" id="h.35rph54m6eiy">
+            <span class="c40">Risks and Consequences</span>
+        </h2>
+        <ul class="c3 lst-kix_c78p5pqlum8q-0 start">
+            <li class="c5 li-bullet-0">
+                <span>There is no doubt that there are certain </span
+                ><span class="c17">risks </span
+                ><span class="c0">when hosting a business online.</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">Here&rsquo;s a couple of them:</span>
+            </li>
+        </ul>
+        <p class="c30 c23"><span class="c0"></span></p>
+        <a id="t.a8f6e51368bef92355b627464a9ebd1207166b0c"></a><a id="t.0"></a>
+        <table class="c43">
+            <tbody>
+                <tr class="c13">
+                    <td class="c28 c32" colspan="1" rowspan="1">
+                        <p class="c16"><span class="c7">Risk</span></p>
+                    </td>
+                    <td class="c28 c32" colspan="1" rowspan="1">
+                        <p class="c16">
+                            <span class="c7">Pretty picture</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="c13">
+                    <td class="c28" colspan="1" rowspan="1">
+                        <p class="c16">
+                            <span class="c34 c10"
+                                >Service and data unavailability</span
+                            >
+                        </p>
+                        <p class="c16 c23"><span class="c10 c34"></span></p>
+                        <p class="c16">
+                            <span class="c35"
+                                >Your service / data could be made
+                                unavailable.</span
+                            >
+                        </p>
+                    </td>
+                    <td class="c28" colspan="1" rowspan="1">
+                        <p class="c16">
+                            <span
+                                style="
+                                    overflow: hidden;
+                                    display: inline-block;
+                                    margin: 0px 0px;
+                                    border: 0px solid #000000;
+                                    transform: rotate(0rad) translateZ(0px);
+                                    -webkit-transform: rotate(0rad)
+                                        translateZ(0px);
+                                    width: 286px;
+                                    height: 208px;
+                                "
+                                ><img
+                                    alt=""
+                                    src="assets/software-security/image15.png"
+                                    style="
+                                        width: 286px;
+                                        height: 208px;
+                                        margin-left: 0px;
+                                        margin-top: 0px;
+                                        transform: rotate(0rad) translateZ(0px);
+                                        -webkit-transform: rotate(0rad)
+                                            translateZ(0px);
+                                    "
+                                    title=""
+                            /></span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="c13">
+                    <td class="c28" colspan="1" rowspan="1">
+                        <p class="c16">
+                            <span class="c34 c10">Reputation</span>
+                        </p>
+                        <p class="c16 c23"><span class="c34 c10"></span></p>
+                        <p class="c16">
+                            <span class="c35"
+                                >A hacker could do something to your website,
+                                and nobody would trust your service
+                                anymore.</span
+                            >
+                        </p>
+                    </td>
+                    <td class="c28" colspan="1" rowspan="1">
+                        <p class="c16">
+                            <span
+                                style="
+                                    overflow: hidden;
+                                    display: inline-block;
+                                    margin: 0px 0px;
+                                    border: 0px solid #000000;
+                                    transform: rotate(0rad) translateZ(0px);
+                                    -webkit-transform: rotate(0rad)
+                                        translateZ(0px);
+                                    width: 286px;
+                                    height: 208px;
+                                "
+                                ><img
+                                    alt=""
+                                    src="assets/software-security/image6.png"
+                                    style="
+                                        width: 286px;
+                                        height: 208px;
+                                        margin-left: 0px;
+                                        margin-top: 0px;
+                                        transform: rotate(0rad) translateZ(0px);
+                                        -webkit-transform: rotate(0rad)
+                                            translateZ(0px);
+                                    "
+                                    title=""
+                            /></span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="c13">
+                    <td class="c28" colspan="1" rowspan="1">
+                        <p class="c16">
+                            <span class="c34 c10">Data leaks</span>
+                        </p>
+                        <p class="c16 c23"><span class="c34 c10"></span></p>
+                        <p class="c16">
+                            <span class="c35"
+                                >Client lists, industrial secrets, business
+                                plans, e-mails etc.</span
+                            >
+                        </p>
+                    </td>
+                    <td class="c28" colspan="1" rowspan="1">
+                        <p class="c16">
+                            <span
+                                style="
+                                    overflow: hidden;
+                                    display: inline-block;
+                                    margin: 0px 0px;
+                                    border: 0px solid #000000;
+                                    transform: rotate(0rad) translateZ(0px);
+                                    -webkit-transform: rotate(0rad)
+                                        translateZ(0px);
+                                    width: 286px;
+                                    height: 174.67px;
+                                "
+                                ><img
+                                    alt=""
+                                    src="assets/software-security/image1.png"
+                                    style="
+                                        width: 286px;
+                                        height: 174.67px;
+                                        margin-left: 0px;
+                                        margin-top: 0px;
+                                        transform: rotate(0rad) translateZ(0px);
+                                        -webkit-transform: rotate(0rad)
+                                            translateZ(0px);
+                                    "
+                                    title=""
+                            /></span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="c13">
+                    <td class="c28" colspan="1" rowspan="1">
+                        <p class="c16">
+                            <span class="c34 c10">Bank fraud</span>
+                        </p>
+                        <p class="c16 c23"><span class="c34 c10"></span></p>
+                        <p class="c16">
+                            <span class="c35"
+                                >Stealing credit cards, phishing for bank
+                                details, etc.</span
+                            >
+                        </p>
+                    </td>
+                    <td class="c28" colspan="1" rowspan="1">
+                        <p class="c16">
+                            <span
+                                style="
+                                    overflow: hidden;
+                                    display: inline-block;
+                                    margin: 0px 0px;
+                                    border: 0px solid #000000;
+                                    transform: rotate(0rad) translateZ(0px);
+                                    -webkit-transform: rotate(0rad)
+                                        translateZ(0px);
+                                    width: 286px;
+                                    height: 193.33px;
+                                "
+                                ><img
+                                    alt=""
+                                    src="assets/software-security/image12.png"
+                                    style="
+                                        width: 286px;
+                                        height: 193.33px;
+                                        margin-left: 0px;
+                                        margin-top: 0px;
+                                        transform: rotate(0rad) translateZ(0px);
+                                        -webkit-transform: rotate(0rad)
+                                            translateZ(0px);
+                                    "
+                                    title=""
+                            /></span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="c13">
+                    <td class="c28" colspan="1" rowspan="1">
+                        <p class="c16">
+                            <span class="c34 c10">Data loss</span>
+                        </p>
+                        <p class="c16 c23"><span class="c34 c10"></span></p>
+                        <p class="c16">
+                            <span class="c35"
+                                >Losing data such as projects, client data,
+                                etc.</span
+                            >
+                        </p>
+                        <p class="c16 c23"><span class="c35"></span></p>
+                        <p class="c16">
+                            <span class="c35"
+                                >This can happen due to HDD / SSD faults.</span
+                            >
+                        </p>
+                    </td>
+                    <td class="c28" colspan="1" rowspan="1">
+                        <p class="c16">
+                            <span
+                                style="
+                                    overflow: hidden;
+                                    display: inline-block;
+                                    margin: 0px 0px;
+                                    border: 0px solid #000000;
+                                    transform: rotate(0rad) translateZ(0px);
+                                    -webkit-transform: rotate(0rad)
+                                        translateZ(0px);
+                                    width: 286px;
+                                    height: 208px;
+                                "
+                                ><img
+                                    alt=""
+                                    src="assets/software-security/image14.png"
+                                    style="
+                                        width: 286px;
+                                        height: 208px;
+                                        margin-left: 0px;
+                                        margin-top: 0px;
+                                        transform: rotate(0rad) translateZ(0px);
+                                        -webkit-transform: rotate(0rad)
+                                            translateZ(0px);
+                                    "
+                                    title=""
+                            /></span>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="c30 c23"><span class="c0"></span></p>
+        <ul class="c3 lst-kix_reacuaxc23ce-0 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0">But who cares?</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >Who cares if I lose my data, or if my website goes down for
+                    a few seconds, or if a hacker steals all my personal
+                    information including bank details?</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span>What are the </span><span class="c17">consequences</span
+                ><span class="c0">?</span>
+            </li>
+        </ul>
+        <p class="c26 c23"><span class="c0"></span></p>
+        <ul class="c3 lst-kix_reacuaxc23ce-0">
+            <li class="c5 li-bullet-0">
+                <span>Well, uh... obviously, </span
+                ><span class="c10">you&rsquo;ll lose money</span
+                ><span class="c0">.</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >The company will lose money with less traffic, and will
+                    have to spend money to replace lost data.</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">This reduces stock market value.</span>
+            </li>
+        </ul>
+        <p class="c26 c23"><span class="c0"></span></p>
+        <ul class="c3 lst-kix_reacuaxc23ce-0">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >In addition, just because you don&rsquo;t care that your
+                    data is compromised, that doesn&rsquo;t mean your clients
+                    don&rsquo;t, either.</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >In addition, if you work in a public sector, providing
+                    services such as water and electricity, there can be big
+                    repercussions.</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >If you allow malicious activity, they could do things like
+                    shut down the power grid.</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >If that happens, you wouldn&rsquo;t be able to read the
+                    notes anymore!</span
+                >
+            </li>
+        </ul>
+        <p class="c26 c23"><span class="c0"></span></p>
+        <ul class="c3 lst-kix_reacuaxc23ce-0">
+            <li class="c5 li-bullet-0">
+                <span class="c0">So, we get it. Risks bad.</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">What do we do to defend against this?</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span>Some of these happen via </span
+                ><span class="c17">fault</span><span>.</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_reacuaxc23ce-1 start">
+            <li class="c2 li-bullet-0">
+                <span class="c0">We can replicate data and backup</span>
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c0">Use disaster recovery software</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_reacuaxc23ce-0">
+            <li class="c5 li-bullet-0">
+                <span>However, some of these happen via </span
+                ><span class="c17">attackers</span><span class="c0">.</span>
+            </li>
+        </ul>
+        <h2 class="c39" id="h.dbpw6giiu1p">
+            <span class="c40">Who is the Attacker?</span>
+        </h2>
+        <ul class="c3 lst-kix_khpme3e6n4zc-0 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >Who would want to attack you? After all, you&rsquo;re such
+                    a nice person.</span
+                >
+            </li>
+        </ul>
+        <p class="c30 c23"><span class="c0"></span></p>
+        <a id="t.236b1ee86187eb0bad256ed4579facddea00be86"></a><a id="t.1"></a>
+        <table class="c43">
+            <tbody>
+                <tr class="c59">
+                    <td class="c36 c32" colspan="1" rowspan="1">
+                        <p class="c16"><span class="c7">Attacker</span></p>
+                    </td>
+                    <td class="c36 c32" colspan="1" rowspan="1">
+                        <p class="c16"><span class="c7">Motive</span></p>
+                    </td>
+                    <td class="c36 c32" colspan="1" rowspan="1">
+                        <p class="c16">
+                            <span class="c7">Pretty picture</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="c13">
+                    <td class="c36" colspan="1" rowspan="1">
+                        <p class="c16"><span class="c0">Competitor</span></p>
+                    </td>
+                    <td class="c36" colspan="1" rowspan="1">
+                        <p class="c16">
+                            <span class="c0">Take down a rival business</span>
+                        </p>
+                    </td>
+                    <td class="c36" colspan="1" rowspan="1">
+                        <p class="c16">
+                            <span
+                                style="
+                                    overflow: hidden;
+                                    display: inline-block;
+                                    margin: 0px 0px;
+                                    border: 0px solid #000000;
+                                    transform: rotate(0rad) translateZ(0px);
+                                    -webkit-transform: rotate(0rad)
+                                        translateZ(0px);
+                                    width: 186px;
+                                    height: 177.33px;
+                                "
+                                ><img
+                                    alt=""
+                                    src="assets/software-security/image17.png"
+                                    style="
+                                        width: 186px;
+                                        height: 177.33px;
+                                        margin-left: 0px;
+                                        margin-top: 0px;
+                                        transform: rotate(0rad) translateZ(0px);
+                                        -webkit-transform: rotate(0rad)
+                                            translateZ(0px);
+                                    "
+                                    title=""
+                            /></span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="c13">
+                    <td class="c36" colspan="1" rowspan="1">
+                        <p class="c16"><span class="c0">Hacker</span></p>
+                    </td>
+                    <td class="c36" colspan="1" rowspan="1">
+                        <p class="c16">
+                            <span class="c0"
+                                >Get a kick out of hacking you</span
+                            >
+                        </p>
+                    </td>
+                    <td class="c36" colspan="1" rowspan="1">
+                        <p class="c16">
+                            <span
+                                style="
+                                    overflow: hidden;
+                                    display: inline-block;
+                                    margin: 0px 0px;
+                                    border: 0px solid #000000;
+                                    transform: rotate(0rad) translateZ(0px);
+                                    -webkit-transform: rotate(0rad)
+                                        translateZ(0px);
+                                    width: 174.46px;
+                                    height: 142.5px;
+                                "
+                                ><img
+                                    alt=""
+                                    src="assets/software-security/image3.png"
+                                    style="
+                                        width: 189.77px;
+                                        height: 142.5px;
+                                        margin-left: -15.3px;
+                                        margin-top: 0px;
+                                        transform: rotate(0rad) translateZ(0px);
+                                        -webkit-transform: rotate(0rad)
+                                            translateZ(0px);
+                                    "
+                                    title=""
+                            /></span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="c13">
+                    <td class="c36" colspan="1" rowspan="1">
+                        <p class="c16">
+                            <span class="c0">Activity (hacktivist)</span>
+                        </p>
+                    </td>
+                    <td class="c36" colspan="1" rowspan="1">
+                        <p class="c16"><span class="c0">Vigilantism</span></p>
+                    </td>
+                    <td class="c36" colspan="1" rowspan="1">
+                        <p class="c16">
+                            <span
+                                style="
+                                    overflow: hidden;
+                                    display: inline-block;
+                                    margin: 0px 0px;
+                                    border: 0px solid #000000;
+                                    transform: rotate(0rad) translateZ(0px);
+                                    -webkit-transform: rotate(0rad)
+                                        translateZ(0px);
+                                    width: 186px;
+                                    height: 121.33px;
+                                "
+                                ><img
+                                    alt=""
+                                    src="assets/software-security/image2.png"
+                                    style="
+                                        width: 186px;
+                                        height: 121.33px;
+                                        margin-left: 0px;
+                                        margin-top: 0px;
+                                        transform: rotate(0rad) translateZ(0px);
+                                        -webkit-transform: rotate(0rad)
+                                            translateZ(0px);
+                                    "
+                                    title=""
+                            /></span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="c13">
+                    <td class="c36" colspan="1" rowspan="1">
+                        <p class="c16"><span class="c0">Nation state</span></p>
+                    </td>
+                    <td class="c36" colspan="1" rowspan="1">
+                        <p class="c16"><span class="c0">War</span></p>
+                    </td>
+                    <td class="c36" colspan="1" rowspan="1">
+                        <p class="c16">
+                            <span
+                                style="
+                                    overflow: hidden;
+                                    display: inline-block;
+                                    margin: 0px 0px;
+                                    border: 0px solid #000000;
+                                    transform: rotate(0rad) translateZ(0px);
+                                    -webkit-transform: rotate(0rad)
+                                        translateZ(0px);
+                                    width: 186px;
+                                    height: 100px;
+                                "
+                                ><img
+                                    alt=""
+                                    src="assets/software-security/image9.png"
+                                    style="
+                                        width: 186px;
+                                        height: 100px;
+                                        margin-left: 0px;
+                                        margin-top: 0px;
+                                        transform: rotate(0rad) translateZ(0px);
+                                        -webkit-transform: rotate(0rad)
+                                            translateZ(0px);
+                                    "
+                                    title=""
+                            /></span>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="c30 c23"><span class="c0"></span></p>
+        <ul class="c3 lst-kix_khpme3e6n4zc-0">
+            <li class="c5 li-bullet-0">
+                <span class="c0">What exactly do we want to protect?</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_khpme3e6n4zc-1 start">
+            <li class="c2 li-bullet-0">
+                <span>Information </span><span class="c21">(our data)</span>
+            </li>
+            <li class="c2 li-bullet-0">
+                <span>Network </span
+                ><span class="c21"
+                    >(we don&rsquo;t want them reading our packets
+                    &#x1f440;)</span
+                >
+            </li>
+            <li class="c2 li-bullet-0">
+                <span>Physical </span
+                ><span class="c21"
+                    >(please don&rsquo;t blow up our computers)</span
+                >
+            </li>
+        </ul>
+        <p class="c26 c23"><span class="c0"></span></p>
+        <ul class="c3 lst-kix_khpme3e6n4zc-0">
+            <li class="c5 li-bullet-0">
+                <span class="c0">How exactly do we protect these?</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_khpme3e6n4zc-1 start">
+            <li class="c2 li-bullet-0">
+                <span class="c0">We can deny unauthorised access to:</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_khpme3e6n4zc-2 start">
+            <li class="c19 li-bullet-0"><span class="c0">Facilities</span></li>
+            <li class="c19 li-bullet-0"><span class="c0">Equipment</span></li>
+            <li class="c19 li-bullet-0">
+                <span class="c0">Data centres</span>
+            </li>
+            <li class="c19 li-bullet-0"><span class="c0">Resources</span></li>
+        </ul>
+        <ul class="c3 lst-kix_khpme3e6n4zc-1">
+            <li class="c2 li-bullet-0">
+                <span class="c0">... and use multiple layers of systems:</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_khpme3e6n4zc-2 start">
+            <li class="c19 li-bullet-0">
+                <span class="c0">Surveillance</span>
+            </li>
+            <li class="c19 li-bullet-0">
+                <span class="c0">Security guards</span>
+            </li>
+            <li class="c19 li-bullet-0">
+                <span class="c0">Protective barriers</span>
+            </li>
+            <li class="c19 li-bullet-0"><span class="c0">Locks</span></li>
+            <li class="c19 li-bullet-0">
+                <span class="c0">Access control protocol</span>
+            </li>
+        </ul>
+        <p class="c26 c23"><span class="c0"></span></p>
+        <ul class="c3 lst-kix_khpme3e6n4zc-0">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >What? Hire security guards for our information and
+                    network?</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >That doesn&rsquo;t quite work... physical security
+                    isn&rsquo;t enough.</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">We need a bit more.</span>
+            </li>
+        </ul>
+        <h2 class="c39" id="h.uuk9adxnsvm">
+            <span class="c40">Vulnerabilities</span>
+        </h2>
+        <ul class="c3 lst-kix_21xd8lol25o0-0 start">
+            <li class="c5 li-bullet-0">
+                <span>A </span><span class="c17">vulnerability </span
+                ><span class="c0"
+                    >is a bug or weakness in a system that, when exploited,
+                    could result in unwanted circumstances.</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span>An </span><span class="c17">exploit </span
+                ><span class="c0"
+                    >is a piece of code written to abuse that
+                    vulnerability.</span
+                >
+            </li>
+        </ul>
+        <p class="c26 c23"><span class="c0"></span></p>
+        <ul class="c3 lst-kix_21xd8lol25o0-0">
+            <li class="c5 li-bullet-0">
+                <span class="c0">There are four kinds of vulnerabilities:</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_fwv93ool6lwu-1 start">
+            <li class="c2 li-bullet-0">
+                <span class="c53 c65">Vulnerabilities in physical systems</span>
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c53 c45"
+                    >Vulnerabilities in infrastructures as networking
+                    systems</span
+                >
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c53 c45"
+                    >Vulnerabilities in Operating Systems</span
+                >
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c45 c53">Vulnerabilities in Software</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_fwv93ool6lwu-0 start">
+            <li class="c5 li-bullet-0">
+                <span>The </span><span class="c45">red vulnerabilities</span
+                ><span class="c0">&nbsp;are bugs in software.</span>
+            </li>
+        </ul>
+        <p class="c26 c23"><span class="c0"></span></p>
+        <ul class="c3 lst-kix_fwv93ool6lwu-0">
+            <li class="c5 li-bullet-0">
+                <span>One such vulnerability could come from a </span
+                ><span class="c17">buffer overflow</span
+                ><span class="c0">&nbsp;weakness.</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >This is where we can accidentally overflow a buffer meant
+                    to manipulate data and overwrite arbitrary memory
+                    addresses.</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span
+                    >This can be used to overwrite the original program&rsquo;s
+                    code and run our own code, called a </span
+                ><span class="c17">payload</span><span class="c0">.</span>
+            </li>
+        </ul>
+        <p class="c26 c23"><span class="c0"></span></p>
+        <ul class="c3 lst-kix_fwv93ool6lwu-0">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >Now, we&rsquo;ll go into detail on what a
+                    &ldquo;risk&rdquo; is.</span
+                >
+            </li>
+        </ul>
+        <p class="c30 c23"><span class="c0"></span></p>
+        <a id="t.99e3f56d426878d229c3032e29edb5121bdf0d83"></a><a id="t.2"></a>
+        <table class="c43">
+            <tbody>
+                <tr class="c13">
+                    <td class="c49" colspan="1" rowspan="1">
+                        <p class="c16">
+                            <span class="c34 c10">Vulnerability</span>
+                        </p>
+                        <ul class="c3 lst-kix_buq3dapb9a7i-0 start">
+                            <li class="c16 c31 li-bullet-0">
+                                <span class="c0">Weakness in the system</span>
+                            </li>
+                            <li class="c16 c31 li-bullet-0">
+                                <span class="c0">Internal factor</span>
+                            </li>
+                        </ul>
+                        <p class="c16 c23"><span class="c0"></span></p>
+                        <p class="c16"><span class="c34 c10">Threat</span></p>
+                        <ul class="c3 lst-kix_jn7pnjnzz8w7-0 start">
+                            <li class="c16 c31 li-bullet-0">
+                                <span class="c0"
+                                    >Condition that can cause harm</span
+                                >
+                            </li>
+                            <li class="c16 c31 li-bullet-0">
+                                <span class="c0">External factor</span>
+                            </li>
+                        </ul>
+                        <p class="c16 c23"><span class="c0"></span></p>
+                        <p class="c16"><span class="c34 c10">Risk</span></p>
+                        <ul class="c3 lst-kix_i1adn21krhg2-0 start">
+                            <li class="c16 c31 li-bullet-0">
+                                <span class="c0"
+                                    >Likelihood of the realisation of a
+                                    threat</span
+                                >
+                            </li>
+                        </ul>
+                        <p class="c16 c23"><span class="c0"></span></p>
+                        <p class="c16">
+                            <span class="c0"
+                                >Vulnerability without a threat = no risk</span
+                            >
+                        </p>
+                        <p class="c16">
+                            <span class="c0"
+                                >Threat without a vulnerability = no risk</span
+                            >
+                        </p>
+                    </td>
+                    <td class="c48" colspan="1" rowspan="1">
+                        <p class="c16">
+                            <span
+                                style="
+                                    overflow: hidden;
+                                    display: inline-block;
+                                    margin: 0px 0px;
+                                    border: 0px solid #000000;
+                                    transform: rotate(0rad) translateZ(0px);
+                                    -webkit-transform: rotate(0rad)
+                                        translateZ(0px);
+                                    width: 286px;
+                                    height: 304px;
+                                "
+                                ><img
+                                    alt=""
+                                    src="assets/software-security/image8.png"
+                                    style="
+                                        width: 286px;
+                                        height: 304px;
+                                        margin-left: 0px;
+                                        margin-top: 0px;
+                                        transform: rotate(0rad) translateZ(0px);
+                                        -webkit-transform: rotate(0rad)
+                                            translateZ(0px);
+                                    "
+                                    title=""
+                            /></span>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="c30 c23"><span class="c0"></span></p>
+        <ul class="c3 lst-kix_fwv93ool6lwu-0">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >So, if we have a vulnerability in our system, but nobody
+                    wants to abuse it, then we don&rsquo;t need to patch it,
+                    right?</span
+                >
+            </li>
+            <li class="c5 li-bullet-0"><span class="c17 c62">WRONG</span></li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">There will always be threats.</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">There will always be vulnerabilities.</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >So as long as we have assets, there will always be
+                    risks.</span
+                >
+            </li>
+        </ul>
+        <p class="c26 c23"><span class="c0"></span></p>
+        <ul class="c3 lst-kix_fwv93ool6lwu-0">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >What happens when a vulnerability exists?</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">It has a lifetime before it is patched:</span>
+            </li>
+        </ul>
+        <ol class="c3 lst-kix_1h0vsvibfxse-0 start" start="1">
+            <li class="c2 li-bullet-0">
+                <span class="c0"
+                    >Software released from a vendor (with the unknown
+                    vulnerability)</span
+                >
+            </li>
+            <li class="c2 li-bullet-0">
+                <span>Vulnerability discovered by an attacker and </span
+                ><span class="c17">exploit </span
+                ><span class="c0">is released</span>
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c0">Vulnerability discovered by the vendor</span>
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c0"
+                    >Public dissemination of the vulnerability</span
+                >
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c0">Antiviruses start revealing the exploit</span>
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c0">Patch released by the vendor</span>
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c0"
+                    >Exploit mitigation deployed on all affected systems</span
+                >
+            </li>
+        </ol>
+        <ul class="c3 lst-kix_m9aq1rx5fxun-0 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0">Here is a cool timeline:</span>
+            </li>
+        </ul>
+        <p class="c22">
+            <span
+                style="
+                    overflow: hidden;
+                    display: inline-block;
+                    margin: 0px 0px;
+                    border: 0px solid #000000;
+                    transform: rotate(0rad) translateZ(0px);
+                    -webkit-transform: rotate(0rad) translateZ(0px);
+                    width: 502.5px;
+                    height: 222.03px;
+                "
+                ><img
+                    alt=""
+                    src="assets/software-security/image7.png"
+                    style="
+                        width: 502.5px;
+                        height: 226.5px;
+                        margin-left: 0px;
+                        margin-top: 0px;
+                        transform: rotate(0rad) translateZ(0px);
+                        -webkit-transform: rotate(0rad) translateZ(0px);
+                    "
+                    title=""
+            /></span>
+        </p>
+        <ul class="c3 lst-kix_fchb40x7pju1-0 start">
+            <li class="c5 li-bullet-0">
+                <span class="c17">Zero-day attacks</span
+                ><span class="c0"
+                    >&nbsp;are exploitations of the vulnerability before it has
+                    been disclosed to the public. Nobody notices these.</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c17">Follow-on attacks</span
+                ><span class="c0"
+                    >&nbsp;are exploitations of the vulnerability after it has
+                    been disclosed to the public, and before it has been
+                    patched.</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span>The </span><span class="c17">window of exposure</span
+                ><span class="c0"
+                    >&nbsp;is the range of time in which the vulnerability can
+                    be exploited.</span
+                >
+            </li>
+        </ul>
+        <p class="c26 c23"><span class="c0"></span></p>
+        <ul class="c3 lst-kix_fchb40x7pju1-0">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >Here is a graph showing how much a security expert could
+                    earn by finding exploits in the following systems:</span
+                >
+            </li>
+        </ul>
+        <p class="c30">
+            <span
+                style="
+                    overflow: hidden;
+                    display: inline-block;
+                    margin: 0px 0px;
+                    border: 0px solid #000000;
+                    transform: rotate(0rad) translateZ(0px);
+                    -webkit-transform: rotate(0rad) translateZ(0px);
+                    width: 601.7px;
+                    height: 404px;
+                "
+                ><img
+                    alt=""
+                    src="assets/software-security/image4.png"
+                    style="
+                        width: 601.7px;
+                        height: 404px;
+                        margin-left: 0px;
+                        margin-top: 0px;
+                        transform: rotate(0rad) translateZ(0px);
+                        -webkit-transform: rotate(0rad) translateZ(0px);
+                    "
+                    title=""
+            /></span>
+        </p>
+        <ul class="c3 lst-kix_de8kyixiasdr-0 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >Alright... that&rsquo;s really hard to see, but
+                    here&rsquo;s the ones the slides mention:</span
+                >
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_de8kyixiasdr-1 start">
+            <li class="c2 li-bullet-0">
+                <span class="c0"
+                    >Wordpress&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&pound;5,000</span
+                >
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c0"
+                    >Flash&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&pound;50,000</span
+                >
+            </li>
+            <li class="c2 li-bullet-0">
+                <span
+                    >Android&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&pound;100,</span
+                ><span>00</span><span class="c0">0</span>
+            </li>
+            <li class="c2 li-bullet-0">
+                <span
+                    >Apple
+                    iOS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&pound;500,000</span
+                >
+            </li>
+        </ul>
+        <h2 class="c39" id="h.jskd5zdotn7o">
+            <span class="c40">CIA Triad</span>
+        </h2>
+        <ul class="c3 lst-kix_xsfcu38keuws-0 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >Each vulnerability can harm one or more CIA
+                    properties.</span
+                >
+            </li>
+            <li class="c5 li-bullet-0"><span class="c0">Those are:</span></li>
+        </ul>
+        <ul class="c3 lst-kix_xsfcu38keuws-1 start">
+            <li class="c2 li-bullet-0">
+                <span class="c17">Confidentiality </span
+                ><span class="c21">(exposure of customer / company data)</span>
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c17">Integrity </span
+                ><span class="c21">(data deletion / modification)</span>
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c17">Availability </span
+                ><span class="c21"
+                    >(IT systems becoming inaccessible / taken down)</span
+                >
+            </li>
+        </ul>
+        <p class="c22">
+            <span
+                style="
+                    overflow: hidden;
+                    display: inline-block;
+                    margin: 0px 0px;
+                    border: 0px solid #000000;
+                    transform: rotate(0rad) translateZ(0px);
+                    -webkit-transform: rotate(0rad) translateZ(0px);
+                    width: 141.44px;
+                    height: 140.31px;
+                "
+                ><img
+                    alt=""
+                    src="assets/software-security/image18.png"
+                    style="
+                        width: 141.44px;
+                        height: 140.31px;
+                        margin-left: 0px;
+                        margin-top: 0px;
+                        transform: rotate(0rad) translateZ(0px);
+                        -webkit-transform: rotate(0rad) translateZ(0px);
+                    "
+                    title=""
+            /></span>
+        </p>
+        <h2 class="c39" id="h.sytln1kma4gg">
+            <span class="c40">CVE / CVSS / CWE</span>
+        </h2>
+        <ul class="c3 lst-kix_twpr6nq6cj5j-0 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >How do we catalogue these vulnerabilities?</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >We could build a unique tuple for each vulnerability, and
+                    then store them into an archive.</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">The tuple structure can look like this:</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_twpr6nq6cj5j-1 start">
+            <li class="c2 li-bullet-0">
+                <span class="c6"
+                    >(id, type, attack vector, threat, exploit)</span
+                >
+            </li>
+        </ul>
+        <p class="c23 c26"><span class="c0"></span></p>
+        <ul class="c3 lst-kix_twpr6nq6cj5j-0">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >That&rsquo;s alright, but it&rsquo;s a bit crap.</span
+                >
+            </li>
+            <li class="c5 li-bullet-0"><span class="c0">Why?</span></li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >We could accidentally store the same vulnerability multiple
+                    times.</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >In fact, the Tower of Babel vulnerability has been
+                    classified 12 times!</span
+                >
+            </li>
+        </ul>
+        <p class="c26 c23"><span class="c0"></span></p>
+        <ul class="c3 lst-kix_twpr6nq6cj5j-0">
+            <li class="c5 li-bullet-0">
+                <span>Let&rsquo;s look at the </span
+                ><span class="c10 c17 c38"
+                    ><a
+                        class="c1"
+                        href="https://www.google.com/url?q=https://cve.mitre.org/&amp;sa=D&amp;source=editors&amp;ust=1623791048595000&amp;usg=AOvVaw3N8omTXbt56PAomJijdoIC"
+                        >Common Vulnerabilities and Exposures (CVE)</a
+                    ></span
+                ><span class="c0">&nbsp;standard.</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">All the vulnerabilities in CVE:</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_twpr6nq6cj5j-1 start">
+            <li class="c2 li-bullet-0">
+                <span class="c0">Violate at least one CIA property.</span>
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c0"
+                    >Are identified by a unique string: CVE-year-number</span
+                >
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c0">Are described with a page containing:</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_twpr6nq6cj5j-2 start">
+            <li class="c19 li-bullet-0"><span class="c0">Description</span></li>
+            <li class="c19 li-bullet-0">
+                <span class="c0">URL to a detailed page (references)</span>
+            </li>
+            <li class="c19 li-bullet-0">
+                <span class="c0">Date of creation</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_twpr6nq6cj5j-0">
+            <li class="c5 li-bullet-0">
+                <span class="c10 c38"
+                    ><a
+                        class="c1"
+                        href="https://www.google.com/url?q=https://us-cert.cisa.gov/ncas/alerts/TA14-098A&amp;sa=D&amp;source=editors&amp;ust=1623791048596000&amp;usg=AOvVaw3315kIk3OfLq1nO1czbTB9"
+                        >Here&rsquo;s a description page for Heartbleed
+                        (CVE-2014-0160).</a
+                    ></span
+                >
+            </li>
+        </ul>
+        <p class="c26 c23"><span class="c0"></span></p>
+        <ul class="c3 lst-kix_twpr6nq6cj5j-0">
+            <li class="c5 li-bullet-0">
+                <span>Now, let&rsquo;s look at the </span
+                ><span class="c10 c17 c38"
+                    ><a
+                        class="c1"
+                        href="https://www.google.com/url?q=https://nvd.nist.gov/vuln-metrics/cvss&amp;sa=D&amp;source=editors&amp;ust=1623791048596000&amp;usg=AOvVaw2j6K7vUoKw43Y2OxXoQrwN"
+                        >Common Vulnerability Scoring System (CVSS)</a
+                    ></span
+                ><span class="c0">.</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >It&rsquo;s a free and open industry standard for scoring
+                    vulnerabilities on a scale of 1 to 10.</span
+                >
+            </li>
+        </ul>
+        <p class="c30 c23"><span class="c0"></span></p>
+        <a id="t.ac6e8d0dd4bdb9374293a0be6d6ce2bade2b7c11"></a><a id="t.3"></a>
+        <table class="c55">
+            <tbody>
+                <tr class="c13">
+                    <td class="c14 c52" colspan="1" rowspan="1">
+                        <p class="c16"><span class="c17 c51">Rating</span></p>
+                    </td>
+                    <td class="c50 c52" colspan="1" rowspan="1">
+                        <p class="c16">
+                            <span class="c51 c17">CVSS Score</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="c13">
+                    <td class="c14 c58" colspan="1" rowspan="1">
+                        <p class="c16"><span class="c7">None</span></p>
+                    </td>
+                    <td class="c44" colspan="1" rowspan="1">
+                        <p class="c16"><span class="c0">0.0</span></p>
+                    </td>
+                </tr>
+                <tr class="c13">
+                    <td class="c14" colspan="1" rowspan="1">
+                        <p class="c16"><span class="c7">Low</span></p>
+                    </td>
+                    <td class="c50" colspan="1" rowspan="1">
+                        <p class="c16"><span class="c0">0.1 - 3.9</span></p>
+                    </td>
+                </tr>
+                <tr class="c13">
+                    <td class="c14 c58" colspan="1" rowspan="1">
+                        <p class="c16"><span class="c7">Medium</span></p>
+                    </td>
+                    <td class="c44" colspan="1" rowspan="1">
+                        <p class="c16"><span class="c0">4.0 - 6.9</span></p>
+                    </td>
+                </tr>
+                <tr class="c13">
+                    <td class="c14" colspan="1" rowspan="1">
+                        <p class="c16"><span class="c7">High</span></p>
+                    </td>
+                    <td class="c50" colspan="1" rowspan="1">
+                        <p class="c16"><span class="c0">7.0 - 8.9</span></p>
+                    </td>
+                </tr>
+                <tr class="c13">
+                    <td class="c14 c58" colspan="1" rowspan="1">
+                        <p class="c16"><span class="c7">Critical</span></p>
+                    </td>
+                    <td class="c44" colspan="1" rowspan="1">
+                        <p class="c16"><span class="c0">9.0 - 10.0</span></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="c30 c23"><span class="c0"></span></p>
+        <ul class="c3 lst-kix_80a5z5i5o0q0-0 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >Given a vulnerability, how do we calculate its CVSS
+                    score?</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >There are a number of factors that go into that.</span
+                >
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_80a5z5i5o0q0-1 start">
+            <li class="c2 li-bullet-0"><span class="c7">Base Metrics</span></li>
+        </ul>
+        <ul class="c3 lst-kix_80a5z5i5o0q0-2 start">
+            <li class="c19 li-bullet-0">
+                <span class="c0">Is it easy to exploit?</span>
+            </li>
+            <li class="c19 li-bullet-0"><span>What is the impact?</span></li>
+        </ul>
+        <ul class="c3 lst-kix_80a5z5i5o0q0-1">
+            <li class="c2 li-bullet-0">
+                <span class="c7">Temporal Metrics</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_80a5z5i5o0q0-2 start">
+            <li class="c19 li-bullet-0">
+                <span class="c0">Is a patch available?</span>
+            </li>
+            <li class="c19 li-bullet-0">
+                <span>Is an exploit available?</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_80a5z5i5o0q0-1">
+            <li class="c2 li-bullet-0">
+                <span class="c7">Environmental Metrics</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_80a5z5i5o0q0-2 start">
+            <li class="c19 li-bullet-0">
+                <span class="c0">What are the consequences on safety?</span>
+            </li>
+            <li class="c19 li-bullet-0">
+                <span class="c0">How many systems are vulnerable?</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_80a5z5i5o0q0-0">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >The CVSS base score of Heartbleed is 6.4.</span
+                >
+            </li>
+        </ul>
+        <p class="c22">
+            <span
+                style="
+                    overflow: hidden;
+                    display: inline-block;
+                    margin: 0px 0px;
+                    border: 0px solid #000000;
+                    transform: rotate(0rad) translateZ(0px);
+                    -webkit-transform: rotate(0rad) translateZ(0px);
+                    width: 357.06px;
+                    height: 199.5px;
+                "
+                ><img
+                    alt=""
+                    src="assets/software-security/image5.png"
+                    style="
+                        width: 357.06px;
+                        height: 199.5px;
+                        margin-left: 0px;
+                        margin-top: 0px;
+                        transform: rotate(0rad) translateZ(0px);
+                        -webkit-transform: rotate(0rad) translateZ(0px);
+                    "
+                    title=""
+            /></span>
+        </p>
+        <p class="c30 c23"><span class="c0"></span></p>
+        <ul class="c3 lst-kix_d1dgw1ko95yp-0 start">
+            <li class="c5 li-bullet-0">
+                <span>Lastly, let&rsquo;s move on to the </span
+                ><span class="c10 c17 c38"
+                    ><a
+                        class="c1"
+                        href="https://www.google.com/url?q=https://cwe.mitre.org/&amp;sa=D&amp;source=editors&amp;ust=1623791048601000&amp;usg=AOvVaw0HLqMbb6FSkrtpGz8QqvKm"
+                        >Common Weakness Enumeration (CWE)</a
+                    ></span
+                ><span class="c0">.</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >We&rsquo;ve just been cataloguing vulnerabilities.</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span>CWE is used for cataloguing </span
+                ><span class="c17">weaknesses</span
+                ><span class="c0">&nbsp;and related scores.</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c10 c38"
+                    ><a
+                        class="c1"
+                        href="https://www.google.com/url?q=https://cwe.mitre.org/data/definitions/121.html&amp;sa=D&amp;source=editors&amp;ust=1623791048602000&amp;usg=AOvVaw1ugNBPuqffoG87S0RbkvY6"
+                        >Here is the page detailing Stack-based Buffer
+                        Overflow.</a
+                    ></span
+                >
+            </li>
+        </ul>
+        <p class="c26 c23"><span class="c0"></span></p>
+        <ul class="c3 lst-kix_d1dgw1ko95yp-0">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >What&rsquo;s the difference between a weakness and a
+                    vulnerability?</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">A weakness can lead to a vulnerability.</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >A weakness describes something that could go wrong with
+                    software. Once you write a program that has that weakness,
+                    and the software can be exploited by some attacker because
+                    of that weakness, you&rsquo;ve now created a
+                    vulnerability.</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >You can think of a vulnerability as an
+                    &ldquo;instantiation&rdquo; of a weakness.</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c10 c38"
+                    ><a
+                        class="c1"
+                        href="https://www.google.com/url?q=https://security.stackexchange.com/questions/192080/difference-between-weakness-and-vulnerability&amp;sa=D&amp;source=editors&amp;ust=1623791048603000&amp;usg=AOvVaw2cUcD0jzBYdPDExz73jj7w"
+                        >If you still don&rsquo;t get it, Tom K. explains this
+                        pretty well.</a
+                    ></span
+                >
+            </li>
+        </ul>
+        <h1 class="c24" id="h.4gfhskll75bo">
+            <span class="c47">Low-Level Programming</span>
+        </h1>
+        <ul class="c3 lst-kix_6wqzb0awpsiq-0 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0">Have you ever learned C?</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span>If not, </span
+                ><span class="c10 c38"
+                    ><a
+                        class="c1"
+                        href="https://www.google.com/url?q=https://www.tutorialspoint.com/cprogramming/index.htm&amp;sa=D&amp;source=editors&amp;ust=1623791048603000&amp;usg=AOvVaw1P6EjvSvY3OkbPvfoykSWE"
+                        >check it out here</a
+                    ></span
+                ><span class="c0">.</span>
+            </li>
+        </ul>
+        <p class="c26 c23"><span class="c0"></span></p>
+        <ul class="c3 lst-kix_6wqzb0awpsiq-0">
+            <li class="c5 li-bullet-0">
+                <span class="c0">In C, we have pointers.</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >Pointers are variables that &lsquo;point&rsquo; to a
+                    location in memory.</span
+                >
+            </li>
+        </ul>
+        <p class="c26 c23"><span class="c0"></span></p>
+        <ul class="c3 lst-kix_6wqzb0awpsiq-0">
+            <li class="c5 li-bullet-0">
+                <span class="c0">Arrays in C are really just pointers.</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_6wqzb0awpsiq-1 start">
+            <li class="c2 li-bullet-0">
+                <span class="c0"
+                    >arr[5] &larr; depends on the size of the type of
+                    array</span
+                >
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c0">*(arr + (sizeof arr type) * 5)</span>
+            </li>
+        </ul>
+        <h1 class="c24" id="h.xa6ttd5xg0h2">
+            <span class="c47">Memory Errors</span>
+        </h1>
+        <ul class="c3 lst-kix_160isjtmnq04-0 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >C has two areas of memory: the stack and the heap.</span
+                >
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_160isjtmnq04-1 start">
+            <li class="c2 li-bullet-0">
+                <span class="c0"
+                    >The stack is where the function calls, arguments, and local
+                    variables are stored.</span
+                >
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c0"
+                    >The heap is where all dynamic memory is stored
+                    (malloc).</span
+                >
+            </li>
+        </ul>
+        <p class="c26 c23"><span class="c0"></span></p>
+        <ul class="c3 lst-kix_160isjtmnq04-0">
+            <li class="c5 li-bullet-0">
+                <span class="c0">Consider the following program:</span>
+            </li>
+        </ul>
+        <a id="t.85cfe43e3b94f80c652f86cdd8804d47ec0b6ce2"></a><a id="t.4"></a>
+        <table class="c43">
+            <tbody>
+                <tr class="c13">
+                    <td class="c9" colspan="1" rowspan="1">
+                        <p class="c60">
+                            <span class="c29">#include &lt;stdio.h&gt;</span
+                            ><span class="c41"><br /><br /></span
+                            ><span class="c33">int</span
+                            ><span class="c41">&nbsp;main</span
+                            ><span class="c20">(</span
+                            ><span class="c33">int</span
+                            ><span class="c20">&nbsp;argc, </span
+                            ><span class="c33">char</span
+                            ><span class="c20">** argv)</span
+                            ><span class="c41"
+                                ><br />{<br />
+                                &nbsp;</span
+                            ><span class="c33">char</span
+                            ><span class="c41">&nbsp;buffer[</span
+                            ><span class="c37">500</span
+                            ><span class="c41"
+                                >];<br />
+                                &nbsp;</span
+                            ><span class="c46">strcpy</span
+                            ><span class="c41">(buffer, argv[</span
+                            ><span class="c37">1</span
+                            ><span class="c41"
+                                >]);<br />
+                                &nbsp;</span
+                            ><span class="c33">return</span
+                            ><span class="c41">&nbsp;</span
+                            ><span class="c37">0</span
+                            ><span class="c41">;<br />}</span>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="c30 c23"><span class="c0"></span></p>
+        <ul class="c3 lst-kix_10wqme5k4bo7-0 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >What if we were to pipe in an argument that is more than
+                    500 characters?</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >C wouldn&rsquo;t crash; it has no validation for such
+                    things.</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >Instead, it would overwrite bits of the stack that
+                    weren&rsquo;t meant to be overwritten...</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">... such as the return pointer.</span>
+            </li>
+        </ul>
+        <p class="c22">
+            <span
+                style="
+                    overflow: hidden;
+                    display: inline-block;
+                    margin: 0px 0px;
+                    border: 0px solid #000000;
+                    transform: rotate(0rad) translateZ(0px);
+                    -webkit-transform: rotate(0rad) translateZ(0px);
+                    width: 601.7px;
+                    height: 350.67px;
+                "
+                ><img
+                    alt=""
+                    src="assets/software-security/image13.png"
+                    style="
+                        width: 601.7px;
+                        height: 350.67px;
+                        margin-left: 0px;
+                        margin-top: 0px;
+                        transform: rotate(0rad) translateZ(0px);
+                        -webkit-transform: rotate(0rad) translateZ(0px);
+                    "
+                    title=""
+            /></span>
+        </p>
+        <p class="c30 c23"><span class="c0"></span></p>
+        <ul class="c3 lst-kix_7yd2e7vmhyah-0 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >If we overwrite that, we can make the main function return
+                    to any malicious code we want.</span
+                >
+            </li>
+        </ul>
+        <h1 class="c24" id="h.5c401vlhp5oy">
+            <span class="c47">Assembly</span>
+        </h1>
+        <ul class="c3 lst-kix_tva0s5xw19q5-0 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0">You can transfer data from:</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_tva0s5xw19q5-1 start">
+            <li class="c2 li-bullet-0">
+                <span class="c0">Memory to registers</span>
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c0">Registers to registers</span>
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c0">Registers to memory</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_tva0s5xw19q5-0">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >But not memory to memory, because computers don&rsquo;t
+                    have the hardware to do that.</span
+                >
+            </li>
+        </ul>
+        <p class="c26 c23"><span class="c0"></span></p>
+        <ul class="c3 lst-kix_tva0s5xw19q5-0">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >Relative addressing, index is scaled by square number 1 2 4
+                    8 16</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >We do this because it&rsquo;s fast; bitwise shift, hardware
+                    operation</span
+                >
+            </li>
+        </ul>
+        <h1 class="c24" id="h.joaalawoh8pb">
+            <span class="c47">Malware</span>
+        </h1>
+        <ul class="c3 lst-kix_w6seyjadpvja-0 start">
+            <li class="c5 li-bullet-0"><span class="c0">Malware bad</span></li>
+            <li class="c5 li-bullet-0">
+                <span class="c17">Malware</span
+                ><span
+                    >: Malicious computer software that interferes with normal
+                    computer functions or sends personal data about the user to
+                    unauthorized parties over the internet [</span
+                ><span class="c10 c38"
+                    ><a
+                        class="c1"
+                        href="https://www.google.com/url?q=https://www.thefreedictionary.com/malware&amp;sa=D&amp;source=editors&amp;ust=1623791048609000&amp;usg=AOvVaw3WHmA9aWyQ98tzsCAnI2kg"
+                        >source</a
+                    ></span
+                ><span class="c0">].</span>
+            </li>
+        </ul>
+        <h2 class="c39" id="h.k6r11uhln00a">
+            <span class="c40">About Malware</span>
+        </h2>
+        <ul class="c3 lst-kix_ewqvb5y7tx9h-0 start">
+            <li class="c5 li-bullet-0"><span class="c0">Types:</span></li>
+        </ul>
+        <ul class="c3 lst-kix_ewqvb5y7tx9h-1 start">
+            <li class="c2 li-bullet-0"><span class="c0">Target:</span></li>
+        </ul>
+        <ul class="c3 lst-kix_ewqvb5y7tx9h-2 start">
+            <li class="c19 li-bullet-0">
+                <span class="c0">Mass (lots of people)</span>
+            </li>
+            <li class="c19 li-bullet-0">
+                <span class="c0">Specific (a few people)</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_ewqvb5y7tx9h-1">
+            <li class="c2 li-bullet-0"><span class="c0">Forms:</span></li>
+        </ul>
+        <ul class="c3 lst-kix_ewqvb5y7tx9h-2 start">
+            <li class="c19 li-bullet-0">
+                <span class="c0"
+                    >Trojan horse (pretends to be good but isn&rsquo;t)</span
+                >
+            </li>
+            <li class="c19 li-bullet-0">
+                <span class="c0">Virus (spreading by host file)</span>
+            </li>
+            <li class="c19 li-bullet-0">
+                <span class="c0">Worm (spreading by vulnerability)</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_ewqvb5y7tx9h-1">
+            <li class="c2 li-bullet-0">
+                <span class="c0">Characteristics:</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_ewqvb5y7tx9h-2 start">
+            <li class="c19 li-bullet-0">
+                <span class="c0"
+                    >Information stealing (keyloggers, sniffers)</span
+                >
+            </li>
+            <li class="c19 li-bullet-0">
+                <span class="c0"
+                    >Remote access (backdoor, accessing your computer via remote
+                    shell)</span
+                >
+            </li>
+            <li class="c19 li-bullet-0">
+                <span class="c0"
+                    >Ransomware (pay us bitcoin and we will decrypt your
+                    files)</span
+                >
+            </li>
+            <li class="c19 li-bullet-0">
+                <span class="c0">Rootkit (hooking into OS system calls)</span>
+            </li>
+            <li class="c19 li-bullet-0">
+                <span class="c0"
+                    >Scareware (your computer has child porn (it doesn&rsquo;t),
+                    pay us or you&rsquo;ll go to jail!!!!)</span
+                >
+            </li>
+            <li class="c19 li-bullet-0">
+                <span class="c0"
+                    >Downloader (download other malware and execute it)</span
+                >
+            </li>
+            <li class="c19 li-bullet-0">
+                <span class="c0">Launcher (launch other malware)</span>
+            </li>
+        </ul>
+        <h2 class="c39" id="h.ru1w07u4uojr">
+            <span class="c40">Common Techniques</span>
+        </h2>
+        <h3 class="c25" id="h.n1ezw51ue1ql">
+            <span class="c27">Persistence</span>
+        </h3>
+        <ul class="c3 lst-kix_u8ykwegfjjbe-0 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >How can they make sure to load each time?</span
+                >
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_u8ykwegfjjbe-1 start">
+            <li class="c2 li-bullet-0"><span class="c0">Logon</span></li>
+            <li class="c2 li-bullet-0">
+                <span class="c0">Explorer hooks</span>
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c0">Scheduled tasks</span>
+            </li>
+            <li class="c2 li-bullet-0"><span class="c0">Services</span></li>
+            <li class="c2 li-bullet-0"><span class="c0">Drivers</span></li>
+            <li class="c2 li-bullet-0"><span class="c0">Boot execute</span></li>
+            <li class="c2 li-bullet-0">
+                <span class="c0"
+                    >AppInit (DLL loaded into every application that
+                    starts)</span
+                >
+            </li>
+        </ul>
+        <h3 class="c25" id="h.2s60qln4xypr">
+            <span class="c27">Stealth</span>
+        </h3>
+        <ul class="c3 lst-kix_z9qx9c8ocf1y-0 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0">How can they hide themselves?</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_z9qx9c8ocf1y-1 start">
+            <li class="c2 li-bullet-0">
+                <span class="c0">Camouflage as real files</span>
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c0">Pretend to be Microsoft</span>
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c0">Inject into other processes</span>
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c0">Replace legitimate files</span>
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c0">Hide from OS (using rootkit)</span>
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c0"
+                    >Replace things that don&rsquo;t get used often</span
+                >
+            </li>
+        </ul>
+        <h3 class="c25" id="h.t7urxezb9vbf">
+            <span class="c27">Packing and Obfuscation</span>
+        </h3>
+        <ul class="c3 lst-kix_dkp3p3lijjbc-0 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0">Pack malware inside a wrapper</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >When you try to inspect application, you only see
+                    wrapper</span
+                >
+            </li>
+        </ul>
+        <h3 class="c25" id="h.a68huvw7sluf">
+            <span class="c27">Anti-Analysis</span>
+        </h3>
+        <ul class="c3 lst-kix_met8vjw3zj2x-0 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >Some malware can detect if they&rsquo;re in VMs by looking
+                    at:</span
+                >
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_met8vjw3zj2x-1 start">
+            <li class="c2 li-bullet-0"><span class="c0">Drivers</span></li>
+            <li class="c2 li-bullet-0">
+                <span class="c0">Virtualized devices</span>
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c0">Virtualisation support software</span>
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c0">Analysis tools</span>
+            </li>
+            <li class="c2 li-bullet-0"><span class="c0">Networking</span></li>
+        </ul>
+        <h2 class="c39" id="h.ea4hzvt2gf38">
+            <span class="c40">Basic Static Analysis</span>
+        </h2>
+        <ul class="c3 lst-kix_487vyjl1px5j-0 start">
+            <li class="c5 li-bullet-0">
+                <span class="c17">Portable Executable (PE)</span
+                ><span class="c0"
+                    >: file format used by Windows executables</span
+                >
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_487vyjl1px5j-1 start">
+            <li class="c2 li-bullet-0">
+                <span class="c0"
+                    >Header: stores info about library dependencies</span
+                >
+            </li>
+            <li class="c2 li-bullet-0"><span class="c0">Sections:</span></li>
+        </ul>
+        <ul class="c3 lst-kix_487vyjl1px5j-2 start">
+            <li class="c19 li-bullet-0">
+                <span class="c0">.text - executable code</span>
+            </li>
+            <li class="c19 li-bullet-0">
+                <span class="c0"
+                    >.rdata - read-only data globally accessible in
+                    program</span
+                >
+            </li>
+            <li class="c19 li-bullet-0">
+                <span class="c0"
+                    >.data - global data accessed throughout program</span
+                >
+            </li>
+            <li class="c19 li-bullet-0">
+                <span class="c0">.rsrc - resources needed by program</span>
+            </li>
+        </ul>
+        <h2 class="c39" id="h.p8ar9kmo50at">
+            <span class="c40">Advanced Static Analysis with IDA</span>
+        </h2>
+        <ul class="c3 lst-kix_hxxvlicdx7b3-0 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0">How to analyse PE?</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_hxxvlicdx7b3-1 start">
+            <li class="c2 li-bullet-0">
+                <span class="c0">Unpack using PEStudio</span>
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c0">Dependency Walker</span>
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c0"
+                    >&lsquo;strings&rsquo; to find all strings in program</span
+                >
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c0">Resource Hacker</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_hxxvlicdx7b3-0">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >Or you can use IDA, which lets you read assembly.</span
+                >
+            </li>
+        </ul>
+        <h1 class="c24" id="h.ck8ypjpw35b4">
+            <span class="c47">Introduction to Risk Analysis</span>
+        </h1>
+        <ul class="c3 lst-kix_f5xbjdkui7c1-0 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0">three pillars of software sec:</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_f5xbjdkui7c1-1 start">
+            <li class="c2 li-bullet-0">
+                <span class="c0">risk management framework</span>
+            </li>
+            <li class="c2 li-bullet-0"><span class="c0">touchpoints</span></li>
+            <li class="c2 li-bullet-0"><span class="c0">knowledge</span></li>
+        </ul>
+        <p class="c30 c23"><span class="c0"></span></p>
+        <ul class="c3 lst-kix_8i8kajdyp5jh-0 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0">10 steps to cyber security:</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_8i8kajdyp5jh-1 start">
+            <li class="c2 li-bullet-0">
+                <span class="c0">network security</span>
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c0">user education and awareness</span>
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c0">malware prevention</span>
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c0">removable media controls</span>
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c0">secure configuration</span>
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c0">managing user privileges</span>
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c0">incident management</span>
+            </li>
+            <li class="c2 li-bullet-0"><span class="c0">monitoring</span></li>
+            <li class="c2 li-bullet-0">
+                <span class="c0">home and mobile networking</span>
+            </li>
+        </ul>
+        <p class="c26 c23"><span class="c0"></span></p>
+        <ul class="c3 lst-kix_8i8kajdyp5jh-0">
+            <li class="c5 li-bullet-0">
+                <span class="c17">Risk Management</span
+                ><span class="c0"
+                    >: perform discrete risk analysis exercises to identify,
+                    track, and mitigate risks throughout SDLC</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c17">Risk Analysis</span
+                ><span class="c0"
+                    >: identifying and ranking risks at some stage of the
+                    SDLC</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c17">Risk Assessment</span
+                ><span class="c0">: identifying and evaluating risks</span>
+            </li>
+        </ul>
+        <p class="c22">
+            <span
+                style="
+                    overflow: hidden;
+                    display: inline-block;
+                    margin: 0px 0px;
+                    border: 0px solid #000000;
+                    transform: rotate(0rad) translateZ(0px);
+                    -webkit-transform: rotate(0rad) translateZ(0px);
+                    width: 322.35px;
+                    height: 377.5px;
+                "
+                ><img
+                    alt=""
+                    src="assets/software-security/image11.png"
+                    style="
+                        width: 322.35px;
+                        height: 377.5px;
+                        margin-left: 0px;
+                        margin-top: 0px;
+                        transform: rotate(0rad) translateZ(0px);
+                        -webkit-transform: rotate(0rad) translateZ(0px);
+                    "
+                    title=""
+            /></span>
+        </p>
+        <p class="c30 c23"><span class="c0"></span></p>
+        <ul class="c3 lst-kix_76op1862h39u-0 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0">As said before,</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_76op1862h39u-1 start">
+            <li class="c2 li-bullet-0">
+                <span class="c0">asset + vulnerability + threat = risk</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_76op1862h39u-0">
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >If security risk, then introduce security mechanisms.</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >Then we&rsquo;ll have a reduced risk level.</span
+                >
+            </li>
+        </ul>
+        <p class="c30 c23"><span class="c0"></span></p>
+        <ul class="c3 lst-kix_p2g7tu3e1m9b-0 start">
+            <li class="c5 li-bullet-0">
+                <span class="c17">Threat event</span
+                ><span
+                    >: the event in which the threat exploits the vulnerability
+                    and affects the asset
+                </span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c17">Likelihood</span
+                ><span class="c0"
+                    >: how likely the threat event is to happen</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c17">Impact</span
+                ><span class="c0">: how bad the threat event would be</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c17">Treatment</span
+                ><span class="c0">: action that mitigates the risk</span>
+            </li>
+        </ul>
+        <p class="c22">
+            <span
+                style="
+                    overflow: hidden;
+                    display: inline-block;
+                    margin: 0px 0px;
+                    border: 0px solid #000000;
+                    transform: rotate(0rad) translateZ(0px);
+                    -webkit-transform: rotate(0rad) translateZ(0px);
+                    width: 438.74px;
+                    height: 236.13px;
+                "
+                ><img
+                    alt=""
+                    src="assets/software-security/image10.png"
+                    style="
+                        width: 438.74px;
+                        height: 236.13px;
+                        margin-left: 0px;
+                        margin-top: 0px;
+                        transform: rotate(0rad) translateZ(0px);
+                        -webkit-transform: rotate(0rad) translateZ(0px);
+                    "
+                    title=""
+            /></span>
+        </p>
+        <ul class="c3 lst-kix_jcz4ucrcr7tk-0 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0">Risk analysis process:</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_jcz4ucrcr7tk-1 start">
+            <li class="c2 li-bullet-0">
+                <span class="c0">Step 1: Context Identification</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_jcz4ucrcr7tk-2 start">
+            <li class="c19 li-bullet-0">
+                <span class="c0">Characterize target of analysis</span>
+            </li>
+            <li class="c19 li-bullet-0">
+                <span class="c0">Identify and value assets</span>
+            </li>
+            <li class="c19 li-bullet-0">
+                <span class="c0">Define likelihood scale</span>
+            </li>
+            <li class="c19 li-bullet-0">
+                <span class="c0">Define consequence scale</span>
+            </li>
+            <li class="c19 li-bullet-0">
+                <span class="c0">Make risk evaluation matrix</span>
+            </li>
+            <li class="c19 li-bullet-0">
+                <span class="c0">Specify the risk evaluation criteria</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_jcz4ucrcr7tk-1">
+            <li class="c2 li-bullet-0">
+                <span class="c0">Step 2: Risk Identification</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_jcz4ucrcr7tk-2 start">
+            <li class="c19 li-bullet-0">
+                <span class="c0"
+                    >Identify threats to the assets through structured
+                    brainstorming</span
+                >
+            </li>
+            <li class="c19 li-bullet-0">
+                <span class="c0"
+                    >Identify vulnerabilities of assets (questionnaires and
+                    checklists)</span
+                >
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_jcz4ucrcr7tk-1">
+            <li class="c2 li-bullet-0">
+                <span class="c0">Step 3: Risk Estimation</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_jcz4ucrcr7tk-2 start">
+            <li class="c19 li-bullet-0">
+                <span class="c0">Determine the level of identified risks</span>
+            </li>
+            <li class="c19 li-bullet-0">
+                <span class="c0">For each threat event</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_jcz4ucrcr7tk-3 start">
+            <li class="c8 li-bullet-0">
+                <span class="c0">Assign a likelihood value</span>
+            </li>
+            <li class="c8 li-bullet-0">
+                <span class="c0">Assign an impact value</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_jcz4ucrcr7tk-1">
+            <li class="c2 li-bullet-0">
+                <span class="c0">Step 4: Risk Evaluation</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_jcz4ucrcr7tk-2 start">
+            <li class="c19 li-bullet-0">
+                <span class="c0">We can&rsquo;t eliminate all risks</span>
+            </li>
+            <li class="c19 li-bullet-0">
+                <span class="c0">Determine which risks need treatment</span>
+            </li>
+            <li class="c19 li-bullet-0">
+                <span class="c0"
+                    >Risk level is prioritized based on analysis of the
+                    likelihood and impact of a threat event</span
+                >
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_jcz4ucrcr7tk-3 start">
+            <li class="c8 li-bullet-0">
+                <span class="c0">Quantitative: loss of &pound;1M</span>
+            </li>
+            <li class="c8 li-bullet-0">
+                <span class="c0">Qualitative: high, medium, low</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_jcz4ucrcr7tk-2">
+            <li class="c19 li-bullet-0">
+                <span class="c0"
+                    >Map the risks into the risk evaluation matrix</span
+                >
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_jcz4ucrcr7tk-1">
+            <li class="c2 li-bullet-0">
+                <span class="c0">Step 5: Risk Treatment</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_jcz4ucrcr7tk-2 start">
+            <li class="c19 li-bullet-0">
+                <span class="c0">Four options:</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_jcz4ucrcr7tk-3 start">
+            <li class="c8 li-bullet-0"><span class="c0">Accept</span></li>
+            <li class="c8 li-bullet-0"><span class="c0">Treat</span></li>
+            <li class="c8 li-bullet-0">
+                <span class="c0">Avoid / Terminate</span>
+            </li>
+            <li class="c8 li-bullet-0"><span class="c0">Transfer</span></li>
+        </ul>
+        <ul class="c3 lst-kix_jcz4ucrcr7tk-2">
+            <li class="c19 li-bullet-0">
+                <span class="c0">Identify treatments for unaccepted risks</span>
+            </li>
+            <li class="c19 li-bullet-0">
+                <span class="c0"
+                    >Evaluate and prioritize different treatment</span
+                >
+            </li>
+        </ul>
+        <p class="c26 c23"><span class="c0"></span></p>
+        <ul class="c3 lst-kix_jcz4ucrcr7tk-0">
+            <li class="c5 li-bullet-0">
+                <span class="c0">Security analysis methods:</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_jcz4ucrcr7tk-1 start">
+            <li class="c2 li-bullet-0">
+                <span class="c0">International standards:</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_jcz4ucrcr7tk-2 start">
+            <li class="c19 li-bullet-0">
+                <span class="c0"
+                    >ISO 27001 (process) + ISO 27005 (treatments)</span
+                >
+            </li>
+            <li class="c19 li-bullet-0"><span class="c0">ISO 31000</span></li>
+            <li class="c19 li-bullet-0">
+                <span class="c0"
+                    >NIST SP 800-30 (process) + NIST SP 800-53
+                    (treatments)</span
+                >
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_jcz4ucrcr7tk-1">
+            <li class="c2 li-bullet-0">
+                <span class="c0">National standards:</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_jcz4ucrcr7tk-2 start">
+            <li class="c19 li-bullet-0">
+                <span class="c0">IT-Grundschutz (Germany)</span>
+            </li>
+            <li class="c19 li-bullet-0">
+                <span class="c0">Magerit (Spain)</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_jcz4ucrcr7tk-1">
+            <li class="c2 li-bullet-0">
+                <span class="c0">Standards-based:</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_jcz4ucrcr7tk-2 start">
+            <li class="c19 li-bullet-0"><span class="c0">OCTAVE</span></li>
+            <li class="c19 li-bullet-0"><span class="c0">CORAS</span></li>
+        </ul>
+        <h1 class="c24" id="h.rdb6g9rq2tpi">
+            <span class="c47"
+                >Eliciting Security Requirements with Misuse Cases</span
+            >
+        </h1>
+        <h2 class="c39" id="h.25tnzhbprpj6">
+            <span class="c40">Security Requirements</span>
+        </h2>
+        <ul class="c3 lst-kix_pf2zrestrfam-0 start">
+            <li class="c5 li-bullet-0">
+                <span class="c17">Security requirements</span
+                ><span>: what system should </span><span class="c10">not</span
+                ><span>&nbsp;</span><span class="c0">be able to do</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">security requirements elicitation:</span>
+            </li>
+        </ul>
+        <ol class="c3 lst-kix_efsqan9lw556-0 start" start="1">
+            <li class="c2 li-bullet-0">
+                <span class="c0">identify critical assets</span>
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c0">define security goals for assets</span>
+            </li>
+        </ol>
+        <ol class="c3 lst-kix_efsqan9lw556-1 start" start="1">
+            <li class="c19 li-bullet-0">
+                <span class="c17">confidentiality</span
+                ><span class="c0">: prevent unauthorized access</span>
+            </li>
+            <li class="c19 li-bullet-0">
+                <span class="c17">integrity</span
+                ><span class="c0">: prevent unauthorized modification</span>
+            </li>
+            <li class="c19 li-bullet-0">
+                <span class="c17">availability</span
+                ><span class="c0">: readiness of a correct service</span>
+            </li>
+            <li class="c19 li-bullet-0">
+                <span class="c17">accountability</span
+                ><span class="c0"
+                    >: ability to identify subjects for decisions and
+                    actions</span
+                >
+            </li>
+        </ol>
+        <ol class="c3 lst-kix_efsqan9lw556-0" start="3">
+            <li class="c2 li-bullet-0">
+                <span class="c0"
+                    >Identify threads to assess &rarr; misuse cases</span
+                >
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c0">identify and analyze the risks</span>
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c0"
+                    >define countermeasures aka security requirements &rarr;
+                    security cases</span
+                >
+            </li>
+        </ol>
+        <p class="c30 c23"><span class="c0"></span></p>
+        <ul class="c3 lst-kix_u17d3gwl3qnw-0 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0">functional vs security requirements:</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_u17d3gwl3qnw-1 start">
+            <li class="c2 li-bullet-0">
+                <span class="c0">functional requirement</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_u17d3gwl3qnw-2 start">
+            <li class="c19 li-bullet-0">
+                <span class="c0"
+                    >system must provide a function to retrieve personnel
+                    info</span
+                >
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_u17d3gwl3qnw-1">
+            <li class="c2 li-bullet-0"><span class="c0">asset</span></li>
+        </ul>
+        <ul class="c3 lst-kix_u17d3gwl3qnw-2 start">
+            <li class="c19 li-bullet-0">
+                <span class="c0">personnel info</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_u17d3gwl3qnw-1">
+            <li class="c2 li-bullet-0">
+                <span class="c0">security goal</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_u17d3gwl3qnw-2 start">
+            <li class="c19 li-bullet-0">
+                <span class="c0"
+                    >protect personnel info from confidentiality harm</span
+                >
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_u17d3gwl3qnw-1">
+            <li class="c2 li-bullet-0"><span class="c0">???</span></li>
+        </ul>
+        <p class="c30 c23"><span class="c0"></span></p>
+        <ul class="c3 lst-kix_iw1lo34gfw2k-0 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0">elicitation methods and techniques</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_iw1lo34gfw2k-1 start">
+            <li class="c2 li-bullet-0"><span class="c0">techniques</span></li>
+        </ul>
+        <ul class="c3 lst-kix_iw1lo34gfw2k-2 start">
+            <li class="c19 li-bullet-0">
+                <span class="c0">misuse / abuse cases</span>
+            </li>
+            <li class="c19 li-bullet-0">
+                <span class="c0">attack trees</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_iw1lo34gfw2k-1">
+            <li class="c2 li-bullet-0"><span class="c0">processes</span></li>
+        </ul>
+        <ul class="c3 lst-kix_iw1lo34gfw2k-2 start">
+            <li class="c19 li-bullet-0"><span class="c0">SQUARE</span></li>
+            <li class="c19 li-bullet-0"><span class="c0">???</span></li>
+        </ul>
+        <h2 class="c39" id="h.59q6qvfb1l4w">
+            <span class="c40">Misuse Cases</span>
+        </h2>
+        <ul class="c3 lst-kix_wztzg7h8qghi-0 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0">use case: what the program should allow</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >misuse case: what the program should not allow</span
+                >
+            </li>
+        </ul>
+        <p class="c26 c23"><span class="c0"></span></p>
+        <ul class="c3 lst-kix_wztzg7h8qghi-0">
+            <li class="c5 li-bullet-0">
+                <span class="c0">how to build misuse case:</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_wztzg7h8qghi-1 start">
+            <li class="c2 li-bullet-0">
+                <span class="c0">start from a normal use case model</span>
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c0">identify actors (attackers / misusers)</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_wztzg7h8qghi-2 start">
+            <li class="c19 li-bullet-0">
+                <span class="c0">what skills the attacker has?</span>
+            </li>
+            <li class="c19 li-bullet-0">
+                <span class="c0">what resources the attacker has?</span>
+            </li>
+            <li class="c19 li-bullet-0">
+                <span class="c0">what does the attacker want to achieve?</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_wztzg7h8qghi-1">
+            <li class="c2 li-bullet-0">
+                <span class="c0">identify misuse cases</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_wztzg7h8qghi-2 start">
+            <li class="c19 li-bullet-0">
+                <span class="c0">what can a bad guy do?</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_wztzg7h8qghi-1">
+            <li class="c2 li-bullet-0">
+                <span class="c0"
+                    >identify threaten relationships between use cases and
+                    misuse cases</span
+                >
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c0"
+                    >identify security use cases aka security requirements that
+                    mitigate these</span
+                >
+            </li>
+        </ul>
+        <p class="c26 c23"><span class="c0"></span></p>
+        <ul class="c3 lst-kix_wztzg7h8qghi-0">
+            <li class="c5 li-bullet-0">
+                <span class="c0">misuse case template:</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_wztzg7h8qghi-1 start">
+            <li class="c2 li-bullet-0">
+                <span class="c17">Name</span
+                ><span class="c0">: Obtain password</span>
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c17">Summary</span
+                ><span class="c0"
+                    >: hacker obtains and misuses user password</span
+                >
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c17">Basic path</span
+                ><span class="c0"
+                    >: hacks into network and uses packet sniffer to get
+                    usernames and password hashes</span
+                >
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c17">Alternative paths</span
+                ><span class="c0">: hacker has operator privileges</span>
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c17">Mitigation paths</span
+                ><span class="c0">: ???</span>
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c17">Extension points</span
+                ><span class="c0">: ???</span>
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c17">Triggers</span
+                ><span class="c0"
+                    >: (what triggers this use-case) always true</span
+                >
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c17">Preconditions</span
+                ><span class="c0"
+                    >: (conditions that must be true for the attack to be
+                    possible)</span
+                >
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_wztzg7h8qghi-2 start">
+            <li class="c19 li-bullet-0">
+                <span class="c0"
+                    >System has special user &lsquo;operator&rsquo; with
+                    extended authorities</span
+                >
+            </li>
+            <li class="c19 li-bullet-0">
+                <span class="c0"
+                    >The system allows operator to log in over network</span
+                >
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_wztzg7h8qghi-1">
+            <li class="c2 li-bullet-0">
+                <span class="c17">Assumptions</span><span class="c0">:</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_wztzg7h8qghi-2 start">
+            <li class="c19 li-bullet-0">
+                <span class="c0"
+                    >Operator uses network to log on to system as operator (for
+                    all paths)</span
+                >
+            </li>
+            <li class="c19 li-bullet-0">
+                <span class="c0">worst case threat:</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_wztzg7h8qghi-3 start">
+            <li class="c8 li-bullet-0">
+                <span class="c0"
+                    >hacker has operator authorities on the web app for an
+                    unlimited time, i.e. they are never caught</span
+                >
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_wztzg7h8qghi-1">
+            <li class="c2 li-bullet-0">
+                <span class="c17">Mitigation guarantee (postcondition)</span
+                ><span class="c0">: (what happens when you mitigate this)</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_wztzg7h8qghi-2 start">
+            <li class="c19 li-bullet-0">
+                <span class="c0"
+                    >hacker never gets operator authorities on web app</span
+                >
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_wztzg7h8qghi-1">
+            <li class="c2 li-bullet-0">
+                <span class="c17">Related business rules</span
+                ><span class="c0">:</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_wztzg7h8qghi-2 start">
+            <li class="c19 li-bullet-0">
+                <span class="c0"
+                    >The role of web app operator shall give full privileges on
+                    the web app, the web app computer and the associated local
+                    network host computers</span
+                >
+            </li>
+            <li class="c19 li-bullet-0">
+                <span class="c0"
+                    >Only the role of e-shop system operator shall give the
+                    privileges mentioned in br1</span
+                >
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_wztzg7h8qghi-1">
+            <li class="c2 li-bullet-0">
+                <span class="c17">Potential misuser profile</span
+                ><span class="c0">: (who will actually do this)</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_wztzg7h8qghi-2 start">
+            <li class="c19 li-bullet-0">
+                <span class="c0"
+                    >Highly skilled, potentially host admin with criminal
+                    intent</span
+                >
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_wztzg7h8qghi-1">
+            <li class="c2 li-bullet-0">
+                <span class="c17">Stakeholders and threats</span
+                ><span class="c0">: (who is affected by this attack)</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_wztzg7h8qghi-2 start">
+            <li class="c19 li-bullet-0">
+                <span class="c0"
+                    >company: reduced turnover if misuser uses operator access
+                    to sabotage system</span
+                >
+            </li>
+            <li class="c19 li-bullet-0">
+                <span class="c0"
+                    >customer: loss of privacy if misuser uses operator access
+                    to find out shopping habits</span
+                >
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_wztzg7h8qghi-1">
+            <li class="c2 li-bullet-0">
+                <span class="c17">Scope</span
+                ><span class="c0">: (how severe is this)</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_wztzg7h8qghi-2 start">
+            <li class="c19 li-bullet-0">
+                <span class="c0">entire business and business environment</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_wztzg7h8qghi-1">
+            <li class="c2 li-bullet-0">
+                <span class="c17">Abstraction level</span
+                ><span class="c0"
+                    >: (at what level does this attack occur)</span
+                >
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_wztzg7h8qghi-2 start">
+            <li class="c19 li-bullet-0">
+                <span class="c0">misuser goal</span>
+            </li>
+        </ul>
+        <h2 class="c39" id="h.kgyvdo5qbku">
+            <span class="c40">Attack Trees</span>
+        </h2>
+        <ul class="c3 lst-kix_pb2zhhjxonuc-0 start">
+            <li class="c5 li-bullet-0"><span class="c0">attack trees</span></li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >used for threat modelling, security requirements
+                    elicitation</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0"
+                    >focuses on attackers and different ways they attack
+                    systems</span
+                >
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">root: attack goal</span>
+            </li>
+            <li class="c5 li-bullet-0">
+                <span class="c0">two kinds of attack decomposition:</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_pb2zhhjxonuc-1 start">
+            <li class="c2 li-bullet-0">
+                <span class="c0">and - all subgoals must be fulfilled</span>
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c0"
+                    >or - at least one subgoal must be fulfilled</span
+                >
+            </li>
+        </ul>
+        <p class="c30">
+            <span
+                style="
+                    overflow: hidden;
+                    display: inline-block;
+                    margin: 0px 0px;
+                    border: 0px solid #000000;
+                    transform: rotate(0rad) translateZ(0px);
+                    -webkit-transform: rotate(0rad) translateZ(0px);
+                    width: 601.7px;
+                    height: 370.67px;
+                "
+                ><img
+                    alt=""
+                    src="assets/software-security/image16.png"
+                    style="
+                        width: 601.7px;
+                        height: 370.67px;
+                        margin-left: 0px;
+                        margin-top: 0px;
+                        transform: rotate(0rad) translateZ(0px);
+                        -webkit-transform: rotate(0rad) translateZ(0px);
+                    "
+                    title=""
+            /></span>
+        </p>
+        <ul class="c3 lst-kix_ualbk18hp3ix-0 start">
+            <li class="c5 li-bullet-0">
+                <span class="c0">building attack trees:</span>
+            </li>
+        </ul>
+        <ul class="c3 lst-kix_ualbk18hp3ix-1 start">
+            <li class="c2 li-bullet-0">
+                <span class="c0"
+                    >identify top level attacks against system</span
+                >
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c0"
+                    >brainstorm different ways attack can be achieved</span
+                >
+            </li>
+            <li class="c2 li-bullet-0">
+                <span class="c0"
+                    >specify children attacks recursively, until attack is so
+                    obvious it can&rsquo;t be decomposed anymore</span
+                >
+            </li>
+        </ul>
+        <p class="c30 c23"><span class="c0"></span></p>
+    </body>
+</html>
