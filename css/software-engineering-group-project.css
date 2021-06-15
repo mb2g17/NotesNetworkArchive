@@ -1,4 +1,5 @@
-@import url("https://themes.googleusercontent.com/fonts/css?kit=5Ost9CBnKE9VGuqkW_oyqTgk1XmFjI0iEdq0Bp5v3Ho");
+@import url("../fonts/consolas.css");
+@import url("../fonts/merriweather.css");
 .lst-kix_ys9xph76mp1q-0 > li:before {
     content: "-  ";
 }
