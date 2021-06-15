@@ -1,0 +1,2273 @@
+<html>
+    <head>
+        <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+        <link rel="stylesheet" href="css/cloud-application-development.css" />
+        <link rel="stylesheet" href="css/page.css" />
+    </head>
+    <body class="c45">
+        <p class="c1">
+            <span class="c40 c6 c42"
+                >COMP3207 - Cloud Application Development</span
+            >
+        </p>
+        <hr />
+        <p class="c1 c22"><span class="c5 c6"></span></p>
+        <p class="c1">
+            <span class="c6 c12 c40">Cloud Computing Overview</span>
+        </p>
+        <p class="c1 c22"><span class="c5 c6"></span></p>
+        <p class="c1">
+            <span class="c9">Cloud Computing:</span
+            ><span class="c5 c6"
+                >&nbsp;the delivery of on-demand system resources, particularly
+                data storage and computing power, without direct management by
+                the user<br
+            /></span>
+        </p>
+        <ul class="c0 lst-kix_b8sgq9793b8r-0 start">
+            <li class="c1 c11 li-bullet-0">
+                <span>large clouds often provide functions </span
+                ><span class="c7 c6 c19">distributed over several servers</span>
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span>clouds can belong to an </span
+                ><span class="c19 c7 c6">organisation or be public</span>
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span>cloud computing relies on the </span
+                ><span class="c7">sharing of resources</span
+                ><span class="c5 c6">&nbsp;to achieve coherence and scale</span>
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span>cloud computing reduces </span
+                ><span class="c19 c7 c6">infrastructure costs</span>
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span>cloud computing improves </span
+                ><span class="c7">speed, performance, and management</span
+                ><span class="c5 c6"><br /></span>
+            </li>
+        </ul>
+        <p class="c1">
+            <span>A </span><span class="c9">Cloud Service Provider</span
+            ><span
+                >&nbsp;is a third-party company offering a cloud-based platform,
+                infrastructure, application, or storage service. Examples of
+                CSPs are </span
+            ><span class="c2">Amazon Web Services (AWS), Microsoft Azure</span
+            ><span>, and</span
+            ><span class="c2">&nbsp;Google Cloud Platform</span
+            ><span class="c5 c6">.<br /></span>
+        </p>
+        <ul class="c0 lst-kix_nrvv5jgmwbal-0 start">
+            <li class="c1 c11 li-bullet-0">
+                <span class="c7">Cloud Providers</span
+                ><span class="c5 c6">&nbsp;need to:</span>
+            </li>
+        </ul>
+        <ul class="c0 lst-kix_nrvv5jgmwbal-1 start">
+            <li class="c1 c15 li-bullet-0">
+                <span class="c5 c6">enable self-service access</span>
+            </li>
+            <li class="c1 c15 li-bullet-0">
+                <span class="c5 c6"
+                    >manage the infrastructure the cloud runs on</span
+                >
+            </li>
+        </ul>
+        <ul class="c0 lst-kix_nrvv5jgmwbal-0">
+            <li class="c1 c11 li-bullet-0">
+                <span class="c7">The Cloud</span
+                ><span>&nbsp;needs to meet </span
+                ><span class="c7">requirements</span
+                ><span class="c5 c6">&nbsp;such as:</span>
+            </li>
+        </ul>
+        <ul class="c0 lst-kix_nrvv5jgmwbal-1 start">
+            <li class="c1 c15 li-bullet-0">
+                <span class="c5 c6">virtualisation</span>
+            </li>
+            <li class="c1 c15 li-bullet-0">
+                <span class="c5 c6">automation</span>
+            </li>
+            <li class="c1 c15 li-bullet-0">
+                <span class="c5 c6">standardisation</span>
+            </li>
+            <li class="c1 c15 li-bullet-0">
+                <span class="c5 c6">service management <br /></span>
+            </li>
+        </ul>
+        <a id="t.c57ac9af4054b155c4a2bf81ab460c027b079cc3"></a><a id="t.0"></a>
+        <table class="c21">
+            <tbody>
+                <tr class="c26">
+                    <td class="c23" colspan="1" rowspan="1">
+                        <p class="c1 c18">
+                            <span class="c19 c7 c6">Type</span>
+                        </p>
+                    </td>
+                    <td class="c14" colspan="1" rowspan="1">
+                        <p class="c1 c16">
+                            <span class="c19 c7 c6">Method</span>
+                        </p>
+                    </td>
+                    <td class="c30" colspan="1" rowspan="1">
+                        <p class="c1 c16">
+                            <span class="c19 c7 c6">Examples</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="c26">
+                    <td class="c23" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c5 c9">On-Premises</span></p>
+                    </td>
+                    <td class="c14" colspan="1" rowspan="1">
+                        <p class="c1">
+                            <span class="c5 c6">Data stored locally</span>
+                        </p>
+                    </td>
+                    <td class="c30" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c5 c6">Home PC</span></p>
+                    </td>
+                </tr>
+                <tr class="c37">
+                    <td class="c23" colspan="1" rowspan="1">
+                        <p class="c1">
+                            <span class="c5 c9"
+                                >IaaS (Infrastructure as a Service)</span
+                            >
+                        </p>
+                    </td>
+                    <td class="c14" colspan="1" rowspan="1">
+                        <p class="c1">
+                            <span>- </span><span>Allows </span
+                            ><span class="c2"
+                                >management of computers, networking, and
+                                storage over a network</span
+                            >
+                        </p>
+                        <p class="c1">
+                            <span>- </span
+                            ><span class="c5 c6"
+                                >Allows full system management</span
+                            >
+                        </p>
+                        <p class="c1">
+                            <span class="c5 c6"
+                                >- Allows low-level control</span
+                            >
+                        </p>
+                    </td>
+                    <td class="c30" colspan="1" rowspan="1">
+                        <p class="c1">
+                            <span class="c5 c6"
+                                >Amazon Cloud, Magento, VMware, VirtualBox</span
+                            >
+                        </p>
+                    </td>
+                </tr>
+                <tr class="c35">
+                    <td class="c23" colspan="1" rowspan="1">
+                        <p class="c1">
+                            <span class="c5 c9"
+                                >PaaS (Platform as a Service)</span
+                            >
+                        </p>
+                    </td>
+                    <td class="c14" colspan="1" rowspan="1">
+                        <p class="c1">
+                            <span>- </span><span>Provides </span
+                            ><span class="c2">software and applications</span
+                            ><span class="c5 c6">&nbsp;over the internet</span>
+                        </p>
+                        <p class="c1">
+                            <span class="c5 c6"
+                                >- Allows users to develop, run, and manage
+                                applications</span
+                            >
+                        </p>
+                        <p class="c1">
+                            <span class="c5 c6"
+                                >- Networks, servers, storage, and middleware
+                                are provided</span
+                            >
+                        </p>
+                    </td>
+                    <td class="c30" colspan="1" rowspan="1">
+                        <p class="c1">
+                            <span class="c5 c6"
+                                >Google App Engine, Windows Azure, SQL
+                                Azure</span
+                            >
+                        </p>
+                    </td>
+                </tr>
+                <tr class="c43">
+                    <td class="c23" colspan="1" rowspan="1">
+                        <p class="c1">
+                            <span class="c5 c9"
+                                >SaaS (Software as a Service)</span
+                            >
+                        </p>
+                    </td>
+                    <td class="c14" colspan="1" rowspan="1">
+                        <p class="c1">
+                            <span>- </span
+                            ><span>Utilises the internet to deliver </span
+                            ><span class="c2">applications</span
+                            ><span>, often runs through a</span
+                            ><span class="c2">&nbsp;web browser<br />- </span
+                            ><span class="c5 c6"
+                                >Managed from a central location</span
+                            >
+                        </p>
+                        <p class="c1">
+                            <span class="c5 c6"
+                                >- Hosted on a remote server</span
+                            >
+                        </p>
+                        <p class="c1">
+                            <span class="c5 c6"
+                                >- Accessible over the internet</span
+                            >
+                        </p>
+                        <p class="c1">
+                            <span class="c5 c6"
+                                >- User does not control hardware or
+                                software</span
+                            >
+                        </p>
+                    </td>
+                    <td class="c30" colspan="1" rowspan="1">
+                        <p class="c1">
+                            <span class="c5 c6"
+                                >Google Apps, Dropbox, Office 365</span
+                            >
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="c1 c27">
+            <span><br /><br /></span><span>&nbsp;</span
+            ><span
+                style="
+                    overflow: hidden;
+                    display: inline-block;
+                    margin: 0px 0px;
+                    border: 0px solid #000000;
+                    transform: rotate(0rad) translateZ(0px);
+                    -webkit-transform: rotate(0rad) translateZ(0px);
+                    width: 446.67px;
+                    height: 362.67px;
+                "
+                ><img
+                    alt="On-Premises 
+Applications 
+Data 
+Runtime 
+Middleware 
+Servers 
+Storage 
+Network in g 
+O 
+laaS 
+Applications 
+Runtime 
+Middleware 
+o/s 
+Vi int ion 
+Servers 
+Storage 
+Networki n g 
+O 
+PaaS 
+Applications 
+Data 
+Runtime 
+Middleware 
+Virtualization 
+Servers 
+SaaS 
+Applications 
+Runtime 
+Middleware 
+o/s 
+Virtualization 
+Servers "
+                    src="assets/cloud-application-development/image1.png"
+                    style="
+                        width: 446.67px;
+                        height: 362.67px;
+                        margin-left: 0px;
+                        margin-top: 0px;
+                        transform: rotate(0rad) translateZ(0px);
+                        -webkit-transform: rotate(0rad) translateZ(0px);
+                    "
+                    title="" /></span
+            ><span class="c5 c6"><br /></span>
+        </p>
+        <p class="c1">
+            <span class="c12">Serverless Architectures</span
+            ><span><br /><br /></span><span class="c9">Serverless:</span
+            ><span class="c5 c6"
+                >&nbsp;cloud computing execution model where the cloud provider
+                runs the server and dynamically manages resource allocation<br
+            /></span>
+        </p>
+        <ul class="c0 lst-kix_b8sgq9793b8r-0">
+            <li class="c1 c11 li-bullet-0">
+                <span class="c5 c2">abstraction of servers</span>
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span class="c2 c5">event-driven applications</span>
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span class="c2">instant and automatic scalability</span
+                ><span class="c5 c6"><br /></span>
+            </li>
+        </ul>
+        <p class="c1">
+            <span>Serverless means that </span
+            ><span class="c2"
+                >code runs only on-demand and on a per-request basis</span
+            ><span class="c5 c6">.<br /></span>
+        </p>
+        <ul class="c0 lst-kix_b8sgq9793b8r-0">
+            <li class="c1 c11 li-bullet-0">
+                <span class="c7">API requests</span
+                ><span class="c5 c6">&nbsp;are sent by consumers</span>
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span class="c7">Objects</span
+                ><span>&nbsp;are retrieved, created, or moved in</span
+                ><span class="c19 c7 c6">&nbsp;storage</span>
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span class="c7">Events</span><span>&nbsp;are</span
+                ><span class="c7">&nbsp;scheduled</span>
+            </li>
+        </ul>
+        <p class="c1 c22"><span class="c5 c6"></span></p>
+        <p class="c1">
+            <span class="c9">Frontend:</span
+            ><span
+                >&nbsp;frontend infrastructure includes everything the end user
+                interacts with, and makes up the </span
+            ><span class="c7">user interface</span
+            ><span>. This includes components such as </span
+            ><span class="c19 c7 c6"
+                >local networks, web browsers, and web applications<br
+            /></span>
+        </p>
+        <ul class="c0 lst-kix_b8sgq9793b8r-0">
+            <li class="c1 c11 li-bullet-0">
+                <span class="c2">User Interface</span
+                ><span class="c5 c6"
+                    >&nbsp;- refers to all components the end user can access,
+                    to send requests or perform actions</span
+                >
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span class="c2">Software</span
+                ><span class="c5 c6"
+                    >&nbsp;- runs on the end user&#39;s machine and is comprised
+                    of client-side applications and browsers</span
+                >
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span class="c2">Network</span
+                ><span class="c5 c6"
+                    >&nbsp;- the end user&#39;s machine. This can be mobile or
+                    PC and should work regardless of computing power</span
+                >
+            </li>
+        </ul>
+        <p class="c1 c22 c27"><span class="c5 c6"></span></p>
+        <p class="c1">
+            <span class="c9">Backend:</span
+            ><span class="c5 c6"
+                >&nbsp;backend architecture is comprised of hardware and storage
+                located on servers, and powers the frontend architecture<br
+            /></span>
+        </p>
+        <ul class="c0 lst-kix_b8sgq9793b8r-0">
+            <li class="c1 c11 li-bullet-0">
+                <span class="c2">Application</span
+                ><span class="c5 c6"
+                    >&nbsp;- manages requests and requirements made by the user
+                    and provides functionality to the user interface</span
+                >
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span class="c2">Service</span
+                ><span class="c5 c6"
+                    >&nbsp;- manages resources on servers such as tasks,
+                    storage, and computing</span
+                >
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span class="c2">Runtime</span
+                ><span class="c5 c6"
+                    >&nbsp;- the virtual environment where services such as
+                    apps, servers, storage, and networks are run</span
+                >
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span class="c2">Storage</span
+                ><span class="c5 c6"
+                    >&nbsp;- location where data is stored. This can be a HDD,
+                    SSD, flash drive, RAID storage, etc. Data is partitioned in
+                    storage for accessibility and redundancy</span
+                >
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span class="c2">Infrastructure</span
+                ><span class="c5 c6"
+                    >&nbsp;- engine managing all the services, which has a CPU,
+                    GPU, motherboard, network cards, input and output</span
+                >
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span class="c2">Management</span
+                ><span class="c5 c6"
+                    >&nbsp;- middleware which allocates resources to specific
+                    tasks and communicates between frontend and backend</span
+                >
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span class="c2">Security</span
+                ><span class="c5 c6"
+                    >&nbsp;- safety of data via redundancy and backups, as well
+                    as safety of networks via firewalls and protocols</span
+                >
+            </li>
+        </ul>
+        <p class="c1 c22"><span class="c5 c6"></span></p>
+        <a id="t.95dd54cec4464707ff555ad5d8e95547867bedbd"></a><a id="t.1"></a>
+        <table class="c20">
+            <tbody>
+                <tr class="c26">
+                    <td class="c38" colspan="1" rowspan="1">
+                        <p class="c1 c16">
+                            <span class="c19 c7 c6">Type</span>
+                        </p>
+                    </td>
+                    <td class="c34" colspan="1" rowspan="1">
+                        <p class="c1 c16">
+                            <span class="c19 c7 c6">Method</span>
+                        </p>
+                    </td>
+                    <td class="c32" colspan="1" rowspan="1">
+                        <p class="c1 c16">
+                            <span class="c19 c7 c6">Examples</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="c41">
+                    <td class="c38" colspan="1" rowspan="1">
+                        <p class="c1">
+                            <span class="c5 c9"
+                                >BaaS (Backend as a Service)</span
+                            >
+                        </p>
+                    </td>
+                    <td class="c34" colspan="1" rowspan="1">
+                        <p class="c1">
+                            <span>- </span><span>Provides</span
+                            ><span class="c5 c2"
+                                >&nbsp;backend functions in a mobile or web
+                                application<br
+                            /></span>
+                        </p>
+                        <p class="c1">
+                            <span class="c5 c6">Common features such as:</span>
+                        </p>
+                        <p class="c1">
+                            <span class="c5 c6"
+                                >- social network integration</span
+                            >
+                        </p>
+                        <p class="c1">
+                            <span class="c5 c6">- user management</span>
+                        </p>
+                        <p class="c1">
+                            <span class="c5 c6">- notifications</span>
+                        </p>
+                        <p class="c1 c44 c22"><span class="c5 c6"></span></p>
+                        <p class="c1">
+                            <span class="c5 c6"
+                                >- Each service has its own API which can be
+                                incorporated into an app</span
+                            >
+                        </p>
+                        <p class="c1">
+                            <span class="c5 c6"
+                                >- This creates a reusable backend which
+                                improves accessibility and performance</span
+                            >
+                        </p>
+                    </td>
+                    <td class="c32" colspan="1" rowspan="1">
+                        <p class="c1">
+                            <span class="c5 c6"
+                                >Firebase, Heroku, PythonAnywhere, Rackspace,
+                                BaasBox, UserGrid</span
+                            >
+                        </p>
+                    </td>
+                </tr>
+                <tr class="c39">
+                    <td class="c38" colspan="1" rowspan="1">
+                        <p class="c1">
+                            <span class="c5 c9"
+                                >FaaS (Function as a Service)</span
+                            >
+                        </p>
+                    </td>
+                    <td class="c34" colspan="1" rowspan="1">
+                        <p class="c1">
+                            <span>- </span><span>Allows users to </span
+                            ><span class="c5 c2"
+                                >develop, run, and manage applications without
+                                maintaining infrastructure<br
+                            /></span>
+                        </p>
+                        <p class="c1">
+                            <span>- </span
+                            ><span class="c5 c6"
+                                >Abstracts servers from the user</span
+                            >
+                        </p>
+                        <p class="c1">
+                            <span class="c5 c6"
+                                >- Associated with on-demand functionality</span
+                            >
+                        </p>
+                        <p class="c1">
+                            <span class="c5 c6"
+                                >- The user only pays for execution time</span
+                            >
+                        </p>
+                    </td>
+                    <td class="c32" colspan="1" rowspan="1">
+                        <p class="c1">
+                            <span class="c5 c6"
+                                >AWS Lambda, Google Cloud, Apache
+                                OpenWhisk</span
+                            >
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="c1">
+            <span><br /><br /></span
+            ><span class="c29">Amazon Web Services<br /><br /></span
+            ><span class="c9">AWS Lambda:</span
+            ><span class="c5 c6"
+                >&nbsp;event-driven, serverless platform provided by Amazon as
+                part of Amazon Web Services<br
+            /></span>
+        </p>
+        <ul class="c0 lst-kix_b8sgq9793b8r-0">
+            <li class="c1 c11 li-bullet-0">
+                <span class="c2">FaaS</span
+                ><span class="c5 c6"
+                    >&nbsp;platform which provides fully managed
+                    infrastructure</span
+                >
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span>Automatic management of </span
+                ><span class="c5 c2">resources and servers</span>
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span>Automatic </span><span class="c5 c2">scaling</span>
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span class="c2">Smart billing</span
+                ><span class="c5 c6"
+                    >&nbsp;based on executions, not server instances</span
+                >
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span class="c2">Rapid</span
+                ><span class="c5 c6">&nbsp;development and deployment</span>
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span>Services that are</span
+                ><span class="c2">&nbsp;event-driven</span
+                ><span>&nbsp;and instantaneously </span
+                ><span class="c5 c2">scalable</span>
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span class="c2">Monolith vs microservices</span
+                ><span class="c5 c6">&nbsp;approach</span>
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span class="c2">Cost, usage, and scale</span
+                ><span>&nbsp;are reduced while</span
+                ><span class="c2">&nbsp;complexity</span
+                ><span class="c5 c6">&nbsp;is increased</span>
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span class="c2">DevOps</span
+                ><span class="c5 c6"
+                    >&nbsp;methodology is used which shortens the development
+                    lifecycle while also delivering features, fixes, and updates
+                    frequently in alignment with business requirements</span
+                >
+            </li>
+        </ul>
+        <p class="c1 c22 c27"><span class="c5 c6"></span></p>
+        <p class="c1">
+            <span>&nbsp;</span
+            ><span
+                style="
+                    overflow: hidden;
+                    display: inline-block;
+                    margin: 0px 0px;
+                    border: 0px solid #000000;
+                    transform: rotate(0rad) translateZ(0px);
+                    -webkit-transform: rotate(0rad) translateZ(0px);
+                    width: 564px;
+                    height: 316px;
+                "
+                ><img
+                    alt='Complexity 
+Handle 
+load 
+Monolith 
+Reduce 
+cost 
+Microservices 
+code 
+m," Ing 
+paaS '
+                    src="assets/cloud-application-development/image6.png"
+                    style="
+                        width: 564px;
+                        height: 316px;
+                        margin-left: 0px;
+                        margin-top: 0px;
+                        transform: rotate(0rad) translateZ(0px);
+                        -webkit-transform: rotate(0rad) translateZ(0px);
+                    "
+                    title="" /></span
+            ><span><br /><br /> </span><span>&nbsp;<br /><br /></span
+            ><span>&nbsp;</span
+            ><span
+                style="
+                    overflow: hidden;
+                    display: inline-block;
+                    margin: 0px 0px;
+                    border: 0px solid #000000;
+                    transform: rotate(0rad) translateZ(0px);
+                    -webkit-transform: rotate(0rad) translateZ(0px);
+                    width: 564px;
+                    height: 313.33px;
+                "
+                ><img
+                    alt="Web Browser 
+Dynamic API calls 
+o&bull;uer HTTP 
+HTML, CSS, JavaScript, etc. 
+Authenticate 
+Amazon API Gateway 
+Amazon S3 
+Amazon Cognito 
+User Pool 
+AWS Lambda 
+Amazon DynamoD3 "
+                    src="assets/cloud-application-development/image14.png"
+                    style="
+                        width: 564px;
+                        height: 313.33px;
+                        margin-left: 0px;
+                        margin-top: 0px;
+                        transform: rotate(0rad) translateZ(0px);
+                        -webkit-transform: rotate(0rad) translateZ(0px);
+                    "
+                    title="" /></span
+            ><span><br /><br /> </span><span>&nbsp;<br /><br /></span
+            ><span>&nbsp;</span
+            ><span
+                style="
+                    overflow: hidden;
+                    display: inline-block;
+                    margin: 0px 0px;
+                    border: 0px solid #000000;
+                    transform: rotate(0rad) translateZ(0px);
+                    -webkit-transform: rotate(0rad) translateZ(0px);
+                    width: 565.33px;
+                    height: 310.67px;
+                "
+                ><img
+                    alt="Amazon 
+S3 
+&bull; Bucket Policies 
+Browser 
+Amazon Cognito 
+Am azon 
+CloudFront 
+&bull; Origin Access Identity (OAI) 
+&bull; Geo-Restriction 
+&bull; Signed Cookies 
+&bull; Signed URLs 
+&bull; DDOS Protection 
+Amazon API 
+Gateway 
+&bull; Throttling 
+&bull; Caching 
+&bull; Usage Plans 
+&bull; ACM 
+&bull; ACLs 
+AVVS 
+Lambda 
+Amazon 
+DynamoD "
+                    src="assets/cloud-application-development/image2.png"
+                    style="
+                        width: 565.33px;
+                        height: 310.67px;
+                        margin-left: 0px;
+                        margin-top: 0px;
+                        transform: rotate(0rad) translateZ(0px);
+                        -webkit-transform: rotate(0rad) translateZ(0px);
+                    "
+                    title="" /></span
+            ><span><br /><br /> </span><span>&nbsp;<br /><br /></span
+            ><span>&nbsp;</span
+            ><span class="c29">Microsoft Azure<br /><br /></span
+            ><span class="c9">Microsoft Azure:</span
+            ><span class="c5 c6"
+                >&nbsp;cloud computing service for developing, testing,
+                deploying, and managing web applications through Microsoft
+                servers<br
+            /></span>
+        </p>
+        <ul class="c0 lst-kix_b8sgq9793b8r-0">
+            <li class="c1 c11 li-bullet-0">
+                <span class="c5 c2">SaaS, PaaS, and IaaS</span>
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span>Provides</span
+                ><span class="c2">&nbsp;IaaS virtual machines</span
+                ><span class="c5 c6"
+                    >&nbsp;which allow users to launch Windows, Linux, and other
+                    popular disk images</span
+                >
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span>Provides </span><span class="c2">PaaS app services</span
+                ><span class="c5 c6"
+                    >&nbsp;letting developers publish and manage web
+                    applications easily</span
+                >
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span class="c2">Azure Websites</span
+                ><span class="c5 c6"
+                    >&nbsp;allows developers to build sites using ASP.NET, PHP,
+                    JavaScript, or Python and can easily be deployed or uploaded
+                    through the user portal &nbsp;</span
+                >
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span class="c2">WebJobs</span
+                ><span>&nbsp;applications can be deployed to an</span
+                ><span class="c2">&nbsp;App Service</span
+                ><span class="c5 c6"
+                    >&nbsp;environment to implement background processing which
+                    can be performed on schedule, on demand, or
+                    continuously</span
+                >
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span>Links to </span><span class="c2">SaaS</span
+                ><span>&nbsp;services such as</span
+                ><span class="c5 c2">&nbsp;Office 365</span>
+            </li>
+        </ul>
+        <p class="c1">
+            <span><br /></span><span>&nbsp;</span
+            ><span
+                style="
+                    overflow: hidden;
+                    display: inline-block;
+                    margin: 0px 0px;
+                    border: 0px solid #000000;
+                    transform: rotate(0rad) translateZ(0px);
+                    -webkit-transform: rotate(0rad) translateZ(0px);
+                    width: 566.67px;
+                    height: 386.67px;
+                "
+                ><img
+                    alt="Azure Functions 
+Service bus 
+Cognitive services 
+Machine learning 
+SharePoint 
+Logic Apps 
+On-premises data 
+gateway 
+SQL 
+O Office 365 
+Docu*me "
+                    src="assets/cloud-application-development/image9.png"
+                    style="
+                        width: 566.67px;
+                        height: 386.67px;
+                        margin-left: 0px;
+                        margin-top: 0px;
+                        transform: rotate(0rad) translateZ(0px);
+                        -webkit-transform: rotate(0rad) translateZ(0px);
+                    "
+                    title="" /></span
+            ><span><br /><br /> </span><span>&nbsp;<br /><br /></span
+            ><span>&nbsp;</span
+            ><span
+                style="
+                    overflow: hidden;
+                    display: inline-block;
+                    margin: 0px 0px;
+                    border: 0px solid #000000;
+                    transform: rotate(0rad) translateZ(0px);
+                    -webkit-transform: rotate(0rad) translateZ(0px);
+                    width: 564px;
+                    height: 208px;
+                "
+                ><img
+                    alt="APP 
+Service 
+Dynamic 
+Runtime 
+WebJobs 
+core SDK 
+WebJobs 
+Script 
+Runtime 
+WebJobs 
+Extensions 
+Triggers 
+Inputs/ 
+Outputs 
+Language 
+Abstraction 
+Code 
+Config "
+                    src="assets/cloud-application-development/image10.png"
+                    style="
+                        width: 564px;
+                        height: 208px;
+                        margin-left: 0px;
+                        margin-top: 0px;
+                        transform: rotate(0rad) translateZ(0px);
+                        -webkit-transform: rotate(0rad) translateZ(0px);
+                    "
+                    title="" /></span
+            ><span><br /><br /> </span><span>&nbsp;<br /><br /></span
+            ><span>&nbsp;</span
+            ><span
+                style="
+                    overflow: hidden;
+                    display: inline-block;
+                    margin: 0px 0px;
+                    border: 0px solid #000000;
+                    transform: rotate(0rad) translateZ(0px);
+                    -webkit-transform: rotate(0rad) translateZ(0px);
+                    width: 564px;
+                    height: 257.33px;
+                "
+                ><img
+                    alt="1) Trigger 
+Azure Seruices 
+2) Input Binding 
+Azure Services 
+3) Deploy 
+4) Execute 
+App Services 
+Hosting Plans 
+5) Output Binding 
+atfiJ 
+Azure Services 
+7) Develop Locally 
+6) Monitor and Improve "
+                    src="assets/cloud-application-development/image12.png"
+                    style="
+                        width: 564px;
+                        height: 257.33px;
+                        margin-left: 0px;
+                        margin-top: 0px;
+                        transform: rotate(0rad) translateZ(0px);
+                        -webkit-transform: rotate(0rad) translateZ(0px);
+                    "
+                    title="" /></span
+            ><span><br /><br /> </span><span>&nbsp;<br /></span
+            ><span>&nbsp;</span
+            ><span class="c29">Google App Engine<br /><br /></span
+            ><span class="c9">Google App Engine (GAE):</span
+            ><span class="c5 c6"
+                >&nbsp;cloud computing platform for developing and hosting web
+                applications in Google data centers<br
+            /></span>
+        </p>
+        <ul class="c0 lst-kix_b8sgq9793b8r-0">
+            <li class="c1 c11 li-bullet-0">
+                <span>Provides </span><span class="c2">PaaS app services</span
+                ><span class="c5 c6"
+                    >&nbsp;letting developers publish and manage web
+                    applications easily</span
+                >
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span class="c2">Language </span
+                ><span class="c5 c6"
+                    >support for Go, PHP, Java, Python, Node.js, .NET, and
+                    Ruby</span
+                >
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span class="c2">Framework </span
+                ><span class="c5 c6"
+                    >support including Django, Pyramid, Flask etc.</span
+                >
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span>Integration with </span
+                ><span class="c2">Google Cloud Platform</span
+                ><span class="c5 c6"
+                    >, a suite of cloud computing services including computing,
+                    storage, analytics, and machine learning</span
+                >
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span>Support for</span><span class="c2">&nbsp;Flask</span
+                ><span class="c5 c6"
+                    >, a Python micro-framework providing tools, libraries, and
+                    technologies for building web applications</span
+                >
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span>Support for </span><span class="c2">Django</span
+                ><span class="c5 c6"
+                    >, a Python framework handling authentication, content, site
+                    maps, RSS, templates, REST etc.</span
+                >
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span>Support for </span><span class="c2">Firebase</span
+                ><span class="c5 c6"
+                    >, a BaaS app development framework providing data storage,
+                    functions, machine learning, authentication, hosting,
+                    analytics, testing, messaging etc.</span
+                >
+            </li>
+        </ul>
+        <p class="c1 c27">
+            <span><br /></span><span>&nbsp;</span
+            ><span class="c5 c6">Development Life Cycle:<br /></span>
+        </p>
+        <ul class="c0 lst-kix_b8sgq9793b8r-0">
+            <li class="c1 c11 li-bullet-0">
+                <span class="c5 c2">Application development</span>
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span class="c5 c2">Application testing</span>
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span class="c5 c2">Administration</span>
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span class="c2">Deployment<br /><br /></span><span>&nbsp;</span
+                ><span
+                    style="
+                        overflow: hidden;
+                        display: inline-block;
+                        margin: 0px 0px;
+                        border: 0px solid #000000;
+                        transform: rotate(0rad) translateZ(0px);
+                        -webkit-transform: rotate(0rad) translateZ(0px);
+                        width: 502.67px;
+                        height: 225.33px;
+                    "
+                    ><img
+                        alt="1. Development application 
+Locally on your own machine 
+4. Administer service 
+Using Google&#39;s Cloud 
+Console 
+2. Test application locally 
+Using Google Cloud SDK 
+3. Deploy to Google 
+Deploy as a service using Google 
+Cloud SDK "
+                        src="assets/cloud-application-development/image7.png"
+                        style="
+                            width: 502.67px;
+                            height: 225.33px;
+                            margin-left: 0px;
+                            margin-top: 0px;
+                            transform: rotate(0rad) translateZ(0px);
+                            -webkit-transform: rotate(0rad) translateZ(0px);
+                        "
+                        title="" /></span
+                ><span><br /></span>
+            </li>
+        </ul>
+        <p class="c1">
+            <span class="c12">JavaScript</span
+            ><span class="c13"><br /><br /></span
+            ><span class="c9">Node.js:</span
+            ><span class="c5 c6"
+                >&nbsp;open-source, cross-platform, backend JavaScript runtime
+                environment built on Chrome&#39;s JavaScript engine which
+                executes JavaScript code locally.<br
+            /></span>
+        </p>
+        <ul class="c0 lst-kix_b8sgq9793b8r-0">
+            <li class="c1 c11 li-bullet-0">
+                <span class="c5 c6"
+                    >uses event-driven I/O to remain lightweight and
+                    efficient</span
+                >
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span class="c5 c6"
+                    >uses traditional web-serving techniques to create new
+                    threads for connections</span
+                >
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span class="c5 c6"
+                    >operates on single-thread I/O calls, allowing it to support
+                    tens of thousands of concurrent connections<br
+                /></span>
+            </li>
+        </ul>
+        <p class="c1">
+            <span class="c29">Variables<br /></span>
+        </p>
+        <p class="c1">
+            <span class="c5 c6"
+                >JS has three kinds of variable declarations:</span
+            >
+        </p>
+        <ul class="c0 lst-kix_b8sgq9793b8r-0">
+            <li class="c1 c11 li-bullet-0">
+                <span class="c9">var</span
+                ><span class="c5 c6"
+                    >&nbsp;declares a global or local variable</span
+                >
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span class="c9">let</span
+                ><span class="c5 c6">&nbsp;declares a local variable</span>
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span class="c9">const</span
+                ><span class="c5 c6">&nbsp;declares a read-only constant</span>
+            </li>
+        </ul>
+        <p class="c1">
+            <span><br /></span><span>&nbsp;</span
+            ><span class="c29">Data Types<br /><br /></span><span>&nbsp;</span
+            ><span class="c5 c6">JS uses the following eight data types:</span>
+        </p>
+        <p class="c1 c22"><span class="c5 c6"></span></p>
+        <a id="t.292da649241aa63f2ae84ccd8b77bdde5f9f4e8e"></a><a id="t.2"></a>
+        <table class="c20">
+            <tbody>
+                <tr class="c26">
+                    <td class="c31" colspan="1" rowspan="1">
+                        <p class="c1 c16">
+                            <span class="c19 c7 c6">Type</span>
+                        </p>
+                    </td>
+                    <td class="c28" colspan="1" rowspan="1">
+                        <p class="c1 c16">
+                            <span class="c19 c7 c6">Values</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="c26">
+                    <td class="c31" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c5 c9">Object</span></p>
+                    </td>
+                    <td class="c28" colspan="1" rowspan="1">
+                        <p class="c1">
+                            <span class="c5 c6"
+                                >superclass of other data types</span
+                            >
+                        </p>
+                    </td>
+                </tr>
+                <tr class="c26">
+                    <td class="c31" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c5 c9">Boolean</span></p>
+                    </td>
+                    <td class="c28" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c5 c6">true, false</span></p>
+                    </td>
+                </tr>
+                <tr class="c26">
+                    <td class="c31" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c5 c9">Number</span></p>
+                    </td>
+                    <td class="c28" colspan="1" rowspan="1">
+                        <p class="c1">
+                            <span class="c5 c6"
+                                >integer, floating point number</span
+                            >
+                        </p>
+                    </td>
+                </tr>
+                <tr class="c26">
+                    <td class="c31" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c5 c9">BigInt</span></p>
+                    </td>
+                    <td class="c28" colspan="1" rowspan="1">
+                        <p class="c1">
+                            <span class="c5 c6"
+                                >integer with arbitrary precision</span
+                            >
+                        </p>
+                    </td>
+                </tr>
+                <tr class="c26">
+                    <td class="c31" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c5 c9">String</span></p>
+                    </td>
+                    <td class="c28" colspan="1" rowspan="1">
+                        <p class="c1">
+                            <span class="c5 c6">sequence of characters</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="c26">
+                    <td class="c31" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c5 c9">Symbol</span></p>
+                    </td>
+                    <td class="c28" colspan="1" rowspan="1">
+                        <p class="c1">
+                            <span class="c5 c6"
+                                >unique immutable character</span
+                            >
+                        </p>
+                    </td>
+                </tr>
+                <tr class="c26">
+                    <td class="c31" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c5 c9">null</span></p>
+                    </td>
+                    <td class="c28" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c5 c6">null value</span></p>
+                    </td>
+                </tr>
+                <tr class="c24">
+                    <td class="c31" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c5 c9">undefined</span></p>
+                    </td>
+                    <td class="c28" colspan="1" rowspan="1">
+                        <p class="c1">
+                            <span class="c5 c6"
+                                >variable which has been declared but is
+                                unassigned</span
+                            >
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="c1 c22 c27"><span class="c5 c6"></span></p>
+        <p class="c1">
+            <span>JS is </span><span class="c9">dynamically typed</span
+            ><span class="c5 c6"
+                >&nbsp;- values are typed but variables are not</span
+            >
+        </p>
+        <p class="c1">
+            <span><br /></span><span>&nbsp;</span
+            ><span class="c29">Conditional Statements<br /></span>
+        </p>
+        <ul class="c0 lst-kix_b8sgq9793b8r-0">
+            <li class="c17 c11 li-bullet-0">
+                <span class="c9">If/else</span
+                ><span>&nbsp;statements<br /><br /></span
+                ><span class="c3">&nbsp;</span><span class="c2 c3">if</span
+                ><span class="c3">&nbsp;(condition1) {<br /><br /></span
+                ><span class="c3">&nbsp;</span
+                ><span class="c3">statement1;<br /><br /></span
+                ><span class="c3">&nbsp;</span><span class="c3">} </span
+                ><span class="c2 c3">else if</span
+                ><span class="c3">&nbsp;(condition2) {<br /><br /></span
+                ><span class="c3">&nbsp;</span
+                ><span class="c3"
+                    >statement2;<br /><br />
+                    }</span
+                ><span class="c2 c3">&nbsp;else</span
+                ><span class="c3">&nbsp;{<br /><br /></span
+                ><span class="c3">&nbsp;</span
+                ><span class="c3">statement3;<br /><br /></span
+                ><span class="c3">&nbsp;</span><span class="c3">}</span
+                ><span class="c5 c6"><br /></span>
+            </li>
+            <li class="c17 c11 li-bullet-0">
+                <span class="c9">Switch</span
+                ><span>&nbsp;statements<br /><br /></span
+                ><span class="c3">&nbsp;</span><span class="c2 c3">switch</span
+                ><span class="c3">&nbsp;(expression) {<br /><br /></span
+                ><span class="c3">&nbsp;</span><span class="c2 c3">case</span
+                ><span class="c3">&nbsp;value1:<br /><br /></span
+                ><span class="c3">&nbsp;</span
+                ><span class="c3">statement1;<br /><br /></span
+                ><span class="c3">&nbsp;</span
+                ><span class="c3">break;<br /></span
+                ><span class="c3"><br /><br /></span
+                ><span class="c3">&nbsp;</span><span class="c2 c3">case</span
+                ><span class="c3">&nbsp;value2:<br /><br /></span
+                ><span class="c3">&nbsp;</span
+                ><span class="c3">statement2;<br /><br /></span
+                ><span class="c3">&nbsp;</span
+                ><span class="c3">break;<br /></span
+                ><span class="c3"><br /><br /></span
+                ><span class="c3">&nbsp;</span><span class="c2 c3">default</span
+                ><span class="c3">:<br /><br /></span
+                ><span class="c3">&nbsp;</span
+                ><span class="c3">statement;<br /><br /></span
+                ><span class="c3">&nbsp;</span
+                ><span class="c3">break;<br /><br /></span
+                ><span class="c3">&nbsp;</span><span class="c3">}</span
+                ><span class="c10"><br /><br /></span><span>&nbsp;</span
+                ><span class="c5 c6">&nbsp;</span>
+            </li>
+        </ul>
+        <p class="c17">
+            <span class="c29">Loops &amp; Iteration</span
+            ><span class="c5 c6"><br /></span>
+        </p>
+        <ul class="c0 lst-kix_8jmusp7m38ul-0 start">
+            <li class="c1 c11 li-bullet-0">
+                <span class="c9">For</span
+                ><span class="c5 c6">&nbsp;loops (previously covered)</span>
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span class="c9">Do-While</span
+                ><span class="c5 c6">&nbsp;loops (previously covered)</span>
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span class="c9">While</span
+                ><span class="c5 c6">&nbsp;loops (previously covered)</span>
+            </li>
+        </ul>
+        <p class="c1 c22 c27"><span class="c5 c6"></span></p>
+        <ul class="c0 lst-kix_8jmusp7m38ul-0">
+            <li class="c1 c11 li-bullet-0">
+                <span class="c9">For-Of</span
+                ><span>&nbsp;Iterators<br /><br /></span
+                ><span class="c3">&nbsp;</span
+                ><span class="c3">var array = [1,2,3];<br /><br /></span
+                ><span class="c3">&nbsp;</span><span class="c3">for (</span
+                ><span class="c2 c3">let</span><span class="c3">&nbsp;i </span
+                ><span class="c2 c3">of</span
+                ><span class="c3">&nbsp;array) {<br /><br /></span
+                ><span class="c3">&nbsp;</span
+                ><span class="c3">statement;<br /><br /></span
+                ><span class="c3">&nbsp;</span><span class="c3">}</span
+                ><span class="c5 c6"><br /></span>
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span class="c9">For-In</span
+                ><span>&nbsp;Iterators<br /><br /></span
+                ><span class="c3">&nbsp;</span
+                ><span class="c3"
+                    >var object = {age:20,height:1.63};<br /><br /></span
+                ><span class="c3">&nbsp;</span><span class="c3">for (</span
+                ><span class="c2 c3">let</span><span class="c3">&nbsp;k </span
+                ><span class="c2 c3">in</span
+                ><span class="c3">&nbsp;object) {<br /><br /></span
+                ><span class="c3">&nbsp;</span
+                ><span class="c3">statement;<br /><br /></span
+                ><span class="c3">&nbsp;</span><span class="c3">}<br /></span
+                ><span class="c10"><br /></span
+                ><span class="c5 c6"><br /></span>
+            </li>
+        </ul>
+        <ul class="c0 lst-kix_b8sgq9793b8r-0">
+            <li class="c1 c11 li-bullet-0">
+                <span class="c9">For-Each</span
+                ><span>&nbsp;Iterators<br /><br /></span
+                ><span class="c3">&nbsp;</span><span class="c3">array.</span
+                ><span class="c2 c3">forEach</span
+                ><span class="c3">(x =&gt; x + 1)<br /></span
+                ><span class="c10"><br /></span><span><br /></span
+                ><span>&nbsp;</span><span class="c29">Exceptions<br /></span>
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span class="c9">Try/Catch</span
+                ><span>&nbsp;blocks<br /><br /></span
+                ><span class="c3">&nbsp;</span><span class="c2 c3">try</span
+                ><span class="c3">&nbsp;{<br /><br /></span
+                ><span class="c3">&nbsp;</span
+                ><span class="c3"
+                    >var input = &quot;hello&quot;;<br /><br /></span
+                ><span class="c3">&nbsp;</span
+                ><span class="c3">var value = parseInt(input);<br /><br /></span
+                ><span class="c3">&nbsp;</span><span class="c3">} </span
+                ><span class="c2 c3">catch</span
+                ><span class="c3"
+                    >&nbsp;(e) {<br /><br />
+                    alert(&quot;Error&quot;)<br /><br /></span
+                ><span class="c3">&nbsp;</span><span class="c3">}<br /></span
+                ><span class="c5 c6"><br /></span>
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span>Throw statements<br /></span><span class="c3"><br /></span
+                ><span class="c3">&nbsp;</span><span class="c2 c3">throw</span
+                ><span class="c3">(&quot;exception thrown&quot;);</span
+                ><span class="c10"><br /></span><span><br /><br /></span
+                ><span>&nbsp;</span><span class="c29">Operators<br /></span>
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span class="c5 c6"
+                    >JS supports the following basic operators:</span
+                >
+            </li>
+        </ul>
+        <p class="c1 c22 c27"><span class="c5 c6"></span></p>
+        <a id="t.4fff84c76d049776bb5368424dcb29909576a849"></a><a id="t.3"></a>
+        <table class="c20">
+            <tbody>
+                <tr class="c26">
+                    <td class="c8" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c5 c9">==, !=</span></p>
+                    </td>
+                    <td class="c4" colspan="1" rowspan="1">
+                        <p class="c1">
+                            <span class="c5 c6">equal, not equal</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="c26">
+                    <td class="c8" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c5 c9">===, !==</span></p>
+                    </td>
+                    <td class="c4" colspan="1" rowspan="1">
+                        <p class="c1">
+                            <span class="c5 c6">strict equal, not equal</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="c26">
+                    <td class="c8" colspan="1" rowspan="1">
+                        <p class="c1">
+                            <span class="c5 c9">&gt;, &lt;, &gt;=, &lt;=</span>
+                        </p>
+                    </td>
+                    <td class="c4" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c5 c6">comparative</span></p>
+                    </td>
+                </tr>
+                <tr class="c26">
+                    <td class="c8" colspan="1" rowspan="1">
+                        <p class="c1">
+                            <span class="c5 c9">+, -, *, /, %, **</span>
+                        </p>
+                    </td>
+                    <td class="c4" colspan="1" rowspan="1">
+                        <p class="c1">
+                            <span class="c5 c6">mathematical</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="c26">
+                    <td class="c8" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c5 c9">++, --</span></p>
+                    </td>
+                    <td class="c4" colspan="1" rowspan="1">
+                        <p class="c1">
+                            <span class="c5 c6">increment, decrement</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="c26">
+                    <td class="c8" colspan="1" rowspan="1">
+                        <p class="c1">
+                            <span class="c5 c9">&amp;&amp;, ||, !</span>
+                        </p>
+                    </td>
+                    <td class="c4" colspan="1" rowspan="1">
+                        <p class="c1"><span class="c5 c6">logical</span></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="c1 c22"><span class="c5 c6"></span></p>
+        <ul class="c0 lst-kix_b8sgq9793b8r-0">
+            <li class="c1 c11 li-bullet-0">
+                <span class="c9">Conditional</span
+                ><span>&nbsp;operators<br /><br /></span
+                ><span class="c3">&nbsp;</span
+                ><span class="c2 c3">condition ?</span
+                ><span class="c3">&nbsp;true value</span
+                ><span class="c2 c3">&nbsp;:</span
+                ><span class="c3">&nbsp;false value</span
+                ><span class="c5 c6"><br /></span>
+            </li>
+        </ul>
+        <p class="c1">
+            <span class="c29">Collections<br /></span>
+        </p>
+        <ul class="c0 lst-kix_b8sgq9793b8r-0">
+            <li class="c1 c11 li-bullet-0">
+                <span class="c9">Arrays<br /><br /></span
+                ><span class="c3">&nbsp;</span
+                ><span class="c3">myarray = [1,2,3];<br /><br /></span
+                ><span class="c3">&nbsp;</span
+                ><span class="c3">myarray[0] = 10;</span>
+            </li>
+        </ul>
+        <p class="c1 c27">
+            <span><br /></span><span>&nbsp;</span
+            ><span
+                style="
+                    overflow: hidden;
+                    display: inline-block;
+                    margin: 0px 0px;
+                    border: 0px solid #000000;
+                    transform: rotate(0rad) translateZ(0px);
+                    -webkit-transform: rotate(0rad) translateZ(0px);
+                    width: 454.67px;
+                    height: 378.67px;
+                "
+                ><img
+                    alt="concat() joins two or more arrays and returns a new array. 
+join() joins all elements of an array into a string. 
+push() adds one or more elements to the end of an array and 
+returns the resulting length of the array. 
+pop() removes the last element from an array and returns that 
+element. 
+shift() removes the first element from an array and returns 
+that element. 
+unshift() adds one or more elements to the front of an array 
+and returns the new length of the array. 
+slice() extracts a section of an array and returns a new array. 
+splice() removes elements from an array and optionally 
+replaces them. It returns the items which were removed from 
+the array. 
+reverse() transposes the elements of an array, in place: the 
+first array element becomes the last and the last becomes the 
+first. It returns a reference to the array. 
+indexOf() searches the array for searchEIement and returns 
+the index of the first match. "
+                    src="assets/cloud-application-development/image11.png"
+                    style="
+                        width: 454.67px;
+                        height: 378.67px;
+                        margin-left: 0px;
+                        margin-top: 0px;
+                        transform: rotate(0rad) translateZ(0px);
+                        -webkit-transform: rotate(0rad) translateZ(0px);
+                    "
+                    title="" /></span
+            ><span><br /><br /> </span
+            ><span
+                style="
+                    overflow: hidden;
+                    display: inline-block;
+                    margin: 0px 0px;
+                    border: 0px solid #000000;
+                    transform: rotate(0rad) translateZ(0px);
+                    -webkit-transform: rotate(0rad) translateZ(0px);
+                    width: 453.33px;
+                    height: 48px;
+                "
+                ><img
+                    alt=""
+                    src="assets/cloud-application-development/image3.png"
+                    style="
+                        width: 453.33px;
+                        height: 48px;
+                        margin-left: 0px;
+                        margin-top: 0px;
+                        transform: rotate(0rad) translateZ(0px);
+                        -webkit-transform: rotate(0rad) translateZ(0px);
+                    "
+                    title="" /></span
+            ><span class="c5 c6"><br /></span>
+        </p>
+        <p class="c1">
+            <span class="c29">Functions<br /></span>
+        </p>
+        <ul class="c0 lst-kix_batnbb5hb12k-0 start">
+            <li class="c1 c11 li-bullet-0">
+                <span class="c9">Simple</span
+                ><span class="c5 c6">&nbsp;Functions</span>
+            </li>
+        </ul>
+        <p class="c1 c27">
+            <span>&nbsp;<br /></span><span class="c3">&nbsp;</span
+            ><span class="c2 c3">function</span
+            ><span class="c3">&nbsp;square(number) {<br /><br /></span
+            ><span class="c3">&nbsp;</span
+            ><span class="c3">return number*number;<br /><br /></span
+            ><span class="c3">&nbsp;</span><span class="c3">}<br /></span
+            ><span class="c10"><br /></span>
+        </p>
+        <ul class="c0 lst-kix_b8sgq9793b8r-0">
+            <li class="c1 c11 li-bullet-0">
+                <span class="c9">Anonymous </span
+                ><span>Functions<br /><br /></span><span>&nbsp;</span
+                ><span class="c3">const square =</span
+                ><span class="c2 c3">&nbsp;function</span
+                ><span class="c3">&nbsp;(number) {<br /><br /></span
+                ><span class="c3">&nbsp;</span
+                ><span class="c3">return number*number<br /><br /></span
+                ><span class="c3">&nbsp;</span><span class="c3">}</span
+                ><span class="c10"><br /></span>
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span class="c9">Lambda</span
+                ><span>&nbsp;Functions<br /><br /></span
+                ><span class="c3">&nbsp;</span><span class="c3">number </span
+                ><span class="c2 c3">=&gt;</span
+                ><span class="c3">&nbsp;number*number;<br /><br /></span
+                ><span class="c3">&nbsp;</span
+                ><span class="c3">array.sort((a,b)</span
+                ><span class="c2 c3">&nbsp;=&gt;</span
+                ><span class="c3">&nbsp;((a &gt; b) ? 1 : 0))<br /></span
+                ><span class="c5 c6"><br /></span>
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span class="c2">Rest parameter syntax</span
+                ><span
+                    >&nbsp;allows an indefinite number of arguments in a
+                    function<br /><br /></span
+                ><span class="c3">&nbsp;</span
+                ><span class="c3">function multiply(multiplier, </span
+                ><span class="c2 c3">...args</span
+                ><span class="c3">) {<br /><br /></span
+                ><span class="c3">&nbsp;</span
+                ><span class="c3"
+                    >return args.map(x =&gt; multiplier * x);<br /><br /></span
+                ><span class="c3">&nbsp;</span><span class="c3">}</span
+                ><span class="c10"><br /></span
+                ><span class="c5 c6"><br /></span>
+            </li>
+        </ul>
+        <p class="c1">
+            <span class="c29">Higher Order Functions</span
+            ><span><br /><br /></span><span>&nbsp;</span
+            ><span
+                style="
+                    overflow: hidden;
+                    display: inline-block;
+                    margin: 0px 0px;
+                    border: 0px solid #000000;
+                    transform: rotate(0rad) translateZ(0px);
+                    -webkit-transform: rotate(0rad) translateZ(0px);
+                    width: 452px;
+                    height: 290.67px;
+                "
+                ><img
+                    alt="Higher Order Functions 
+sort() sorts the elements of an array in place, and returns a 
+reference to the array. It takes a function to determine how array 
+elements are compared. 
+forEach() executes function on every array item and returns 
+undefined 
+map() returns a new array that maps a function on every array 
+item 
+filter() returns a new array containing the items for which a 
+function returns true 
+every() returns true if a function returns true for every item in 
+the array 
+some() returns true if a function returns true for at least one 
+item in the array 
+reduce() a generalised aggregator higher order-function "
+                    src="assets/cloud-application-development/image4.png"
+                    style="
+                        width: 452px;
+                        height: 290.67px;
+                        margin-left: 0px;
+                        margin-top: 0px;
+                        transform: rotate(0rad) translateZ(0px);
+                        -webkit-transform: rotate(0rad) translateZ(0px);
+                    "
+                    title="" /></span
+            ><span><br /><br /></span><span>&nbsp;</span
+            ><span class="c29">Object Functions<br /></span><span>&nbsp;</span
+            ><span
+                style="
+                    overflow: hidden;
+                    display: inline-block;
+                    margin: 0px 0px;
+                    border: 0px solid #000000;
+                    transform: rotate(0rad) translateZ(0px);
+                    -webkit-transform: rotate(0rad) translateZ(0px);
+                    width: 601.7px;
+                    height: 237.33px;
+                "
+                ><img
+                    alt="Object.create() is used to create a new object 
+and link it to the prototype of an existing 
+object. 
+Object.keys() creates an array containing the 
+keys of an object. 
+Object.values() creates an array containing the 
+values of an object. 
+Object.entries() creates a nested array of the 
+key/value pairs of an object. 
+Object.assign() is used to copy values from 
+one object to another. 
+Object.freeze() prevents modification to 
+properties and values of an object, and 
+prevents properties from being added or 
+removed from an object. 
+Object.isFrozen() is available to determine 
+whether an object has been frozen or not, and 
+returns a Boolean. 
+Object.seal() prevents new properties from 
+being added to an object, but allows the 
+modification of existing properties. This 
+method is similar to Object.freeze(). Refresh 
+your console before implementing the code 
+below to avoid an error. 
+&bull; NB All of these are static methods from 
+JavaScript&#39;s Object class "
+                    src="assets/cloud-application-development/image5.png"
+                    style="
+                        width: 601.7px;
+                        height: 237.33px;
+                        margin-left: 0px;
+                        margin-top: 0px;
+                        transform: rotate(0rad) translateZ(0px);
+                        -webkit-transform: rotate(0rad) translateZ(0px);
+                    "
+                    title="" /></span
+            ><span><br /></span><span><br /></span><span>&nbsp;</span
+            ><span class="c29">JavaScript in Web Pages<br /><br /></span
+            ><span class="c9">Document Object Model (DOM):</span
+            ><span class="c5 c6"
+                >&nbsp;formal API which abstracts the elements of HTML into a
+                hierarchical structure consisting of nodes accessed by standard
+                methods<br
+            /></span>
+        </p>
+        <ul class="c0 lst-kix_b8sgq9793b8r-0">
+            <li class="c1 c11 li-bullet-0">
+                <span>Finding all </span
+                ><span class="c19 c7 c6">text paragraphs</span>
+            </li>
+        </ul>
+        <p class="c1 c22 c27"><span class="c19 c7 c6"></span></p>
+        <p class="c1 c36">
+            <span class="c33 c6 c3"
+                >document.querySelectorAll(&quot;p&quot;)</span
+            >
+        </p>
+        <p class="c1 c22 c27"><span class="c5 c6"></span></p>
+        <ul class="c0 lst-kix_b8sgq9793b8r-0">
+            <li class="c1 c11 li-bullet-0">
+                <span>Finding all the </span><span class="c7">HTTP URLs</span
+                ><span class="c5 c6"><br /></span>
+            </li>
+        </ul>
+        <p class="c1 c27">
+            <span class="c6 c3 c33"
+                >allA = document.querySelectorAll(&quot;a&quot;)</span
+            >
+        </p>
+        <p class="c1 c27">
+            <span class="c33 c6 c3"
+                >allURLs = Array.from(allA).map(a =&gt;
+                a.getAttribute(&quot;href&quot;))</span
+            >
+        </p>
+        <p class="c1 c27">
+            <span class="c3"
+                >allHTTPURLs = allURLs.filter(u =&gt;
+                u.startsWith(&quot;http&quot;))</span
+            ><span><br /></span><span>&nbsp;</span
+            ><span
+                style="
+                    overflow: hidden;
+                    display: inline-block;
+                    margin: 0px 0px;
+                    border: 0px solid #000000;
+                    transform: rotate(0rad) translateZ(0px);
+                    -webkit-transform: rotate(0rad) translateZ(0px);
+                    width: 601.7px;
+                    height: 180px;
+                "
+                ><img
+                    alt="BROWSER VIEW 
+Welcome to DOM 
+A HTML CSS 
+DOM STRUCTURE 
+HTML FILE 
+to 
+A Web of HTML el&mdash;ts, 
+CSS sty/ i ng md 
+ale-tCTfE fist &bull; + "
+                    src="assets/cloud-application-development/image13.png"
+                    style="
+                        width: 601.7px;
+                        height: 180px;
+                        margin-left: 0px;
+                        margin-top: 0px;
+                        transform: rotate(0rad) translateZ(0px);
+                        -webkit-transform: rotate(0rad) translateZ(0px);
+                    "
+                    title="" /></span
+            ><span><br /><br /> </span><span class="c5 c6">&nbsp;</span>
+        </p>
+        <p class="c1">
+            <span class="c12">A</span
+            ><span class="c12">synchronous Programming</span
+            ><span class="c5 c6 c13"><br /></span>
+        </p>
+        <p class="c1">
+            <span class="c9">Asynchronous Programming:</span
+            ><span class="c5 c6"
+                >&nbsp;method of parallel programming where tasks can run
+                separately to the main application thread and communicate their
+                completion, failure, or progress<br
+            /></span>
+        </p>
+        <ul class="c0 lst-kix_b8sgq9793b8r-0">
+            <li class="c1 c11 li-bullet-0">
+                <span class="c5 c6"
+                    >JS can be used to update a date in a web page</span
+                >
+            </li>
+        </ul>
+        <ul class="c0 lst-kix_b8sgq9793b8r-1 start">
+            <li class="c1 c15 li-bullet-0">
+                <span class="c5 c6">given the date code</span>
+            </li>
+        </ul>
+        <p class="c1 c27 c36">
+            <span class="c3">&lt;p class=&quot;credits&quot;&gt; </span
+            ><span class="c2 c3">&lt;date&gt;</span><span class="c3">2013</span
+            ><span class="c2 c3">&lt;/date&gt;</span
+            ><span class="c33 c6 c3">&hellip;<br /></span>
+        </p>
+        <ul class="c0 lst-kix_b8sgq9793b8r-1">
+            <li class="c1 c15 li-bullet-0">
+                <span class="c5 c6">select the date text content</span>
+            </li>
+        </ul>
+        <p class="c1 c36 c27">
+            <span class="c3">document.</span
+            ><span class="c33 c2 c3"
+                >querySelector(&quot;date&quot;).textContent<br
+            /></span>
+        </p>
+        <ul class="c0 lst-kix_b8sgq9793b8r-1">
+            <li class="c1 c15 li-bullet-0">
+                <span class="c5 c6">check it against the current date</span>
+            </li>
+        </ul>
+        <p class="c1 c36 c27">
+            <span class="c3">new </span
+            ><span class="c33 c2 c3">Date().getFullYear()<br /></span>
+        </p>
+        <ul class="c0 lst-kix_b8sgq9793b8r-1">
+            <li class="c1 c15 li-bullet-0">
+                <span class="c5 c6">put it all together</span>
+            </li>
+        </ul>
+        <p class="c17 c44">
+            <span class="c3">function checkdate() {<br /></span
+            ><span class="c10"><br /></span><span class="c3">&nbsp;</span
+            ><span class="c3">if (document.</span
+            ><span class="c2 c3"
+                >querySelector(&quot;date&quot;).textContent </span
+            ><span class="c3">== new </span
+            ><span class="c2 c3">Date().getFullYear()</span
+            ><span class="c3">)<br /><br /></span><span class="c3">&nbsp;</span
+            ><span class="c3"
+                >alert(&quot;correct&quot;);<br /><br />
+                else alert(&quot;incorrect&quot;);<br /><br /></span
+            ><span class="c3">&nbsp;</span
+            ><span class="c33 c6 c3">}<br /></span>
+        </p>
+        <ul class="c0 lst-kix_b8sgq9793b8r-1">
+            <li class="c1 c15 li-bullet-0">
+                <span class="c5 c6"
+                    >call it only after the page has loaded</span
+                >
+            </li>
+        </ul>
+        <p class="c1 c36 c27">
+            <span class="c3">window.onload = checkdate</span
+            ><span class="c10"><br /></span><span>&nbsp;</span
+            ><span>&nbsp;<br /></span><span>&nbsp;</span
+            ><span class="c29">Callbacks &amp; Promises<br /></span
+            ><span>&nbsp;</span><span>&nbsp;<br /></span><span>&nbsp;</span
+            ><span class="c9">Callback:</span
+            ><span class="c5 c6"
+                >&nbsp;function which executes after another function is
+                complete<br
+            /></span>
+        </p>
+        <ul class="c0 lst-kix_b8sgq9793b8r-0">
+            <li class="c1 c11 li-bullet-0">
+                <span>a </span
+                ><span class="c7">function passed into another function</span
+                ><span class="c5 c6">&nbsp;is called a callback</span>
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span>callbacks are executed </span
+                ><span class="c7">after other functions</span
+                ><span class="c5 c6">&nbsp;are complete</span>
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span
+                    >functions which accept callbacks as parameters are called </span
+                ><span class="c19 c7 c6">higher-order functions</span>
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span>callbacks ensure code executes in the </span
+                ><span class="c19 c7 c6">correct order</span>
+            </li>
+        </ul>
+        <p class="c17">
+            <span><br /></span><span class="c7">Callback</span
+            ><span>&nbsp;declaration:<br /><br /></span
+            ><span class="c3">&nbsp;</span
+            ><span class="c3">function addOne(number,</span
+            ><span class="c2 c3">&nbsp;callback</span
+            ><span class="c3">) {<br /><br /></span
+            ><span class="c3">&nbsp;</span
+            ><span class="c3">alert(number +1);<br /><br /></span
+            ><span class="c3">&nbsp;</span
+            ><span class="c2 c3">callback();<br /><br /></span
+            ><span class="c3">&nbsp;</span><span class="c3">}<br /><br /></span
+            ><span class="c3">&nbsp;</span><span class="c3">addOne(1, </span
+            ><span class="c2 c3">callback</span><span class="c3">);<br /></span
+            ><span class="c10"><br /></span><span><br /></span
+            ><span>&nbsp;</span><span class="c9">Promise:</span
+            ><span
+                >&nbsp;alternative to a callback which represents the result of
+                an asynchronous operation<br /><br /></span
+            ><span>&nbsp;</span
+            ><span class="c5 c6"
+                >A promise can be pending, fulfilled, or rejected:<br
+            /></span>
+        </p>
+        <ul class="c0 lst-kix_b8sgq9793b8r-0">
+            <li class="c1 c11 li-bullet-0">
+                <span class="c2">Pending:</span
+                ><span class="c5 c6"
+                    >&nbsp;state showing the initial state of a promise</span
+                >
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span class="c2">Fulfilled:</span
+                ><span class="c5 c6"
+                    >&nbsp;state showing a successful operation</span
+                >
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span class="c2">Rejected:</span
+                ><span class="c5 c6"
+                    >&nbsp;state showing a failed operation<br
+                /></span>
+            </li>
+        </ul>
+        <p class="c1">
+            <span class="c7">Promise</span
+            ><span class="c5 c6">&nbsp;declaration:</span>
+        </p>
+        <ul class="c0 lst-kix_b8sgq9793b8r-0">
+            <li class="c1 c11 li-bullet-0">
+                <span>the function passed to the new promise is the </span
+                ><span class="c5 c2">executor</span>
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span>the executor contains</span
+                ><span class="c2">&nbsp;producing code</span
+                ><span class="c5 c6">&nbsp;which outputs a result</span>
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span
+                    >the executor starts automatically on creation<br /><br /></span
+                ><span class="c3">&nbsp;</span
+                ><span class="c3">promise = new</span
+                ><span class="c2 c3"
+                    >&nbsp;Promise(function(resolve, reject)</span
+                ><span class="c3">&nbsp;{<br /><br /></span
+                ><span class="c3">&nbsp;</span
+                ><span class="c3">statement;<br /><br /></span
+                ><span class="c3">&nbsp;</span><span class="c3">});<br /></span
+                ><span class="c10"><br /></span><span>&nbsp;</span
+                ><span class="c5 c6">&nbsp;</span>
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span class="c2">resolve(value)</span
+                ><span class="c5 c6"
+                    >&nbsp;indicates the job has completed successfully</span
+                >
+            </li>
+        </ul>
+        <ul class="c0 lst-kix_b8sgq9793b8r-1 start">
+            <li class="c1 c15 li-bullet-0">
+                <span class="c5 c6"
+                    >sets the state to &quot;fulfilled&quot;</span
+                >
+            </li>
+            <li class="c1 c15 li-bullet-0">
+                <span>sets the result to</span
+                ><span class="c33 c6 c3">&nbsp;value</span>
+            </li>
+        </ul>
+        <ul class="c0 lst-kix_b8sgq9793b8r-0">
+            <li class="c1 c11 li-bullet-0">
+                <span class="c2">reject(error)</span
+                ><span class="c5 c6"
+                    >&nbsp;indicates an error has occurred</span
+                >
+            </li>
+        </ul>
+        <ul class="c0 lst-kix_b8sgq9793b8r-1 start">
+            <li class="c1 c15 li-bullet-0">
+                <span class="c5 c6"
+                    >sets the state to &quot;rejected&quot;</span
+                >
+            </li>
+            <li class="c1 c15 li-bullet-0">
+                <span>sets the result to </span
+                ><span class="c33 c6 c3">error</span>
+            </li>
+        </ul>
+        <p class="c1">
+            <span><br /></span><span>&nbsp;</span
+            ><span
+                style="
+                    overflow: hidden;
+                    display: inline-block;
+                    margin: 0px 0px;
+                    border: 0px solid #000000;
+                    transform: rotate(0rad) translateZ(0px);
+                    -webkit-transform: rotate(0rad) translateZ(0px);
+                    width: 424px;
+                    height: 220px;
+                "
+                ><img
+                    alt='new Promise(executor) 
+state: 
+result: 
+"pending" 
+undefined 
+state: 
+result: 
+state: 
+result: 
+"fulfilled" 
+value 
+" rej ected" 
+error '
+                    src="assets/cloud-application-development/image8.png"
+                    style="
+                        width: 424px;
+                        height: 220px;
+                        margin-left: 0px;
+                        margin-top: 0px;
+                        transform: rotate(0rad) translateZ(0px);
+                        -webkit-transform: rotate(0rad) translateZ(0px);
+                    "
+                    title="" /></span
+            ><span class="c5 c6"><br /></span>
+        </p>
+        <p class="c1">
+            <span
+                >Promises can be connected to consuming functions such as </span
+            ><span class="c3">then</span><span>&nbsp;and</span
+            ><span class="c3">&nbsp;catch</span
+            ><span class="c5 c6">:<br /></span>
+        </p>
+        <ul class="c0 lst-kix_b8sgq9793b8r-0">
+            <li class="c1 c11 li-bullet-0">
+                <span class="c9">Then</span
+                ><span class="c5 c6">&nbsp;function</span>
+            </li>
+        </ul>
+        <ul class="c0 lst-kix_b8sgq9793b8r-1 start">
+            <li class="c1 c15 li-bullet-0">
+                <span class="c7">function(result)</span
+                ><span class="c5 c6"
+                    >&nbsp;runs when the promise is resolved</span
+                >
+            </li>
+            <li class="c1 c15 li-bullet-0">
+                <span class="c5 c6">and receives the result</span>
+            </li>
+            <li class="c1 c15 li-bullet-0">
+                <span class="c7">function(error)</span
+                ><span class="c5 c6"
+                    >&nbsp;runs when the promise is rejected</span
+                >
+            </li>
+            <li class="c1 c15 li-bullet-0">
+                <span>and receives the error<br /><br /></span
+                ><span class="c3">&nbsp;</span><span class="c3">promise.</span
+                ><span class="c2 c3">then</span><span class="c3">(</span
+                ><span class="c2 c3">function(result)</span
+                ><span class="c3">&nbsp;{ statement; }, </span
+                ><span class="c2 c3">function(error)</span
+                ><span class="c3">&nbsp;{ statement; });<br /></span>
+            </li>
+        </ul>
+        <ul class="c0 lst-kix_b8sgq9793b8r-0">
+            <li class="c1 c11 li-bullet-0">
+                <span class="c9">Catch</span
+                ><span class="c5 c6">&nbsp;function</span>
+            </li>
+        </ul>
+        <ul class="c0 lst-kix_b8sgq9793b8r-1 start">
+            <li class="c1 c15 li-bullet-0">
+                <span class="c5 c6"
+                    >catch is used if you&#39;re only interested in errors</span
+                >
+            </li>
+            <li class="c1 c15 li-bullet-0">
+                <span
+                    >is a shorthand method of omitting the result function<br /><br /></span
+                ><span class="c3">&nbsp;</span><span class="c3">promise.</span
+                ><span class="c2 c3">catch</span
+                ><span class="c3">(alert);<br /><br /></span
+                ><span class="c3">&nbsp;</span
+                ><span class="c3">OR<br /><br /></span
+                ><span class="c3">&nbsp;</span
+                ><span class="c3">promise.then(null,alert);<br /></span>
+            </li>
+            <li class="c1 c15 li-bullet-0">
+                <span
+                    >to omit the error function, promise.then can be shortened
+                    <br /><br /></span
+                ><span class="c3">&nbsp;</span><span class="c3">promise.</span
+                ><span class="c2 c3">then</span
+                ><span class="c3">(alert);<br /><br /></span
+                ><span class="c3">&nbsp;</span
+                ><span class="c3">OR<br /><br /></span
+                ><span class="c3">&nbsp;</span
+                ><span class="c3">promise.then(alert,null);<br /></span
+                ><span class="c5 c6">&nbsp;<br /></span>
+            </li>
+        </ul>
+        <p class="c1">
+            <span class="c12"
+                >Software Development Practices and Tips<br /></span
+            ><span>&nbsp;</span><span><br /></span><span>&nbsp;</span
+            ><span class="c29">Practices for Software Development<br /></span
+            ><span><br /></span><span>&nbsp;</span
+            ><span class="c5 c6"
+                >What are the barriers to writing good code?<br
+            /></span>
+        </p>
+        <ul class="c0 lst-kix_b8sgq9793b8r-0">
+            <li class="c1 c11 li-bullet-0">
+                <span class="c5 c6"
+                    >functional goals often take precedence</span
+                >
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span class="c5 c6"
+                    >a lot of software development is self-taught</span
+                >
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span class="c5 c6"
+                    >progress can be slow when developing applications</span
+                >
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span class="c5 c6"
+                    >wide variety of frameworks and practices</span
+                >
+            </li>
+        </ul>
+        <p class="c1 c22"><span class="c5 c6"></span></p>
+        <p class="c1">
+            <span class="c9">Technical Debt:</span
+            ><span class="c5 c6"
+                >&nbsp;implied cost of additional work caused by choosing an
+                limited solution rather than a more complex approach<br
+            /></span>
+        </p>
+        <ul class="c0 lst-kix_b8sgq9793b8r-0">
+            <li class="c1 c11 li-bullet-0">
+                <span class="c5 c6"
+                    >like financial debt, code gathers interest over time</span
+                >
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span class="c5 c6">debt is paid off in maintenance</span>
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span class="c5 c6"
+                    >if not maintained, software is unable to evolve<br
+                /></span>
+            </li>
+        </ul>
+        <p class="c1">
+            <span class="c9">Maintainability:</span
+            ><span class="c5 c6"
+                >&nbsp;ease with which a software system or component can be
+                modified to correct faults, improve performance, or adapt to a
+                changed environment<br
+            /></span>
+        </p>
+        <ul class="c0 lst-kix_b8sgq9793b8r-0">
+            <li class="c1 c11 li-bullet-0">
+                <span>adding</span><span class="c7">&nbsp;new features</span
+                ><span class="c5 c6">, without introducing bugs</span>
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span class="c7">fixing bugs</span
+                ><span class="c5 c6">, without introducing new bugs</span>
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span>improvement in </span
+                ><span class="c19 c7 c6">performance and usability</span>
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span>improvement in</span
+                ><span class="c19 c7 c6">&nbsp;productivity</span>
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span>support for multiple </span
+                ><span class="c19 c7 c6">environments</span>
+            </li>
+            <li class="c1 c11 li-bullet-0">
+                <span>easier </span><span class="c7">collaboration</span
+                ><span class="c5 c6"><br /></span>
+            </li>
+        </ul>
+        <p class="c1">
+            <span class="c29">Top Tips for Software Development<br /></span>
+        </p>
+        <ul class="c0 lst-kix_b8sgq9793b8r-0">
+            <li class="c1 c11 li-bullet-0">
+                <span class="c5 c2">Get the requirements right</span>
+            </li>
+        </ul>
+        <ul class="c0 lst-kix_b8sgq9793b8r-1 start">
+            <li class="c1 c15 li-bullet-0">
+                <span class="c5 c6"
+                    >Decide what you are building and who it is for</span
+                >
+            </li>
+            <li class="c1 c15 li-bullet-0">
+                <span class="c5 c6"
+                    >Most errors are introduced during requirements analysis and
+                    design</span
+                >
+            </li>
+            <li class="c1 c15 li-bullet-0">
+                <span class="c5 c6"
+                    >Leaving errors in code reduces maintainability and
+                    increases technical debt</span
+                >
+            </li>
+        </ul>
+        <ul class="c0 lst-kix_b8sgq9793b8r-0">
+            <li class="c1 c11 li-bullet-0">
+                <span class="c5 c2"
+                    >Write code assuming others will see it</span
+                >
+            </li>
+        </ul>
+        <ul class="c0 lst-kix_b8sgq9793b8r-1 start">
+            <li class="c1 c15 li-bullet-0">
+                <span class="c5 c6">Use comments in code</span>
+            </li>
+            <li class="c1 c15 li-bullet-0">
+                <span class="c5 c6">Use consistent-looking code</span>
+            </li>
+            <li class="c1 c15 li-bullet-0">
+                <span class="c5 c6"
+                    >Use code analysis tools e.g. pycodestyle, pylint,
+                    flake8</span
+                >
+            </li>
+        </ul>
+        <ul class="c0 lst-kix_b8sgq9793b8r-0">
+            <li class="c1 c11 li-bullet-0">
+                <span class="c5 c2"
+                    >Write code assuming others will run it</span
+                >
+            </li>
+        </ul>
+        <ul class="c0 lst-kix_b8sgq9793b8r-1 start">
+            <li class="c1 c15 li-bullet-0">
+                <span class="c5 c6">Provide an automated build process</span>
+            </li>
+            <li class="c1 c15 li-bullet-0">
+                <span class="c5 c6">Provide a test suite</span>
+            </li>
+            <li class="c1 c15 li-bullet-0">
+                <span class="c5 c6"
+                    >Automate install, build, and test together</span
+                >
+            </li>
+            <li class="c1 c15 li-bullet-0">
+                <span class="c5 c6">Provide infrastructure support</span>
+            </li>
+        </ul>
+        <ul class="c0 lst-kix_b8sgq9793b8r-2 start">
+            <li class="c1 c25 li-bullet-0">
+                <span class="c5 c6">run and install overnight</span>
+            </li>
+            <li class="c1 c25 li-bullet-0">
+                <span class="c5 c6">email reporting</span>
+            </li>
+            <li class="c1 c25 li-bullet-0">
+                <span class="c5 c6">continuous integration</span>
+            </li>
+        </ul>
+        <ul class="c0 lst-kix_b8sgq9793b8r-0">
+            <li class="c1 c11 li-bullet-0">
+                <span class="c5 c2">Get others to check code</span>
+            </li>
+        </ul>
+        <ul class="c0 lst-kix_b8sgq9793b8r-1 start">
+            <li class="c1 c15 li-bullet-0">
+                <span class="c5 c6">Collaborate with other team members</span>
+            </li>
+            <li class="c1 c15 li-bullet-0">
+                <span class="c5 c6">Focus on critical sections of code</span>
+            </li>
+        </ul>
+        <ul class="c0 lst-kix_b8sgq9793b8r-0">
+            <li class="c1 c11 li-bullet-0">
+                <span class="c5 c2">Use version control</span>
+            </li>
+        </ul>
+        <ul class="c0 lst-kix_b8sgq9793b8r-1 start">
+            <li class="c1 c15 li-bullet-0">
+                <span class="c5 c6">Use GitHub for version control</span>
+            </li>
+        </ul>
+        <ul class="c0 lst-kix_b8sgq9793b8r-2 start">
+            <li class="c1 c25 li-bullet-0">
+                <span class="c5 c6">allows easy backups and commits</span>
+            </li>
+            <li class="c1 c25 li-bullet-0">
+                <span class="c5 c6"
+                    >store code, documentation, unit tests, test data, custom
+                    scripts</span
+                >
+            </li>
+            <li class="c1 c25 li-bullet-0">
+                <span class="c5 c6">improves collaborative development</span>
+            </li>
+        </ul>
+        <hr />
+        <p class="c1 c22"><span class="c5 c6"></span></p>
+        <p class="c1 c22"><span class="c5 c6"></span></p>
+    </body>
+</html>
