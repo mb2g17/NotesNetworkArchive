@@ -30,7 +30,7 @@ What separates the archive and the original is the performance. Google Docs uses
 
 # Where can I view the Notes Network?
 
-[The original Notes Network is hosted on Google Docs](https://docs.google.com/document/d/1OIcQ8dJ_FAhdkirU94M29-ZbNZ4oQs1LbWF3Nz-mq_U/edit?usp=sharing), but [the archive can be viewed through GitHub Pages](https://mb2g17.github.io/NotesNetworkArchive/).
+[The original Notes Network is hosted on Google Docs](https://docs.google.com/document/d/1OIcQ8dJ_FAhdkirU94M29-ZbNZ4oQs1LbWF3Nz-mq_U/edit?usp=sharing), but [the archive can be viewed at my site](https://demos.matt-barnes.co.uk/notes-network-archive/).
 
 # License
 
